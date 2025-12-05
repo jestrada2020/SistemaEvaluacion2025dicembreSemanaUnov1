@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Evaluativo de Matemáticas</title>
+
+    <!-- KaTeX -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
+
+    <!-- GeoGebra -->
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+
+    <!-- SheetJS for Excel Export -->
+    <script src="https://cdn.sheetjs.com/xlsx-0.20.0/package/dist/xlsx.full.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/generator.css">
+</head>
+
+<body>
+    <div id="setup-section">
+        <h1>Sistema de Evaluación Matemática</h1>
+        <div id="categories-container"></div>
+        <button id="start-button">Comenzar Evaluación</button>
+        <button id="generator-button" class="secondary-btn"
+            onclick="document.getElementById('setup-section').classList.add('hidden'); document.getElementById('generator-section').classList.remove('hidden'); window.evaluationGenerator.init();">Generador
+            de Evaluación</button>
+
+    </div>
+
+    <div id="generator-section" class="hidden">
+        <div class="header-row">
+            <h2>Generador de Evaluación</h2>
+            <button class="back-btn" onclick="location.reload()">Volver</button>
+        </div>
+        <div id="generator-container"></div>
+    </div>
+
+    <div id="exam-section" class="exam-section hidden">
+        <h2>Evaluación en Curso</h2>
+        <div id="question-container"></div>
+        <div class="nav-buttons">
+            <button id="prev-btn" class="nav-btn hidden">Anterior</button>
+            <button id="next-btn" class="nav-btn">Siguiente</button>
+            <button id="finish-btn" class="nav-btn hidden">Finalizar</button>
+        </div>
+    </div>
+
+    <div id="results-section" class="hidden">
+        <h2>Resultados de la Evaluación</h2>
+        <div class="score" id="final-score"></div>
+        <div id="feedback-container"></div>
+        <button class="restart-btn" onclick="location.reload()">Volver al Inicio</button>
+    </div>
+
+    <!-- Preview Modal -->
+    <div id="preview-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal"
+                onclick="document.getElementById('preview-modal').classList.add('hidden')">&times;</span>
+            <h2>Previsualización de Evaluación</h2>
+            <div id="preview-scroll-wrapper" class="preview-scroll-wrapper">
+                <div id="preview-container" class="preview-container">
+                    <!-- Exam content will be injected here -->
+                </div>
+            </div>
+            <div class="modal-actions">
+                <button class="action-btn" style="background: #28a745;"
+                    onclick="evaluationGenerator.runOnlineExam()">Realizar Evaluación en Línea</button>
+                <button class="action-btn export-btn" onclick="evaluationGenerator.exportPDF()">Descargar PDF</button>
+                <button class="action-btn export-btn" onclick="evaluationGenerator.exportExcel()">Descargar
+                    Excel</button>
+                <button class="action-btn export-btn" onclick="evaluationGenerator.exportLaTeX()">Descargar
+                    LaTeX</button>
+                <button class="action-btn export-btn" onclick="evaluationGenerator.exportJSON()">Descargar JSON</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modules -->
+    <script src="js/modules/aritmetica.js"></script>
+    <script src="js/modules/calculodiferencial.js"></script>
+    <script src="js/modules/calculointegral.js"></script>
+    <script src="js/modules/calculomultivariado.js"></script>
+    <script src="js/modules/geometria.js"></script>
+    <script src="js/modules/factorizacion.js"></script>
+    <script src="js/modules/ecuaciones.js"></script>
+    <script src="js/modules/sistemas_ecuaciones.js"></script>
+    <script src="js/modules/razonamiento_logico.js"></script>
+    <script src="js/modules/ecuaciones_diferenciales.js"></script>
+    <script src="js/modules/algebra_lineal.js"></script>
+    <script src="js/modules/regla_de_tres.js"></script>
+    <script src="js/modules/regla_de_tres_agro.js"></script>
+    <script src="js/modules/cambio_unidades.js"></script>
+    <script src="js/modules/analisis_numerico.js"></script>
+    <script src="js/modules/geometria_vectorial.js"></script>
+    <script src="js/modules/geometria_triangulo.js"></script>
+    <script src="js/modules/estadistica_descriptiva.js"></script>
+    <script src="js/modules/estadistica_probabilistica.js"></script>
+    <script src="js/modules/estadistica_inferencial.js"></script>
+    <script src="js/modules/geometria_plano.js"></script>
+    <script src="js/modules/superficies_3d.js"></script>
+    <script src="js/modules/campos_vectoriales.js"></script>
+    <script src="js/modules/combinatoria.js"></script>
+
+    <!-- Main System -->
+    <script src="js/data/questions.js"></script>
+    <script src="js/ExamSystem.js"></script>
+    <script src="js/EvaluationGenerator.js"></script>
+
+    <!-- Initialization -->
+    <script>
+        let examSystem;
+        document.addEventListener('DOMContentLoaded', () => {
+            examSystem = new ExamSystem();
+        });
+    </script>
+</body>
+
+</html>

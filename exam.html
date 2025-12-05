@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación en Línea</title>
+
+    <!-- KaTeX -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
+
+    <!-- GeoGebra -->
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+
+    <!-- SheetJS for Excel Export -->
+    <script src="https://cdn.sheetjs.com/xlsx-0.20.0/package/dist/xlsx.full.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            padding: 20px;
+            background-color: #f0f2f5;
+        }
+
+        #exam-section {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="setup-section" class="hidden"></div>
+    <!-- Placeholder to prevent errors if ExamSystem tries to access it -->
+    <div id="generator-section" class="hidden"></div> <!-- Placeholder -->
+    <div id="categories-container" class="hidden"></div> <!-- Placeholder -->
+
+    <div id="exam-section">
+        <h2>Evaluación en Curso</h2>
+        <div id="question-container" style="border: 1px solid red; min-height: 100px; padding: 10px;"></div>
+        <div class="nav-buttons">
+            <button id="prev-btn" class="nav-btn hidden">Anterior</button>
+            <button id="next-btn" class="nav-btn">Siguiente</button>
+            <button id="finish-btn" class="nav-btn hidden">Finalizar</button>
+        </div>
+    </div>
+
+    <div id="results-section" class="hidden">
+        <h2>Resultados de la Evaluación</h2>
+        <div class="score" id="final-score"></div>
+        <div id="score-display" class="score"></div>
+        <div id="detailed-results"></div>
+        <button class="restart-btn" onclick="window.close()">Cerrar Evaluación</button>
+    </div>
+
+    <!-- Main System -->
+    <script src="js/ExamSystem.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let examData = null;
+
+            // 1. Try localStorage
+            let examDataJSON = localStorage.getItem('examData');
+
+            // 2. Try sessionStorage
+            if (!examDataJSON) {
+                try {
+                    examDataJSON = sessionStorage.getItem('examData');
+                } catch (e) { console.warn("sessionStorage access failed", e); }
+            }
+
+            if (examDataJSON) {
+                try {
+                    examData = JSON.parse(examDataJSON);
+                } catch (e) {
+                    console.error("Error parsing exam data", e);
+                }
+            }
+
+            // 3. Fallback: Try reading from window.opener
+            if (!examData) {
+                try {
+                    if (window.opener && window.opener.evaluationGenerator) {
+                        console.log("Loading data from window.opener");
+                        examData = window.opener.evaluationGenerator.selectedQuestions;
+                    }
+                } catch (e) {
+                    console.error("Security error accessing window.opener:", e);
+                }
+            }
+
+            if (examData && examData.length > 0) {
+                window.examSystem = new ExamSystem();
+                // Small delay to ensure ExamSystem is ready
+                setTimeout(() => {
+                    window.examSystem.startCustomExam(examData);
+                }, 100);
+            } else {
+                document.body.innerHTML = `
+                    <div style="text-align: center; margin-top: 50px;">
+                        <h1>No se encontraron datos de evaluación.</h1>
+                        <p>Esto puede ocurrir si:</p>
+                        <ul style="display: inline-block; text-align: left;">
+                            <li>La ventana se abrió directamente y no desde el generador.</li>
+                            <li>El navegador bloqueó el acceso al almacenamiento local (común en modo incógnito o archivos locales).</li>
+                        </ul>
+                        <br>
+                        <button onclick="window.close()" class="nav-btn" style="background: #dc3545;">Cerrar</button>
+                    </div>
+                `;
+            }
+        });
+    </script>
+</body>
+
+</html>
