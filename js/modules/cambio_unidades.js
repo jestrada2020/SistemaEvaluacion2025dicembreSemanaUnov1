@@ -14,7 +14,7 @@ window.examCategories.cambio_unidades = {
                 { latex: '5000 \\text{ m}' },
                 { latex: '500 \\text{ m}' },
                 { latex: '50 \\text{ m}' },
-                { latex: '0.005 \\text{ m}' }
+                { latex: '0{,}005 \\text{ m}' }
             ],
             correct: 0,
             hint: '1 km = 1000 m'
@@ -25,41 +25,41 @@ window.examCategories.cambio_unidades = {
             geogebraState: '0',
             latex: '120 \\text{ cm} = ? \\text{ m}',
             options: [
-                { latex: '1.2 \\text{ m}' },
+                { latex: '1{,}2 \\text{ m}' },
                 { latex: '12 \\text{ m}' },
-                { latex: '0.12 \\text{ m}' },
+                { latex: '0{,}12 \\text{ m}' },
                 { latex: '1200 \\text{ m}' }
             ],
             correct: 0,
             hint: '1 m = 100 cm'
         },
         {
-            question: 'Convertir 3 pulgadas a centímetros (1 in = 2.54 cm).',
+            question: 'Convertir 3 pulgadas a centímetros (1 in = 2,54 cm).',
             geogebraAppName: 'classic',
             geogebraState: '0',
             latex: '3 \\text{ in} = ? \\text{ cm}',
             options: [
-                { latex: '7.62 \\text{ cm}' },
-                { latex: '6.54 \\text{ cm}' },
-                { latex: '8.12 \\text{ cm}' },
-                { latex: '3.54 \\text{ cm}' }
+                { latex: '7{,}62 \\text{ cm}' },
+                { latex: '6{,}54 \\text{ cm}' },
+                { latex: '8{,}12 \\text{ cm}' },
+                { latex: '3{,}54 \\text{ cm}' }
             ],
             correct: 0,
-            hint: 'Multiplica por 2.54'
+            hint: 'Multiplica por 2,54'
         },
         {
-            question: 'Convertir 10 pies a metros (1 ft = 0.3048 m).',
+            question: 'Convertir 10 pies a metros (1 ft = 0,3048 m).',
             geogebraAppName: 'classic',
             geogebraState: '0',
             latex: '10 \\text{ ft} = ? \\text{ m}',
             options: [
-                { latex: '3.048 \\text{ m}' },
-                { latex: '30.48 \\text{ m}' },
-                { latex: '0.3048 \\text{ m}' },
-                { latex: '304.8 \\text{ m}' }
+                { latex: '3{,}048 \\text{ m}' },
+                { latex: '30{,}48 \\text{ m}' },
+                { latex: '0{,}3048 \\text{ m}' },
+                { latex: '304{,}8 \\text{ m}' }
             ],
             correct: 0,
-            hint: 'Multiplica por 0.3048'
+            hint: 'Multiplica por 0,3048'
         },
         {
             question: 'Convertir 5000 milímetros a metros.',
@@ -69,31 +69,31 @@ window.examCategories.cambio_unidades = {
             options: [
                 { latex: '5 \\text{ m}' },
                 { latex: '50 \\text{ m}' },
-                { latex: '0.5 \\text{ m}' },
+                { latex: '0{,}5 \\text{ m}' },
                 { latex: '500 \\text{ m}' }
             ],
             correct: 0,
             hint: '1 m = 1000 mm'
         },
         {
-            question: 'Convertir 2 millas a kilómetros (1 mi ≈ 1.609 km).',
+            question: 'Convertir 2 millas a kilómetros (1 mi ≈ 1,609 km).',
             geogebraAppName: 'classic',
             geogebraState: '0',
             latex: '2 \\text{ mi} = ? \\text{ km}',
             options: [
-                { latex: '3.218 \\text{ km}' },
-                { latex: '1.609 \\text{ km}' },
-                { latex: '2.609 \\text{ km}' },
-                { latex: '4.218 \\text{ km}' }
+                { latex: '3{,}218 \\text{ km}' },
+                { latex: '1{,}609 \\text{ km}' },
+                { latex: '2{,}609 \\text{ km}' },
+                { latex: '4{,}218 \\text{ km}' }
             ],
             correct: 0,
-            hint: 'Multiplica por 1.609'
+            hint: 'Multiplica por 1,609'
         },
         {
-            question: 'Convertir 0.5 metros a nanómetros (Biología).',
+            question: 'Convertir 0,5 metros a nanómetros (Biología).',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '0.5 \\text{ m} = ? \\text{ nm}',
+            latex: '0{,}5 \\text{ m} = ? \\text{ nm}',
             options: [
                 { latex: '5 \\times 10^8 \\text{ nm}' },
                 { latex: '5 \\times 10^9 \\text{ nm}' },
@@ -118,15 +118,15 @@ window.examCategories.cambio_unidades = {
             hint: '1 yd = 3 ft'
         },
         {
-            question: 'Convertir 1.5 metros a centímetros.',
+            question: 'Convertir 1,5 metros a centímetros.',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '1.5 \\text{ m} = ? \\text{ cm}',
+            latex: '1{,}5 \\text{ m} = ? \\text{ cm}',
             options: [
                 { latex: '150 \\text{ cm}' },
                 { latex: '15 \\text{ cm}' },
                 { latex: '1500 \\text{ cm}' },
-                { latex: '1.5 \\text{ cm}' }
+                { latex: '1{,}5 \\text{ cm}' }
             ],
             correct: 0,
             hint: '1 m = 100 cm'
@@ -138,9 +138,9 @@ window.examCategories.cambio_unidades = {
             latex: '1000 \\text{ } \\mu\\text{m} = ? \\text{ mm}',
             options: [
                 { latex: '1 \\text{ mm}' },
-                { latex: '0.1 \\text{ mm}' },
+                { latex: '0{,}1 \\text{ mm}' },
                 { latex: '10 \\text{ mm}' },
-                { latex: '0.01 \\text{ mm}' }
+                { latex: '0{,}01 \\text{ mm}' }
             ],
             correct: 0,
             hint: '1 mm = 1000 μm'
@@ -197,7 +197,7 @@ window.examCategories.cambio_unidades = {
             options: [
                 { latex: '1 \\text{ a}' },
                 { latex: '10 \\text{ a}' },
-                { latex: '0.1 \\text{ a}' },
+                { latex: '0{,}1 \\text{ a}' },
                 { latex: '100 \\text{ a}' }
             ],
             correct: 0,
@@ -218,10 +218,10 @@ window.examCategories.cambio_unidades = {
             hint: '1 km² = 100 ha'
         },
         {
-            question: 'Convertir 0.5 acres a pies cuadrados (1 acre = 43560 ft²).',
+            question: 'Convertir 0,5 acres a pies cuadrados (1 acre = 43560 ft²).',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '0.5 \\text{ acre} = ? \\text{ ft}^2',
+            latex: '0{,}5 \\text{ acre} = ? \\text{ ft}^2',
             options: [
                 { latex: '21780 \\text{ ft}^2' },
                 { latex: '43560 \\text{ ft}^2' },
@@ -239,7 +239,7 @@ window.examCategories.cambio_unidades = {
             options: [
                 { latex: '3 \\text{ m}^2' },
                 { latex: '30 \\text{ m}^2' },
-                { latex: '0.3 \\text{ m}^2' },
+                { latex: '0{,}3 \\text{ m}^2' },
                 { latex: '300 \\text{ m}^2' }
             ],
             correct: 0,
@@ -253,7 +253,7 @@ window.examCategories.cambio_unidades = {
             options: [
                 { latex: '4 \\text{ cm}^2' },
                 { latex: '40 \\text{ cm}^2' },
-                { latex: '0.4 \\text{ cm}^2' },
+                { latex: '0{,}4 \\text{ cm}^2' },
                 { latex: '4000 \\text{ cm}^2' }
             ],
             correct: 0,
@@ -281,24 +281,24 @@ window.examCategories.cambio_unidades = {
             geogebraState: '0',
             latex: '500 \\text{ ml} = ? \\text{ L}',
             options: [
-                { latex: '0.5 \\text{ L}' },
+                { latex: '0{,}5 \\text{ L}' },
                 { latex: '5 \\text{ L}' },
                 { latex: '50 \\text{ L}' },
-                { latex: '0.05 \\text{ L}' }
+                { latex: '0{,}05 \\text{ L}' }
             ],
             correct: 0,
             hint: '1 L = 1000 ml'
         },
         {
-            question: 'Convertir 1 galón (US) a litros (1 gal ≈ 3.785 L).',
+            question: 'Convertir 5 galones (US) a litros (1 gal ≈ 3,785 L).',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '1 \\text{ gal} = ? \\text{ L}',
+            latex: '5 \\text{ gal} = ? \\text{ L}',
             options: [
-                { latex: '3.785 \\text{ L}' },
-                { latex: '4.546 \\text{ L}' }, // UK gal
-                { latex: '3.5 \\text{ L}' },
-                { latex: '4 \\text{ L}' }
+                { latex: '18{,}925 \\text{ L}' },
+                { latex: '22{,}73 \\text{ L}' },
+                { latex: '1{,}321 \\text{ L}' },
+                { latex: '20 \\text{ L}' }
             ],
             correct: 0,
             hint: 'Factor de conversión US'
@@ -311,7 +311,7 @@ window.examCategories.cambio_unidades = {
             options: [
                 { latex: '2 \\text{ L}' },
                 { latex: '20 \\text{ L}' },
-                { latex: '0.2 \\text{ L}' },
+                { latex: '0{,}2 \\text{ L}' },
                 { latex: '200 \\text{ L}' }
             ],
             correct: 0,
@@ -325,25 +325,25 @@ window.examCategories.cambio_unidades = {
             options: [
                 { latex: '1 \\text{ L}' },
                 { latex: '10 \\text{ L}' },
-                { latex: '0.1 \\text{ L}' },
+                { latex: '0{,}1 \\text{ L}' },
                 { latex: '100 \\text{ L}' }
             ],
             correct: 0,
             hint: '1000 cm³ = 1 L'
         },
         {
-            question: 'Convertir 3 pies cúbicos a litros (1 ft³ ≈ 28.32 L).',
+            question: 'Convertir 3 pies cúbicos a litros (1 ft³ ≈ 28,32 L).',
             geogebraAppName: 'classic',
             geogebraState: '0',
             latex: '3 \\text{ ft}^3 = ? \\text{ L}',
             options: [
-                { latex: '84.96 \\text{ L}' },
-                { latex: '28.32 \\text{ L}' },
-                { latex: '56.64 \\text{ L}' },
+                { latex: '84{,}96 \\text{ L}' },
+                { latex: '28{,}32 \\text{ L}' },
+                { latex: '56{,}64 \\text{ L}' },
                 { latex: '90 \\text{ L}' }
             ],
             correct: 0,
-            hint: 'Multiplica por 28.32'
+            hint: 'Multiplica por 28,32'
         },
         {
             question: 'Convertir 50 microlitros a mililitros.',
@@ -351,9 +351,9 @@ window.examCategories.cambio_unidades = {
             geogebraState: '0',
             latex: '50 \\text{ } \\mu\\text{L} = ? \\text{ ml}',
             options: [
-                { latex: '0.05 \\text{ ml}' },
-                { latex: '0.5 \\text{ ml}' },
-                { latex: '0.005 \\text{ ml}' },
+                { latex: '0{,}05 \\text{ ml}' },
+                { latex: '0{,}5 \\text{ ml}' },
+                { latex: '0{,}005 \\text{ ml}' },
                 { latex: '5 \\text{ ml}' }
             ],
             correct: 0,
@@ -376,15 +376,15 @@ window.examCategories.cambio_unidades = {
 
         // 4. Masa y Peso (8 preguntas)
         {
-            question: 'Convertir 1 kilogramo a libras (1 kg ≈ 2.2046 lb).',
+            question: 'Convertir 1 kilogramo a libras (1 kg ≈ 2,2046 lb).',
             geogebraAppName: 'classic',
             geogebraState: '0',
             latex: '1 \\text{ kg} = ? \\text{ lb}',
             options: [
-                { latex: '2.205 \\text{ lb}' },
+                { latex: '2{,}205 \\text{ lb}' },
                 { latex: '1 \\text{ lb}' },
-                { latex: '0.454 \\text{ lb}' },
-                { latex: '2.5 \\text{ lb}' }
+                { latex: '0{,}454 \\text{ lb}' },
+                { latex: '2{,}5 \\text{ lb}' }
             ],
             correct: 0,
             hint: 'Factor de conversión'
@@ -395,10 +395,10 @@ window.examCategories.cambio_unidades = {
             geogebraState: '0',
             latex: '500 \\text{ g} = ? \\text{ kg}',
             options: [
-                { latex: '0.5 \\text{ kg}' },
+                { latex: '0{,}5 \\text{ kg}' },
                 { latex: '5 \\text{ kg}' },
                 { latex: '50 \\text{ kg}' },
-                { latex: '0.05 \\text{ kg}' }
+                { latex: '0{,}05 \\text{ kg}' }
             ],
             correct: 0,
             hint: '1 kg = 1000 g'
@@ -411,7 +411,7 @@ window.examCategories.cambio_unidades = {
             options: [
                 { latex: '1000 \\text{ kg}' },
                 { latex: '100 \\text{ kg}' },
-                { latex: '2000 \\text{ lb}' },
+                { latex: '10 \\text{ kg}' },
                 { latex: '10000 \\text{ kg}' }
             ],
             correct: 0,
@@ -424,9 +424,9 @@ window.examCategories.cambio_unidades = {
             latex: '16 \\text{ oz} = ? \\text{ lb}',
             options: [
                 { latex: '1 \\text{ lb}' },
-                { latex: '0.5 \\text{ lb}' },
+                { latex: '0{,}5 \\text{ lb}' },
                 { latex: '2 \\text{ lb}' },
-                { latex: '1.6 \\text{ lb}' }
+                { latex: '1{,}6 \\text{ lb}' }
             ],
             correct: 0,
             hint: '1 lb = 16 oz'
@@ -437,41 +437,41 @@ window.examCategories.cambio_unidades = {
             geogebraState: '0',
             latex: '100 \\text{ mg} = ? \\text{ g}',
             options: [
-                { latex: '0.1 \\text{ g}' },
+                { latex: '0{,}1 \\text{ g}' },
                 { latex: '1 \\text{ g}' },
-                { latex: '0.01 \\text{ g}' },
+                { latex: '0{,}01 \\text{ g}' },
                 { latex: '10 \\text{ g}' }
             ],
             correct: 0,
             hint: '1 g = 1000 mg'
         },
         {
-            question: 'Convertir 1 slug a kilogramos (1 slug ≈ 14.59 kg).',
+            question: 'Convertir 3 slugs a kilogramos (1 slug ≈ 14,59 kg).',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '1 \\text{ slug} = ? \\text{ kg}',
+            latex: '3 \\text{ slug} = ? \\text{ kg}',
             options: [
-                { latex: '14.59 \\text{ kg}' },
-                { latex: '10 \\text{ kg}' },
-                { latex: '32.17 \\text{ kg}' },
-                { latex: '1 \\text{ kg}' }
+                { latex: '43{,}77 \\text{ kg}' },
+                { latex: '30 \\text{ kg}' },
+                { latex: '96{,}51 \\text{ kg}' },
+                { latex: '4{,}86 \\text{ kg}' }
             ],
             correct: 0,
             hint: 'Unidad imperial de masa'
         },
         {
-            question: 'Convertir 5 quilates a gramos (1 ct = 0.2 g).',
+            question: 'Convertir 5 quilates a gramos (1 ct = 0,2 g).',
             geogebraAppName: 'classic',
             geogebraState: '0',
             latex: '5 \\text{ ct} = ? \\text{ g}',
             options: [
                 { latex: '1 \\text{ g}' },
-                { latex: '0.5 \\text{ g}' },
+                { latex: '0{,}5 \\text{ g}' },
                 { latex: '2 \\text{ g}' },
                 { latex: '5 \\text{ g}' }
             ],
             correct: 0,
-            hint: 'Multiplica por 0.2'
+            hint: 'Multiplica por 0,2'
         },
         {
             question: 'Convertir 1 microgramo a nanogramos.',
@@ -482,7 +482,7 @@ window.examCategories.cambio_unidades = {
                 { latex: '1000 \\text{ ng}' },
                 { latex: '100 \\text{ ng}' },
                 { latex: '10 \\text{ ng}' },
-                { latex: '0.001 \\text{ ng}' }
+                { latex: '0{,}001 \\text{ ng}' }
             ],
             correct: 0,
             hint: '1 μg = 1000 ng'
@@ -554,16 +554,16 @@ window.examCategories.cambio_unidades = {
                 { latex: '1000 \\text{ } \\mu\\text{s}' },
                 { latex: '100 \\text{ } \\mu\\text{s}' },
                 { latex: '10 \\text{ } \\mu\\text{s}' },
-                { latex: '0.001 \\text{ } \\mu\\text{s}' }
+                { latex: '0{,}001 \\text{ } \\mu\\text{s}' }
             ],
             correct: 0,
             hint: '1 ms = 1000 μs'
         },
         {
-            question: 'Convertir 0.5 horas a segundos.',
+            question: 'Convertir 0,5 horas a segundos.',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '0.5 \\text{ h} = ? \\text{ s}',
+            latex: '0{,}5 \\text{ h} = ? \\text{ s}',
             options: [
                 { latex: '1800 \\text{ s}' },
                 { latex: '3600 \\text{ s}' },
@@ -615,7 +615,7 @@ window.examCategories.cambio_unidades = {
                 { latex: '900 \\text{ m/s}' }
             ],
             correct: 0,
-            hint: 'Divide por 3.6'
+            hint: 'Divide por 3,6'
         },
         {
             question: 'Convertir 10 m/s a km/h.',
@@ -624,50 +624,50 @@ window.examCategories.cambio_unidades = {
             latex: '10 \\text{ m/s} = ? \\text{ km/h}',
             options: [
                 { latex: '36 \\text{ km/h}' },
-                { latex: '3.6 \\text{ km/h}' },
+                { latex: '3{,}6 \\text{ km/h}' },
                 { latex: '100 \\text{ km/h}' },
                 { latex: '60 \\text{ km/h}' }
             ],
             correct: 0,
-            hint: 'Multiplica por 3.6'
+            hint: 'Multiplica por 3,6'
         },
         {
-            question: 'Convertir 60 mph a km/h (1 mph ≈ 1.609 km/h).',
+            question: 'Convertir 60 mph a km/h (1 mph ≈ 1,609 km/h).',
             geogebraAppName: 'classic',
             geogebraState: '0',
             latex: '60 \\text{ mph} = ? \\text{ km/h}',
             options: [
-                { latex: '96.54 \\text{ km/h}' },
+                { latex: '96{,}54 \\text{ km/h}' },
                 { latex: '100 \\text{ km/h}' },
                 { latex: '60 \\text{ km/h}' },
                 { latex: '120 \\text{ km/h}' }
             ],
             correct: 0,
-            hint: 'Multiplica por 1.609'
+            hint: 'Multiplica por 1,609'
         },
         {
-            question: 'Convertir 1 nudo a km/h (1 kn = 1.852 km/h).',
+            question: 'Convertir 25 nudos a km/h (1 kn = 1,852 km/h).',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '1 \\text{ kn} = ? \\text{ km/h}',
+            latex: '25 \\text{ kn} = ? \\text{ km/h}',
             options: [
-                { latex: '1.852 \\text{ km/h}' },
-                { latex: '1.609 \\text{ km/h}' },
-                { latex: '2 \\text{ km/h}' },
-                { latex: '1 \\text{ km/h}' }
+                { latex: '46{,}3 \\text{ km/h}' },
+                { latex: '40{,}23 \\text{ km/h}' },
+                { latex: '50 \\text{ km/h}' },
+                { latex: '13{,}5 \\text{ km/h}' }
             ],
             correct: 0,
             hint: 'Milla náutica por hora'
         },
         {
-            question: 'Convertir la velocidad de la luz (c ≈ 3x10^8 m/s) a km/s.',
+            question: 'Convertir la velocidad de la luz ($c \\approx 3 \\times 10^8$ m/s) a km/s.',
             geogebraAppName: 'classic',
             geogebraState: '0',
             latex: '3 \\times 10^8 \\text{ m/s} = ? \\text{ km/s}',
             options: [
-                { latex: '300,000 \\text{ km/s}' },
-                { latex: '30,000 \\text{ km/s}' },
-                { latex: '3,000,000 \\text{ km/s}' },
+                { latex: '300\\,000 \\text{ km/s}' },
+                { latex: '30\\,000 \\text{ km/s}' },
+                { latex: '3\\,000\\,000 \\text{ km/s}' },
                 { latex: '300 \\text{ km/s}' }
             ],
             correct: 0,
@@ -679,13 +679,13 @@ window.examCategories.cambio_unidades = {
             geogebraState: '0',
             latex: '343 \\text{ m/s} = ? \\text{ km/h}',
             options: [
-                { latex: '1234.8 \\text{ km/h}' },
+                { latex: '1234{,}8 \\text{ km/h}' },
                 { latex: '1000 \\text{ km/h}' },
                 { latex: '3430 \\text{ km/h}' },
                 { latex: '600 \\text{ km/h}' }
             ],
             correct: 0,
-            hint: 'Multiplica por 3.6'
+            hint: 'Multiplica por 3,6'
         },
 
         // 7. Temperatura (6 preguntas)
@@ -723,13 +723,13 @@ window.examCategories.cambio_unidades = {
             geogebraState: '0',
             latex: '25^\\circ\\text{C} = ? \\text{ K}',
             options: [
-                { latex: '298.15 \\text{ K}' },
-                { latex: '273.15 \\text{ K}' },
+                { latex: '298{,}15 \\text{ K}' },
+                { latex: '273{,}15 \\text{ K}' },
                 { latex: '300 \\text{ K}' },
                 { latex: '25 \\text{ K}' }
             ],
             correct: 0,
-            hint: 'C + 273.15'
+            hint: 'C + 273,15'
         },
         {
             question: 'Convertir 0 K a Celsius.',
@@ -737,19 +737,19 @@ window.examCategories.cambio_unidades = {
             geogebraState: '0',
             latex: '0 \\text{ K} = ? ^\\circ\\text{C}',
             options: [
-                { latex: '-273.15^\\circ\\text{C}' },
+                { latex: '-273{,}15^\\circ\\text{C}' },
                 { latex: '0^\\circ\\text{C}' },
                 { latex: '-100^\\circ\\text{C}' },
-                { latex: '273.15^\\circ\\text{C}' }
+                { latex: '273{,}15^\\circ\\text{C}' }
             ],
             correct: 0,
             hint: 'Cero absoluto'
         },
         {
-            question: 'Convertir 98.6°F a Celsius.',
+            question: 'Convertir 98,6°F a Celsius.',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '98.6^\\circ\\text{F} = ? ^\\circ\\text{C}',
+            latex: '98{,}6^\\circ\\text{F} = ? ^\\circ\\text{C}',
             options: [
                 { latex: '37^\\circ\\text{C}' },
                 { latex: '36^\\circ\\text{C}' },
@@ -765,24 +765,24 @@ window.examCategories.cambio_unidades = {
             geogebraState: '0',
             latex: '300 \\text{ K} = ? ^\\circ\\text{C}',
             options: [
-                { latex: '26.85^\\circ\\text{C}' },
-                { latex: '27^\\circ\\text{C}' },
+                { latex: '26{,}85^\\circ\\text{C}' },
+                { latex: '573{,}15^\\circ\\text{C}' },
                 { latex: '300^\\circ\\text{C}' },
                 { latex: '100^\\circ\\text{C}' }
             ],
             correct: 0,
-            hint: 'K - 273.15'
+            hint: 'K - 273,15'
         },
 
         // 8. Almacenamiento de Datos (6 preguntas)
         {
-            question: 'Convertir 1 Kilobyte a bytes.',
+            question: 'Convertir 1 Kilobyte a bytes (sistema binario: cada unidad equivale a 1024 de la anterior).',
             geogebraAppName: 'classic',
             geogebraState: '0',
             latex: '1 \\text{ KB} = ? \\text{ B}',
             options: [
                 { latex: '1024 \\text{ B}' },
-                { latex: '1000 \\text{ B}' },
+                { latex: '512 \\text{ B}' },
                 { latex: '8 \\text{ B}' },
                 { latex: '100 \\text{ B}' }
             ],
@@ -790,13 +790,13 @@ window.examCategories.cambio_unidades = {
             hint: 'Sistema binario (2^10)'
         },
         {
-            question: 'Convertir 1 Gigabyte a Megabytes.',
+            question: 'Convertir 1 Gigabyte a Megabytes (sistema binario: cada unidad equivale a 1024 de la anterior).',
             geogebraAppName: 'classic',
             geogebraState: '0',
             latex: '1 \\text{ GB} = ? \\text{ MB}',
             options: [
                 { latex: '1024 \\text{ MB}' },
-                { latex: '1000 \\text{ MB}' },
+                { latex: '2048 \\text{ MB}' },
                 { latex: '100 \\text{ MB}' },
                 { latex: '10 \\text{ MB}' }
             ],
@@ -804,13 +804,13 @@ window.examCategories.cambio_unidades = {
             hint: '1 GB = 1024 MB'
         },
         {
-            question: 'Convertir 1 Terabyte a Gigabytes.',
+            question: 'Convertir 1 Terabyte a Gigabytes (sistema binario: cada unidad equivale a 1024 de la anterior).',
             geogebraAppName: 'classic',
             geogebraState: '0',
             latex: '1 \\text{ TB} = ? \\text{ GB}',
             options: [
                 { latex: '1024 \\text{ GB}' },
-                { latex: '1000 \\text{ GB}' },
+                { latex: '2048 \\text{ GB}' },
                 { latex: '10000 \\text{ GB}' },
                 { latex: '500 \\text{ GB}' }
             ],
@@ -825,39 +825,54 @@ window.examCategories.cambio_unidades = {
             options: [
                 { latex: '1 \\text{ B}' },
                 { latex: '8 \\text{ B}' },
-                { latex: '0.1 \\text{ B}' },
+                { latex: '0{,}1 \\text{ B}' },
                 { latex: '2 \\text{ B}' }
             ],
             correct: 0,
             hint: '1 Byte = 8 bits'
         },
         {
-            question: 'Convertir 1024 Megabytes a Gigabytes.',
+            question: 'Convertir 1024 Megabytes a Gigabytes (sistema binario: cada unidad equivale a 1024 de la anterior).',
             geogebraAppName: 'classic',
             geogebraState: '0',
             latex: '1024 \\text{ MB} = ? \\text{ GB}',
             options: [
                 { latex: '1 \\text{ GB}' },
                 { latex: '10 \\text{ GB}' },
-                { latex: '0.1 \\text{ GB}' },
+                { latex: '0{,}1 \\text{ GB}' },
                 { latex: '100 \\text{ GB}' }
             ],
             correct: 0,
             hint: '1024 MB = 1 GB'
         },
         {
-            question: 'Convertir 500 Gigabytes a Terabytes.',
+            question: 'Convertir 500 Gigabytes a Terabytes (sistema binario: cada unidad equivale a 1024 de la anterior).',
             geogebraAppName: 'classic',
             geogebraState: '0',
             latex: '500 \\text{ GB} = ? \\text{ TB}',
             options: [
-                { latex: '0.488 \\text{ TB}' }, // 500/1024
-                { latex: '0.5 \\text{ TB}' },
+                { latex: '0{,}488 \\text{ TB}' }, // 500/1024
+                { latex: '0{,}5 \\text{ TB}' },
                 { latex: '5 \\text{ TB}' },
-                { latex: '0.05 \\text{ TB}' }
+                { latex: '0{,}05 \\text{ TB}' }
             ],
             correct: 0,
             hint: 'Divide por 1024'
+        },
+        // ===== Paramétrica (2026-11-06) =====
+        {
+            question: 'Convierta la velocidad a metros por segundo:',
+            params: { k: { min: 1, max: 8 }, v: '= 18*k' },
+            geogebraAppName: 'classic',
+            latex: '{{v}}\\ \\text{km/h} = ?\\ \\text{m/s}',
+            options: [
+                { latex: '{{5*k}}\\ \\text{m/s}' },
+                { latex: '{{round(v*3.6, 2)}}\\ \\text{m/s}' },     // multiplicar por 3.6
+                { latex: '{{round(v/60, 2)}}\\ \\text{m/s}' },
+                { latex: '{{round(v*1000/60, 2)}}\\ \\text{m/s}' }  // pasar a m/min
+            ],
+            correct: 0,
+            hint: '1 km/h = 1000 m / 3600 s; divide entre 3,6.'
         }
     ]
 };

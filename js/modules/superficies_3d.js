@@ -51,7 +51,7 @@ window.examCategories.superficies_3d = {
             question: 'La ecuación z = 0 representa:',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Plano?}',
+            latex: '',
             options: [
                 { latex: '\\text{El plano XY}' },
                 { latex: '\\text{El plano XZ}' },
@@ -90,24 +90,25 @@ window.examCategories.superficies_3d = {
             hint: 'Proyección sobre la normal.'
         },
         {
-            question: 'La intersección de dos planos no paralelos es:',
+            // Reemplaza un duplicado de geometria_vectorial_39 (2026-11-06)
+            question: 'El plano corta a la esfera en una circunferencia. ¿Cuál es su radio?',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Objeto?}',
+            latex: 'x^2 + y^2 + z^2 = 25, \\quad z = 3',
             options: [
-                { latex: '\\text{Una recta}' },
-                { latex: '\\text{Un punto}' },
-                { latex: '\\text{Un plano}' },
-                { latex: '\\text{Un segmento}' }
+                { latex: '4' },
+                { latex: '3' },
+                { latex: '5' },
+                { latex: '16' }
             ],
             correct: 0,
-            hint: 'Como las páginas de un libro.'
+            hint: 'Sustituye z = 3 en la ecuación de la esfera.'
         },
         {
             question: 'El plano x = 5 es paralelo al plano:',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Plano?}',
+            latex: '',
             options: [
                 { latex: '\\text{YZ (x=0)}' },
                 { latex: '\\text{XY (z=0)}' },
@@ -121,7 +122,7 @@ window.examCategories.superficies_3d = {
             question: 'Tres puntos no colineales determinan:',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Objeto?}',
+            latex: '',
             options: [
                 { latex: '\\text{Un único plano}' },
                 { latex: '\\text{Una recta}' },
@@ -135,7 +136,7 @@ window.examCategories.superficies_3d = {
             question: 'El ángulo entre dos planos es el ángulo entre sus:',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Elementos?}',
+            latex: '',
             options: [
                 { latex: '\\text{Vectores normales}' },
                 { latex: '\\text{Trazas}' },
@@ -162,7 +163,7 @@ window.examCategories.superficies_3d = {
             hint: 'Distancia 3D al cuadrado.'
         },
         {
-            question: 'Si x^2 + y^2 + z^2 = 9, el radio es:',
+            question: 'Si $x^2 + y^2 + z^2 = 9$, el radio es:',
             geogebraAppName: '3d',
             geogebraState: '0',
             latex: 'r = ?',
@@ -170,13 +171,13 @@ window.examCategories.superficies_3d = {
                 { latex: '3' },
                 { latex: '9' },
                 { latex: '81' },
-                { latex: '4.5' }
+                { latex: '4{,}5' }
             ],
             correct: 0,
             hint: 'Raíz de 9.'
         },
         {
-            question: 'El centro de la esfera x^2 + y^2 + z^2 - 2x = 0 es:',
+            question: 'El centro de la esfera $x^2 + y^2 + z^2 - 2x = 0$ es:',
             geogebraAppName: '3d',
             geogebraState: '0',
             latex: 'C = ?',
@@ -193,7 +194,7 @@ window.examCategories.superficies_3d = {
             question: 'Una esfera es el lugar geométrico de puntos que equidistan de:',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Elemento?}',
+            latex: '',
             options: [
                 { latex: '\\text{Un punto fijo (centro)}' },
                 { latex: '\\text{Una recta (eje)}' },
@@ -207,7 +208,7 @@ window.examCategories.superficies_3d = {
             question: 'La intersección de una esfera con un plano es:',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Figura?}',
+            latex: '',
             options: [
                 { latex: '\\text{Una circunferencia (o un punto)}' },
                 { latex: '\\text{Una elipse}' },
@@ -246,10 +247,10 @@ window.examCategories.superficies_3d = {
             hint: 'Derivada del volumen respecto a r.'
         },
         {
-            question: 'Si x^2 + y^2 + z^2 + 1 = 0, la esfera es:',
+            question: 'Si $x^2 + y^2 + z^2 + 1 = 0$, la esfera es:',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Tipo?}',
+            latex: '',
             options: [
                 { latex: '\\text{Imaginaria (no existe)}' },
                 { latex: '\\text{Real}' },
@@ -279,7 +280,7 @@ window.examCategories.superficies_3d = {
             geogebraState: '0',
             latex: '(\\rho, \\theta, \\phi)',
             options: [
-                { latex: '\\text{Radio, ángulo polar, ángulo azimutal}' },
+                { latex: '\\text{Distancia al origen y dos ángulos (azimutal y polar)}' },
                 { latex: '\\text{x, y, z}' },
                 { latex: '\\text{Radio, ángulo, altura}' },
                 { latex: '\\text{Dos radios, un ángulo}' }
@@ -290,10 +291,10 @@ window.examCategories.superficies_3d = {
 
         // --- CILINDROS (10 Preguntas) ---
         {
-            question: 'La ecuación x^2 + y^2 = r^2 en el espacio 3D representa:',
+            question: 'La ecuación $x^2 + y^2 = r^2$ en el espacio 3D representa:',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Superficie?}',
+            latex: '',
             options: [
                 { latex: '\\text{Un cilindro circular recto}' },
                 { latex: '\\text{Una circunferencia}' },
@@ -307,7 +308,7 @@ window.examCategories.superficies_3d = {
             question: 'Un cilindro se genera por una recta que se mueve paralela a sí misma a lo largo de una:',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Curva?}',
+            latex: '',
             options: [
                 { latex: '\\text{Directriz}' },
                 { latex: '\\text{Generatriz}' },
@@ -318,10 +319,10 @@ window.examCategories.superficies_3d = {
             hint: 'Curva base.'
         },
         {
-            question: 'La ecuación y = x^2 en el espacio 3D es:',
+            question: 'La ecuación $y = x^2$ en el espacio 3D es:',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Superficie?}',
+            latex: '',
             options: [
                 { latex: '\\text{Cilindro parabólico}' },
                 { latex: '\\text{Parábola}' },
@@ -335,7 +336,7 @@ window.examCategories.superficies_3d = {
             question: 'Si falta una variable en la ecuación (ej: f(x,z)=0), la superficie es:',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Tipo?}',
+            latex: '',
             options: [
                 { latex: '\\text{Un cilindro paralelo al eje de la variable faltante}' },
                 { latex: '\\text{Un plano}' },
@@ -346,10 +347,10 @@ window.examCategories.superficies_3d = {
             hint: 'Se extiende infinitamente en esa dirección.'
         },
         {
-            question: 'El eje del cilindro x^2 + z^2 = 1 es:',
+            question: 'El eje del cilindro $x^2 + z^2 = 1$ es:',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Eje?}',
+            latex: '',
             options: [
                 { latex: '\\text{Eje Y}' },
                 { latex: '\\text{Eje Z}' },
@@ -360,10 +361,10 @@ window.examCategories.superficies_3d = {
             hint: 'Variable que falta.'
         },
         {
-            question: 'La ecuación x^2/a^2 + y^2/b^2 = 1 en 3D es:',
+            question: 'La ecuación $\\dfrac{x^2}{a^2} + \\dfrac{y^2}{b^2} = 1$ en 3D es:',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Superficie?}',
+            latex: '',
             options: [
                 { latex: '\\text{Cilindro elíptico}' },
                 { latex: '\\text{Elipse}' },
@@ -374,10 +375,10 @@ window.examCategories.superficies_3d = {
             hint: 'Tubo aplastado.'
         },
         {
-            question: 'La ecuación x^2 - y^2 = 1 en 3D es:',
+            question: 'La ecuación $x^2 - y^2 = 1$ en 3D es:',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Superficie?}',
+            latex: '',
             options: [
                 { latex: '\\text{Cilindro hiperbólico}' },
                 { latex: '\\text{Hipérbola}' },
@@ -388,10 +389,10 @@ window.examCategories.superficies_3d = {
             hint: 'Dos hojas curvadas.'
         },
         {
-            question: 'Las trazas de un cilindro circular x^2+y^2=1 en planos z=k son:',
+            question: 'Las trazas de un cilindro circular $x^2+y^2=1$ en planos $z=k$ son:',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Figuras?}',
+            latex: '',
             options: [
                 { latex: '\\text{Circunferencias idénticas}' },
                 { latex: '\\text{Rectas}' },
@@ -402,10 +403,10 @@ window.examCategories.superficies_3d = {
             hint: 'Cortes transversales.'
         },
         {
-            question: 'El cilindro z = sin(y) se llama:',
+            question: 'El cilindro $z = \\sin y$ se llama:',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Nombre?}',
+            latex: '',
             options: [
                 { latex: '\\text{Cilindro sinusoidal}' },
                 { latex: '\\text{Onda}' },
@@ -419,7 +420,7 @@ window.examCategories.superficies_3d = {
             question: 'Un tubo de cañería se modela mejor como:',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Modelo?}',
+            latex: '',
             options: [
                 { latex: '\\text{Cilindro}' },
                 { latex: '\\text{Toro}' },
@@ -432,10 +433,10 @@ window.examCategories.superficies_3d = {
 
         // --- CUÁDRICAS (30 Preguntas) ---
         {
-            question: 'La ecuación x^2/a^2 + y^2/b^2 + z^2/c^2 = 1 representa:',
+            question: 'La ecuación $\\dfrac{x^2}{a^2} + \\dfrac{y^2}{b^2} + \\dfrac{z^2}{c^2} = 1$ representa:',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Superficie?}',
+            latex: '',
             options: [
                 { latex: '\\text{Elipsoide}' },
                 { latex: '\\text{Esfera}' },
@@ -449,7 +450,7 @@ window.examCategories.superficies_3d = {
             question: 'Si a = b = c en el elipsoide, se obtiene:',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Superficie?}',
+            latex: '',
             options: [
                 { latex: '\\text{Esfera}' },
                 { latex: '\\text{Cubo}' },
@@ -460,10 +461,10 @@ window.examCategories.superficies_3d = {
             hint: 'Simetría total.'
         },
         {
-            question: 'La ecuación z = x^2/a^2 + y^2/b^2 representa:',
+            question: 'La ecuación $z = \\dfrac{x^2}{a^2} + \\dfrac{y^2}{b^2}$ representa:',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Superficie?}',
+            latex: '',
             options: [
                 { latex: '\\text{Paraboloide Elíptico}' },
                 { latex: '\\text{Paraboloide Hiperbólico}' },
@@ -488,10 +489,10 @@ window.examCategories.superficies_3d = {
             hint: 'Cortes circulares/elípticos.'
         },
         {
-            question: 'La ecuación z = x^2/a^2 - y^2/b^2 representa:',
+            question: 'La ecuación $z = \\dfrac{x^2}{a^2} - \\dfrac{y^2}{b^2}$ representa:',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Superficie?}',
+            latex: '',
             options: [
                 { latex: '\\text{Paraboloide Hiperbólico (Silla de montar)}' },
                 { latex: '\\text{Paraboloide Elíptico}' },
@@ -502,10 +503,10 @@ window.examCategories.superficies_3d = {
             hint: 'Pringles.'
         },
         {
-            question: 'El punto (0,0,0) en z = x^2 - y^2 es un:',
+            question: 'El punto $(0,0,0)$ en $z = x^2 - y^2$ es un:',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Punto?}',
+            latex: '',
             options: [
                 { latex: '\\text{Punto de silla}' },
                 { latex: '\\text{Máximo local}' },
@@ -516,10 +517,10 @@ window.examCategories.superficies_3d = {
             hint: 'Sube por un lado, baja por el otro.'
         },
         {
-            question: 'La ecuación x^2/a^2 + y^2/b^2 - z^2/c^2 = 1 representa:',
+            question: 'La ecuación $\\dfrac{x^2}{a^2} + \\dfrac{y^2}{b^2} - \\dfrac{z^2}{c^2} = 1$ representa:',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Superficie?}',
+            latex: '',
             options: [
                 { latex: '\\text{Hiperboloide de una hoja}' },
                 { latex: '\\text{Hiperboloide de dos hojas}' },
@@ -530,10 +531,10 @@ window.examCategories.superficies_3d = {
             hint: 'Un signo menos, una hoja (cintura).'
         },
         {
-            question: 'La ecuación -x^2/a^2 - y^2/b^2 + z^2/c^2 = 1 representa:',
+            question: 'La ecuación $-\\dfrac{x^2}{a^2} - \\dfrac{y^2}{b^2} + \\dfrac{z^2}{c^2} = 1$ representa:',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Superficie?}',
+            latex: '',
             options: [
                 { latex: '\\text{Hiperboloide de dos hojas}' },
                 { latex: '\\text{Hiperboloide de una hoja}' },
@@ -544,10 +545,10 @@ window.examCategories.superficies_3d = {
             hint: 'Dos signos menos, dos hojas (separadas).'
         },
         {
-            question: 'La ecuación z^2 = x^2/a^2 + y^2/b^2 representa:',
+            question: 'La ecuación $z^2 = \\dfrac{x^2}{a^2} + \\dfrac{y^2}{b^2}$ representa:',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Superficie?}',
+            latex: '',
             options: [
                 { latex: '\\text{Cono Elíptico}' },
                 { latex: '\\text{Paraboloide}' },
@@ -558,7 +559,7 @@ window.examCategories.superficies_3d = {
             hint: 'Lineas rectas que pasan por el origen.'
         },
         {
-            question: 'Las trazas verticales del cono z^2 = x^2 + y^2 son:',
+            question: 'Las trazas verticales del cono $z^2 = x^2 + y^2$ son:',
             geogebraAppName: '3d',
             geogebraState: '0',
             latex: 'x=k \\text{ o } y=k',
@@ -575,7 +576,7 @@ window.examCategories.superficies_3d = {
             question: 'El hiperboloide de una hoja es una superficie:',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Propiedad?}',
+            latex: '',
             options: [
                 { latex: '\\text{Reglada (se puede construir con rectas)}' },
                 { latex: '\\text{Cerrada}' },
@@ -589,7 +590,7 @@ window.examCategories.superficies_3d = {
             question: 'El paraboloide hiperbólico es una superficie:',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Propiedad?}',
+            latex: '',
             options: [
                 { latex: '\\text{Reglada}' },
                 { latex: '\\text{Cerrada}' },
@@ -600,10 +601,10 @@ window.examCategories.superficies_3d = {
             hint: 'Se forma con rectas.'
         },
         {
-            question: 'La ecuación x^2 + y^2 - z^2 = 0 representa:',
+            question: 'La ecuación $x^2 + y^2 - z^2 = 0$ representa:',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Superficie?}',
+            latex: '',
             options: [
                 { latex: '\\text{Cono circular}' },
                 { latex: '\\text{Hiperboloide}' },
@@ -614,7 +615,7 @@ window.examCategories.superficies_3d = {
             hint: 'Degeneración del hiperboloide.'
         },
         {
-            question: 'Si z = x^2 + y^2, el vértice está en:',
+            question: 'Si $z = x^2 + y^2$, el vértice está en:',
             geogebraAppName: '3d',
             geogebraState: '0',
             latex: 'V = ?',
@@ -631,7 +632,7 @@ window.examCategories.superficies_3d = {
             question: '¿Qué superficie se parece a una pelota de rugby?',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Nombre?}',
+            latex: '',
             options: [
                 { latex: '\\text{Elipsoide prolato}' },
                 { latex: '\\text{Esfera}' },
@@ -645,7 +646,7 @@ window.examCategories.superficies_3d = {
             question: '¿Qué superficie se parece a una antena parabólica?',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Nombre?}',
+            latex: '',
             options: [
                 { latex: '\\text{Paraboloide circular}' },
                 { latex: '\\text{Cono}' },
@@ -656,10 +657,10 @@ window.examCategories.superficies_3d = {
             hint: 'Concentra señales en el foco.'
         },
         {
-            question: 'La ecuación x^2 + 2y^2 + 3z^2 = 1 es un:',
+            question: 'La ecuación $x^2 + 2y^2 + 3z^2 = 1$ es un:',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Superficie?}',
+            latex: '',
             options: [
                 { latex: '\\text{Elipsoide}' },
                 { latex: '\\text{Esfera}' },
@@ -670,10 +671,10 @@ window.examCategories.superficies_3d = {
             hint: 'Todos positivos, coeficientes distintos.'
         },
         {
-            question: 'La ecuación z = x^2 es un:',
+            question: 'La ecuación $z = x^2$ es un:',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Superficie?}',
+            latex: '',
             options: [
                 { latex: '\\text{Cilindro parabólico}' },
                 { latex: '\\text{Paraboloide}' },
@@ -684,10 +685,10 @@ window.examCategories.superficies_3d = {
             hint: 'Falta y.'
         },
         {
-            question: 'La ecuación x^2 + y^2 - z^2 = -1 es un:',
+            question: 'La ecuación $x^2 + y^2 - z^2 = -1$ es un:',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Superficie?}',
+            latex: '',
             options: [
                 { latex: '\\text{Hiperboloide de dos hojas}' },
                 { latex: '\\text{Hiperboloide de una hoja}' },
@@ -698,10 +699,10 @@ window.examCategories.superficies_3d = {
             hint: 'Multiplica por -1: -x^2 -y^2 + z^2 = 1. Dos negativos.'
         },
         {
-            question: 'La ecuación x^2 + y^2 - z^2 = 1 es un:',
+            question: 'La ecuación $x^2 + y^2 - z^2 = 1$ es un:',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Superficie?}',
+            latex: '',
             options: [
                 { latex: '\\text{Hiperboloide de una hoja}' },
                 { latex: '\\text{Hiperboloide de dos hojas}' },
@@ -715,7 +716,7 @@ window.examCategories.superficies_3d = {
             question: 'Las trazas de un elipsoide son siempre:',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Curvas?}',
+            latex: '',
             options: [
                 { latex: '\\text{Elipses (o puntos/vacío)}' },
                 { latex: '\\text{Parábolas}' },
@@ -726,7 +727,7 @@ window.examCategories.superficies_3d = {
             hint: 'Cerrado por todos lados.'
         },
         {
-            question: 'Las trazas de un paraboloide elíptico z = x^2 + y^2 en planos verticales x=0 son:',
+            question: 'Las trazas de un paraboloide elíptico $z = x^2 + y^2$ en planos verticales $x=0$ son:',
             geogebraAppName: '3d',
             geogebraState: '0',
             latex: 'z = y^2',
@@ -740,10 +741,10 @@ window.examCategories.superficies_3d = {
             hint: 'Corte vertical.'
         },
         {
-            question: 'Las trazas de un paraboloide hiperbólico z = x^2 - y^2 en planos horizontales z=k (k!=0) son:',
+            question: 'Las trazas de un paraboloide hiperbólico $z = x^2 - y^2$ en planos horizontales $z=k$ ($k \\neq 0$) son:',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Curvas?}',
+            latex: '',
             options: [
                 { latex: '\\text{Hipérbolas}' },
                 { latex: '\\text{Parábolas}' },
@@ -754,10 +755,10 @@ window.examCategories.superficies_3d = {
             hint: 'Corte horizontal de la silla.'
         },
         {
-            question: 'El eje de simetría del cono z^2 = x^2 + y^2 es:',
+            question: 'El eje de simetría del cono $z^2 = x^2 + y^2$ es:',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Eje?}',
+            latex: '',
             options: [
                 { latex: '\\text{Eje Z}' },
                 { latex: '\\text{Eje X}' },
@@ -771,7 +772,7 @@ window.examCategories.superficies_3d = {
             question: '¿Qué superficie se usa en torres de enfriamiento?',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Superficie?}',
+            latex: '',
             options: [
                 { latex: '\\text{Hiperboloide de una hoja}' },
                 { latex: '\\text{Cilindro}' },
@@ -785,7 +786,7 @@ window.examCategories.superficies_3d = {
             question: '¿Qué superficie se usa en faros de coches?',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Superficie?}',
+            latex: '',
             options: [
                 { latex: '\\text{Paraboloide}' },
                 { latex: '\\text{Esfera}' },
@@ -796,10 +797,10 @@ window.examCategories.superficies_3d = {
             hint: 'Refleja rayos paralelos.'
         },
         {
-            question: 'La intersección de x^2+y^2=1 y z=x es:',
+            question: 'La intersección de $x^2+y^2=1$ y $z=x$ es:',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Curva?}',
+            latex: '',
             options: [
                 { latex: '\\text{Una elipse en el espacio}' },
                 { latex: '\\text{Una circunferencia}' },
@@ -810,7 +811,7 @@ window.examCategories.superficies_3d = {
             hint: 'Corte inclinado de un cilindro.'
         },
         {
-            question: 'El dominio de z = sqrt(1 - x^2 - y^2) es:',
+            question: 'El dominio de $z = \\sqrt{1 - x^2 - y^2}$ es:',
             geogebraAppName: '3d',
             geogebraState: '0',
             latex: 'D = ?',
@@ -824,10 +825,10 @@ window.examCategories.superficies_3d = {
             hint: 'Interior del círculo unitario.'
         },
         {
-            question: 'La gráfica de z = sqrt(x^2 + y^2) es:',
+            question: 'La gráfica de $z = \\sqrt{x^2 + y^2}$ es:',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Superficie?}',
+            latex: '',
             options: [
                 { latex: '\\text{Semicono superior}' },
                 { latex: '\\text{Cono completo}' },
@@ -838,10 +839,10 @@ window.examCategories.superficies_3d = {
             hint: 'Solo z positivo, recto.'
         },
         {
-            question: 'La gráfica de z = sqrt(1 - x^2 - y^2) es:',
+            question: 'La gráfica de $z = \\sqrt{1 - x^2 - y^2}$ es:',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Superficie?}',
+            latex: '',
             options: [
                 { latex: '\\text{Semiesfera superior}' },
                 { latex: '\\text{Esfera completa}' },

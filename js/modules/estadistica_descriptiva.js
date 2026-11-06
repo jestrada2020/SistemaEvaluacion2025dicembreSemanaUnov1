@@ -9,7 +9,7 @@ window.examCategories.estadistica_descriptiva = {
             question: 'El conjunto total de elementos que se quiere estudiar se llama:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Definición?}',
+            latex: '',
             options: [
                 { latex: '\\text{Población}' },
                 { latex: '\\text{Muestra}' },
@@ -23,7 +23,7 @@ window.examCategories.estadistica_descriptiva = {
             question: 'Un subconjunto representativo de la población se llama:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Definición?}',
+            latex: '',
             options: [
                 { latex: '\\text{Muestra}' },
                 { latex: '\\text{Individuo}' },
@@ -37,7 +37,7 @@ window.examCategories.estadistica_descriptiva = {
             question: 'Una variable que toma valores numéricos se llama:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Tipo de variable?}',
+            latex: '',
             options: [
                 { latex: '\\text{Cuantitativa}' },
                 { latex: '\\text{Cualitativa}' },
@@ -51,7 +51,7 @@ window.examCategories.estadistica_descriptiva = {
             question: 'El número de hijos de una familia es una variable:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Tipo?}',
+            latex: '',
             options: [
                 { latex: '\\text{Cuantitativa discreta}' },
                 { latex: '\\text{Cuantitativa continua}' },
@@ -65,7 +65,7 @@ window.examCategories.estadistica_descriptiva = {
             question: 'El peso de una persona es una variable:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Tipo?}',
+            latex: '',
             options: [
                 { latex: '\\text{Cuantitativa continua}' },
                 { latex: '\\text{Cuantitativa discreta}' },
@@ -79,7 +79,7 @@ window.examCategories.estadistica_descriptiva = {
             question: 'El color de ojos es una variable:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Tipo?}',
+            latex: '',
             options: [
                 { latex: '\\text{Cualitativa nominal}' },
                 { latex: '\\text{Cualitativa ordinal}' },
@@ -93,7 +93,7 @@ window.examCategories.estadistica_descriptiva = {
             question: 'El nivel de satisfacción (Bajo, Medio, Alto) es una variable:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Tipo?}',
+            latex: '',
             options: [
                 { latex: '\\text{Cualitativa ordinal}' },
                 { latex: '\\text{Cualitativa nominal}' },
@@ -107,7 +107,7 @@ window.examCategories.estadistica_descriptiva = {
             question: 'Un valor numérico que describe una característica de la población se llama:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Definición?}',
+            latex: '',
             options: [
                 { latex: '\\text{Parámetro}' },
                 { latex: '\\text{Estadístico}' },
@@ -121,7 +121,7 @@ window.examCategories.estadistica_descriptiva = {
             question: 'Un valor numérico calculado a partir de una muestra se llama:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Definición?}',
+            latex: '',
             options: [
                 { latex: '\\text{Estadístico}' },
                 { latex: '\\text{Parámetro}' },
@@ -135,7 +135,7 @@ window.examCategories.estadistica_descriptiva = {
             question: 'La estadística que se encarga de recolectar, organizar y presentar datos es:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Rama?}',
+            latex: '',
             options: [
                 { latex: '\\text{Estadística Descriptiva}' },
                 { latex: '\\text{Estadística Inferencial}' },
@@ -237,7 +237,7 @@ window.examCategories.estadistica_descriptiva = {
             geogebraState: '0',
             latex: 'k \\approx ?',
             options: [
-                { latex: '1 + 3.322 \\log_{10}(N)' },
+                { latex: '1 + 3{,}322 \\log_{10}(N)' },
                 { latex: '\\sqrt{N}' },
                 { latex: '2N' },
                 { latex: '\\log(N)' }
@@ -251,10 +251,10 @@ window.examCategories.estadistica_descriptiva = {
             geogebraState: '0',
             latex: 'A = ?',
             options: [
-                { latex: '\\frac{Rango}{k}' },
-                { latex: 'Rango \\times k' },
-                { latex: '\\frac{k}{Rango}' },
-                { latex: 'Rango + k' }
+                { latex: '\\frac{\\text{Rango}}{k}' },
+                { latex: '\\text{Rango} \\times k' },
+                { latex: '\\frac{k}{\\text{Rango}}' },
+                { latex: '\\text{Rango} + k' }
             ],
             correct: 0,
             hint: 'Rango dividido por número de clases.'
@@ -274,7 +274,7 @@ window.examCategories.estadistica_descriptiva = {
             hint: 'Diferencia extremos.'
         },
         {
-            question: 'Si f_i = 5 y N = 20, la frecuencia relativa porcentual es:',
+            question: 'Si $f_i = 5$ y $N = 20$, la frecuencia relativa porcentual es:',
             geogebraAppName: 'classic',
             geogebraState: '0',
             latex: 'h_i\\% = ?',
@@ -307,7 +307,7 @@ window.examCategories.estadistica_descriptiva = {
             question: 'La mediana es el valor que:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Definición?}',
+            latex: '',
             options: [
                 { latex: '\\text{Divide a los datos ordenados en dos partes iguales}' },
                 { latex: '\\text{Más se repite}' },
@@ -321,7 +321,7 @@ window.examCategories.estadistica_descriptiva = {
             question: 'La moda es el valor que:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Definición?}',
+            latex: '',
             options: [
                 { latex: '\\text{Tiene mayor frecuencia absoluta}' },
                 { latex: '\\text{Está en el centro}' },
@@ -340,7 +340,7 @@ window.examCategories.estadistica_descriptiva = {
                 { latex: '2' },
                 { latex: '1' },
                 { latex: '3' },
-                { latex: '2.4' }
+                { latex: '2{,}4' }
             ],
             correct: 0,
             hint: 'El que más se repite.'
@@ -354,7 +354,7 @@ window.examCategories.estadistica_descriptiva = {
                 { latex: '4' },
                 { latex: '3' },
                 { latex: '5' },
-                { latex: '3.5' }
+                { latex: '3{,}5' }
             ],
             correct: 0,
             hint: 'Promedio de 3 y 5.'
@@ -363,7 +363,7 @@ window.examCategories.estadistica_descriptiva = {
             question: '¿Qué medida es más sensible a valores extremos (atípicos)?',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Medida?}',
+            latex: '',
             options: [
                 { latex: '\\text{Media aritmética}' },
                 { latex: '\\text{Mediana}' },
@@ -377,7 +377,7 @@ window.examCategories.estadistica_descriptiva = {
             question: 'En una distribución simétrica, la media, mediana y moda:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Relación?}',
+            latex: '',
             options: [
                 { latex: '\\text{Coinciden aproximadamente}' },
                 { latex: '\\text{Media > Mediana}' },
@@ -391,7 +391,7 @@ window.examCategories.estadistica_descriptiva = {
             question: 'La media ponderada se usa cuando:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Uso?}',
+            latex: '',
             options: [
                 { latex: '\\text{Los datos tienen diferente peso o importancia}' },
                 { latex: '\\text{Los datos son iguales}' },
@@ -435,7 +435,7 @@ window.examCategories.estadistica_descriptiva = {
             question: 'La varianza mide:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Mide?}',
+            latex: '',
             options: [
                 { latex: '\\text{La dispersión promedio al cuadrado respecto a la media}' },
                 { latex: '\\text{La dispersión lineal}' },
@@ -482,7 +482,7 @@ window.examCategories.estadistica_descriptiva = {
                 { latex: '5' },
                 { latex: '25' },
                 { latex: '625' },
-                { latex: '12.5' }
+                { latex: '12{,}5' }
             ],
             correct: 0,
             hint: 'Raíz de 25.'
@@ -533,7 +533,7 @@ window.examCategories.estadistica_descriptiva = {
             question: 'Una desviación estándar grande indica:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Indica?}',
+            latex: '',
             options: [
                 { latex: '\\text{Datos muy dispersos (heterogéneos)}' },
                 { latex: '\\text{Datos muy concentrados (homogéneos)}' },
@@ -561,7 +561,7 @@ window.examCategories.estadistica_descriptiva = {
             question: 'Si CV > 30%, la muestra se considera:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Consideración?}',
+            latex: '',
             options: [
                 { latex: '\\text{Heterogénea}' },
                 { latex: '\\text{Homogénea}' },
@@ -577,9 +577,9 @@ window.examCategories.estadistica_descriptiva = {
             question: 'Los cuartiles dividen a los datos en:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Partes?}',
+            latex: '',
             options: [
-                { latex: '\\text{4 partes iguales (25% cada una)}' },
+                { latex: '\\text{4 partes iguales (25\\% cada una)}' },
                 { latex: '\\text{3 partes iguales}' },
                 { latex: '\\text{10 partes iguales}' },
                 { latex: '\\text{100 partes iguales}' }
@@ -605,7 +605,7 @@ window.examCategories.estadistica_descriptiva = {
             question: 'Los deciles dividen a los datos en:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Partes?}',
+            latex: '',
             options: [
                 { latex: '\\text{10 partes iguales}' },
                 { latex: '\\text{4 partes iguales}' },
@@ -633,7 +633,7 @@ window.examCategories.estadistica_descriptiva = {
             question: 'Para calcular cuartiles, los datos deben estar:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Condición?}',
+            latex: '',
             options: [
                 { latex: '\\text{Ordenados}' },
                 { latex: '\\text{Desordenados}' },
@@ -661,7 +661,7 @@ window.examCategories.estadistica_descriptiva = {
             question: '¿Cuántos percentiles hay?',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Cantidad?}',
+            latex: '',
             options: [
                 { latex: '99' },
                 { latex: '100' },
@@ -675,7 +675,7 @@ window.examCategories.estadistica_descriptiva = {
             question: 'El diagrama de caja y bigotes (Boxplot) usa:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Valores?}',
+            latex: '',
             options: [
                 { latex: '\\text{Min, Q1, Q2, Q3, Max}' },
                 { latex: '\\text{Media y Desviación}' },
@@ -689,9 +689,9 @@ window.examCategories.estadistica_descriptiva = {
             question: 'En un Boxplot, la caja representa:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Representa?}',
+            latex: '',
             options: [
-                { latex: '\\text{El 50% central de los datos (RIC)}' },
+                { latex: '\\text{El 50\\% central de los datos (RIC)}' },
                 { latex: '\\text{Todos los datos}' },
                 { latex: '\\text{Los valores atípicos}' },
                 { latex: '\\text{El rango total}' }
@@ -703,15 +703,15 @@ window.examCategories.estadistica_descriptiva = {
             question: 'Un valor se considera atípico (outlier) si está:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Condición?}',
+            latex: '',
             options: [
-                { latex: '\\text{Más allá de 1.5 RIC de los cuartiles}' },
+                { latex: '\\text{Más allá de 1{,}5 RIC de los cuartiles}' },
                 { latex: '\\text{Fuera del rango}' },
                 { latex: '\\text{Lejos de la media}' },
                 { latex: '\\text{Es negativo}' }
             ],
             correct: 0,
-            hint: 'Regla del 1.5 RIC.'
+            hint: 'Regla del 1,5 RIC.'
         },
 
         // 6. Forma de la Distribución (10 preguntas)
@@ -719,7 +719,7 @@ window.examCategories.estadistica_descriptiva = {
             question: 'El coeficiente de asimetría (Skewness) mide:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Mide?}',
+            latex: '',
             options: [
                 { latex: '\\text{La falta de simetría de la distribución}' },
                 { latex: '\\text{El apuntamiento}' },
@@ -733,7 +733,7 @@ window.examCategories.estadistica_descriptiva = {
             question: 'Si la asimetría es positiva (derecha):',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Relación?}',
+            latex: '',
             options: [
                 { latex: '\\text{Media > Mediana}' },
                 { latex: '\\text{Media < Mediana}' },
@@ -747,7 +747,7 @@ window.examCategories.estadistica_descriptiva = {
             question: 'La curtosis mide:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Mide?}',
+            latex: '',
             options: [
                 { latex: '\\text{El grado de apuntamiento o picudez}' },
                 { latex: '\\text{La asimetría}' },
@@ -761,7 +761,7 @@ window.examCategories.estadistica_descriptiva = {
             question: 'Una distribución Leptocúrtica es:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Forma?}',
+            latex: '',
             options: [
                 { latex: '\\text{Más picuda que la normal}' },
                 { latex: '\\text{Más plana que la normal}' },
@@ -775,7 +775,7 @@ window.examCategories.estadistica_descriptiva = {
             question: 'Una distribución Platicúrtica es:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Forma?}',
+            latex: '',
             options: [
                 { latex: '\\text{Más plana que la normal}' },
                 { latex: '\\text{Más picuda}' },
@@ -803,7 +803,7 @@ window.examCategories.estadistica_descriptiva = {
             question: 'Si Media = Mediana = Moda, la distribución es:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Tipo?}',
+            latex: '',
             options: [
                 { latex: '\\text{Simétrica}' },
                 { latex: '\\text{Asimétrica positiva}' },
@@ -821,17 +821,17 @@ window.examCategories.estadistica_descriptiva = {
             options: [
                 { latex: '3 \\text{ (o 0 en exceso)}' },
                 { latex: '1' },
-                { latex: '0' },
+                { latex: '2' },
                 { latex: '-3' }
             ],
             correct: 0,
             hint: 'Referencia mesocúrtica.'
         },
         {
-            question: 'Una cola larga a la izquierda indica:',
+            question: 'Una cola larga a la izquierda indica una asimetría:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Asimetría?}',
+            latex: '',
             options: [
                 { latex: '\\text{Negativa}' },
                 { latex: '\\text{Positiva}' },
@@ -845,7 +845,7 @@ window.examCategories.estadistica_descriptiva = {
             question: 'La forma de campana es característica de:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Distribución?}',
+            latex: '',
             options: [
                 { latex: '\\text{Normal (Gaussiana)}' },
                 { latex: '\\text{Uniforme}' },
@@ -858,10 +858,10 @@ window.examCategories.estadistica_descriptiva = {
 
         // 7. Interpretación Gráfica (10 preguntas)
         {
-            question: 'El histograma se usa para representar:',
+            question: 'El histograma se usa para representar variables:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Variables?}',
+            latex: '',
             options: [
                 { latex: '\\text{Cuantitativas continuas}' },
                 { latex: '\\text{Cualitativas}' },
@@ -872,10 +872,10 @@ window.examCategories.estadistica_descriptiva = {
             hint: 'Barras juntas.'
         },
         {
-            question: 'El diagrama de barras se usa para:',
+            question: 'El diagrama de barras se usa para variables:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Variables?}',
+            latex: '',
             options: [
                 { latex: '\\text{Cualitativas o discretas}' },
                 { latex: '\\text{Continuas}' },
@@ -889,7 +889,7 @@ window.examCategories.estadistica_descriptiva = {
             question: 'El diagrama de sectores (pastel) es útil para:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Mostrar?}',
+            latex: '',
             options: [
                 { latex: '\\text{Proporciones o porcentajes}' },
                 { latex: '\\text{Tendencias temporales}' },
@@ -903,7 +903,7 @@ window.examCategories.estadistica_descriptiva = {
             question: 'El polígono de frecuencias une:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Puntos?}',
+            latex: '',
             options: [
                 { latex: '\\text{Las marcas de clase}' },
                 { latex: '\\text{Los límites inferiores}' },
@@ -914,10 +914,10 @@ window.examCategories.estadistica_descriptiva = {
             hint: 'Puntos medios de los techos del histograma.'
         },
         {
-            question: 'La ojiva representa:',
+            question: 'La ojiva representa las frecuencias:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Frecuencias?}',
+            latex: '',
             options: [
                 { latex: '\\text{Acumuladas}' },
                 { latex: '\\text{Absolutas}' },
@@ -928,10 +928,10 @@ window.examCategories.estadistica_descriptiva = {
             hint: 'Siempre crece.'
         },
         {
-            question: 'El diagrama de dispersión (Scatterplot) muestra:',
+            question: 'El diagrama de dispersión (Scatterplot) muestra la relación:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Relación?}',
+            latex: '',
             options: [
                 { latex: '\\text{Entre dos variables cuantitativas}' },
                 { latex: '\\text{Frecuencias}' },
@@ -945,7 +945,7 @@ window.examCategories.estadistica_descriptiva = {
             question: 'En un histograma, el área de las barras representa:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Representa?}',
+            latex: '',
             options: [
                 { latex: '\\text{La frecuencia (proporcional)}' },
                 { latex: '\\text{La variable}' },
@@ -959,7 +959,7 @@ window.examCategories.estadistica_descriptiva = {
             question: 'Un gráfico de líneas es ideal para:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Datos?}',
+            latex: '',
             options: [
                 { latex: '\\text{Series de tiempo (evolución)}' },
                 { latex: '\\text{Categorías nominales}' },
@@ -973,7 +973,7 @@ window.examCategories.estadistica_descriptiva = {
             question: 'El diagrama de Pareto ordena las barras:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Orden?}',
+            latex: '',
             options: [
                 { latex: '\\text{De mayor a menor frecuencia}' },
                 { latex: '\\text{Alfabéticamente}' },
@@ -987,7 +987,7 @@ window.examCategories.estadistica_descriptiva = {
             question: 'En un diagrama de tallo y hojas, las hojas son:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Son?}',
+            latex: '',
             options: [
                 { latex: '\\text{El último dígito del dato}' },
                 { latex: '\\text{El primer dígito}' },
@@ -996,6 +996,21 @@ window.examCategories.estadistica_descriptiva = {
             ],
             correct: 0,
             hint: 'Parte final del número.'
+        },
+        // ===== Paramétrica (2026-11-06) =====
+        {
+            question: 'Calcule la media aritmética de los datos:',
+            params: { x1: { min: 1, max: 20 }, x2: { min: 1, max: 20 }, x3: { min: 1, max: 20 }, x4: { min: 1, max: 20 }, x5: { min: 1, max: 20 } },
+            geogebraAppName: 'classic',
+            latex: '{{x1}},\\ {{x2}},\\ {{x3}},\\ {{x4}},\\ {{x5}}',
+            options: [
+                { latex: '\\bar{x} = {{round((x1 + x2 + x3 + x4 + x5) / 5, 2)}}' },
+                { latex: '\\bar{x} = {{x1 + x2 + x3 + x4 + x5}}' },                       // solo sumar
+                { latex: '\\bar{x} = {{round((x1 + x2 + x3 + x4 + x5) / 4, 2)}}' },       // dividir entre n - 1
+                { latex: '\\bar{x} = {{round((max(x1, x2, x3, x4, x5) + min(x1, x2, x3, x4, x5)) / 2, 2)}}' } // rango medio
+            ],
+            correct: 0,
+            hint: 'Suma de los datos dividida entre la cantidad de datos.'
         }
     ]
 };

@@ -148,10 +148,10 @@ window.examCategories.combinatoria = {
 
         // --- PERMUTACIONES (10 Preguntas) ---
         {
-            question: 'Las permutaciones importan el:',
+            question: 'En las permutaciones, ¿importa el orden de los elementos?',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Orden?}',
+            latex: '',
             options: [
                 { latex: '\\text{Sí, el orden importa}' },
                 { latex: '\\text{No, el orden no importa}' },
@@ -263,7 +263,7 @@ window.examCategories.combinatoria = {
             question: 'Si importa el orden y participan TODOS los elementos, es una:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Tipo?}',
+            latex: '',
             options: [
                 { latex: '\\text{Permutación}' },
                 { latex: '\\text{Variación}' },
@@ -293,7 +293,7 @@ window.examCategories.combinatoria = {
             question: 'Las variaciones importan el orden y:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Elementos?}',
+            latex: '',
             options: [
                 { latex: '\\text{Se toma una parte (k) de los n elementos}' },
                 { latex: '\\text{Se toman todos los n elementos}' },
@@ -393,16 +393,16 @@ window.examCategories.combinatoria = {
             geogebraState: '0',
             latex: 'VR_{3,14} = 3^{14}',
             options: [
-                { latex: '4,782,969' },
+                { latex: '4\\,782\\,969' },
                 { latex: '14^3' },
                 { latex: '42' },
-                { latex: '1,000,000' }
+                { latex: '1\\,000\\,000' }
             ],
             correct: 0,
             hint: '3 opciones, 14 veces.'
         },
         {
-            question: 'Si V_{n,2} = 20, ¿cuánto vale n?',
+            question: 'Si $V_{n,2} = 20$, ¿cuánto vale $n$?',
             geogebraAppName: 'classic',
             geogebraState: '0',
             latex: 'n(n-1) = 20',
@@ -419,7 +419,7 @@ window.examCategories.combinatoria = {
             question: 'En las variaciones, k puede ser mayor que n:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Posible?}',
+            latex: '',
             options: [
                 { latex: '\\text{Solo en variaciones con repetición}' },
                 { latex: '\\text{Nunca}' },
@@ -435,7 +435,7 @@ window.examCategories.combinatoria = {
             question: 'Las combinaciones se diferencian de las variaciones en que:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Orden?}',
+            latex: '',
             options: [
                 { latex: '\\text{El orden NO importa}' },
                 { latex: '\\text{El orden SÍ importa}' },
@@ -493,10 +493,10 @@ window.examCategories.combinatoria = {
             geogebraState: '0',
             latex: 'C_{52,5}',
             options: [
-                { latex: '2,598,960' },
+                { latex: '2\\,598\\,960' },
                 { latex: '52^5' },
                 { latex: '52!' },
-                { latex: '1,000' }
+                { latex: '1\\,000' }
             ],
             correct: 0,
             hint: 'Millones.'
@@ -505,7 +505,7 @@ window.examCategories.combinatoria = {
             question: 'La lotería primitiva (6 de 49) es un problema de:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Tipo?}',
+            latex: '',
             options: [
                 { latex: '\\text{Combinaciones}' },
                 { latex: '\\text{Variaciones}' },
@@ -519,7 +519,7 @@ window.examCategories.combinatoria = {
             question: 'El Triángulo de Pascal sirve para calcular:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Valores?}',
+            latex: '',
             options: [
                 { latex: '\\text{Números combinatorios}' },
                 { latex: '\\text{Raíces cuadradas}' },
@@ -530,10 +530,10 @@ window.examCategories.combinatoria = {
             hint: 'Coeficientes binomiales.'
         },
         {
-            question: 'El desarrollo de (a+b)^n usa:',
+            question: 'El desarrollo de $(a+b)^n$ usa:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Coeficientes?}',
+            latex: '',
             options: [
                 { latex: '\\binom{n}{k}' },
                 { latex: 'n!' },
@@ -600,7 +600,7 @@ window.examCategories.combinatoria = {
             hint: 'Uniones de 2 vértices menos los lados.'
         },
         {
-            question: 'Si C_{n,1} = 10, entonces n es:',
+            question: 'Si $C_{n,1} = 10$, entonces $n$ es:',
             geogebraAppName: 'classic',
             geogebraState: '0',
             latex: '\\binom{n}{1} = n',
@@ -647,7 +647,7 @@ window.examCategories.combinatoria = {
             question: 'En Estadística, el número de muestras posibles sin orden ni reposición es:',
             geogebraAppName: 'probability',
             geogebraState: '0',
-            latex: '\\text{Muestreo?}',
+            latex: '',
             options: [
                 { latex: '\\text{Combinaciones}' },
                 { latex: '\\text{Variaciones}' },
@@ -717,7 +717,7 @@ window.examCategories.combinatoria = {
             question: 'El número de isómeros estructurales de alcanos crece:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Crecimiento?}',
+            latex: '',
             options: [
                 { latex: '\\text{Combinatoriamente con los carbonos}' },
                 { latex: '\\text{Linealmente}' },
@@ -731,7 +731,7 @@ window.examCategories.combinatoria = {
             question: 'En una red cristalina, el número de formas de colocar defectos puntuales es un problema de:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Problema?}',
+            latex: '',
             options: [
                 { latex: '\\text{Combinaciones (posiciones elegidas)}' },
                 { latex: '\\text{Permutaciones}' },
@@ -745,7 +745,7 @@ window.examCategories.combinatoria = {
             question: 'La probabilidad de sacar una escalera real en póker es baja porque:',
             geogebraAppName: 'probability',
             geogebraState: '0',
-            latex: '\\text{Razón?}',
+            latex: '',
             options: [
                 { latex: '\\text{El número de casos favorables es muy pequeño (4) frente a los posibles}' },
                 { latex: '\\text{El póker está trucado}' },
@@ -753,13 +753,13 @@ window.examCategories.combinatoria = {
                 { latex: '\\text{Es imposible}' }
             ],
             correct: 0,
-            hint: '4 entre 2.6 millones.'
+            hint: '4 entre 2,6 millones.'
         },
         {
             question: 'En informática, la complejidad de probar todas las claves posibles (fuerza bruta) es:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Complejidad?}',
+            latex: '',
             options: [
                 { latex: '\\text{Exponencial (Variaciones con repetición)}' },
                 { latex: '\\text{Lineal}' },
@@ -775,7 +775,7 @@ window.examCategories.combinatoria = {
             geogebraState: '0',
             latex: '\\binom{n+m}{n}',
             options: [
-                { latex: '\\text{Combinaciones con repetición de pasos}' },
+                { latex: '\\text{Combinaciones: se eligen cuáles } n \\text{ de los } n+m \\text{ pasos van a la derecha}' },
                 { latex: '\\text{Infinito}' },
                 { latex: 'n \\times m' },
                 { latex: 'n^m' }
@@ -787,7 +787,7 @@ window.examCategories.combinatoria = {
             question: 'En Química, la quiralidad implica que dos moléculas son:',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Relación?}',
+            latex: '',
             options: [
                 { latex: '\\text{Imágenes especulares no superponibles (Permutación espacial)}' },
                 { latex: '\\text{Idénticas}' },

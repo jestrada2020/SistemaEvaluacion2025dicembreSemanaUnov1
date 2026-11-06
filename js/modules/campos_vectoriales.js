@@ -205,7 +205,7 @@ window.examCategories.campos_vectoriales = {
             question: 'Las líneas de campo son tangentes a:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Vectores?}',
+            latex: '',
             options: [
                 { latex: '\\text{Los vectores del campo en cada punto}' },
                 { latex: '\\text{Las equipotenciales}' },
@@ -219,7 +219,7 @@ window.examCategories.campos_vectoriales = {
             question: 'Las superficies equipotenciales son perpendiculares a:',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Campo?}',
+            latex: '',
             options: [
                 { latex: '\\text{Las líneas de campo (si es conservativo)}' },
                 { latex: '\\text{Otras equipotenciales}' },
@@ -247,7 +247,7 @@ window.examCategories.campos_vectoriales = {
             question: 'El operador Nabla se denota por:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Símbolo?}',
+            latex: '',
             options: [
                 { latex: '\\nabla' },
                 { latex: '\\Delta' },
@@ -261,7 +261,7 @@ window.examCategories.campos_vectoriales = {
             question: 'Un campo de fuerzas central F(r) siempre es:',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Propiedad?}',
+            latex: '',
             options: [
                 { latex: '\\text{Conservativo}' },
                 { latex: '\\text{Solenoidal}' },
@@ -275,7 +275,7 @@ window.examCategories.campos_vectoriales = {
             question: 'La integral de flujo mide:',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Cantidad?}',
+            latex: '',
             options: [
                 { latex: '\\text{Cuánto campo atraviesa una superficie}' },
                 { latex: '\\text{Cuánto campo circula}' },
@@ -333,7 +333,7 @@ window.examCategories.campos_vectoriales = {
             question: 'Las leyes de Maxwell se expresan usando:',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Operadores?}',
+            latex: '',
             options: [
                 { latex: '\\text{Divergencia y Rotacional}' },
                 { latex: '\\text{Solo Gradiente}' },
@@ -431,7 +431,7 @@ window.examCategories.campos_vectoriales = {
             question: 'El campo magnético alrededor de un cable recto sigue la regla de:',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Regla?}',
+            latex: '',
             options: [
                 { latex: '\\text{La mano derecha}' },
                 { latex: '\\text{La mano izquierda}' },
@@ -445,7 +445,7 @@ window.examCategories.campos_vectoriales = {
             question: 'Un campo de fuerzas conservativo conserva:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Cantidad?}',
+            latex: '',
             options: [
                 { latex: '\\text{La energía mecánica total}' },
                 { latex: '\\text{El momento}' },
@@ -531,7 +531,7 @@ window.examCategories.campos_vectoriales = {
             question: 'El gradiente electroquímico en biología impulsa:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Movimiento?}',
+            latex: '',
             options: [
                 { latex: '\\text{Iones a través de membranas}' },
                 { latex: '\\text{Sangre}' },
@@ -545,7 +545,7 @@ window.examCategories.campos_vectoriales = {
             question: 'En ingeniería civil, el campo de esfuerzos (tensor) determina:',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Efecto?}',
+            latex: '',
             options: [
                 { latex: '\\text{Distribución de fuerzas internas}' },
                 { latex: '\\text{Velocidad del viento}' },
@@ -559,7 +559,7 @@ window.examCategories.campos_vectoriales = {
             question: 'El gradiente de temperatura en un intercambiador de calor determina:',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Efecto?}',
+            latex: '',
             options: [
                 { latex: '\\text{La tasa de transferencia de calor}' },
                 { latex: '\\text{La presión}' },
@@ -573,7 +573,7 @@ window.examCategories.campos_vectoriales = {
             question: 'La quimiotaxis en bacterias es el movimiento siguiendo un:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Campo?}',
+            latex: '',
             options: [
                 { latex: '\\text{Gradiente químico (alimento/toxina)}' },
                 { latex: '\\text{Campo magnético}' },
@@ -587,7 +587,7 @@ window.examCategories.campos_vectoriales = {
             question: 'En aerodinámica, el campo de presión alrededor de un ala genera:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Fuerza?}',
+            latex: '',
             options: [
                 { latex: '\\text{Sustentación}' },
                 { latex: '\\text{Peso}' },
@@ -601,7 +601,7 @@ window.examCategories.campos_vectoriales = {
             question: 'El campo de desplazamientos en una estructura deformada es un campo:',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Tipo?}',
+            latex: '',
             options: [
                 { latex: '\\text{Vectorial}' },
                 { latex: '\\text{Escalar}' },
@@ -615,7 +615,7 @@ window.examCategories.campos_vectoriales = {
             question: 'En meteorología, el viento es un campo vectorial de:',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Variable?}',
+            latex: '',
             options: [
                 { latex: '\\text{Velocidad}' },
                 { latex: '\\text{Presión}' },
@@ -629,7 +629,7 @@ window.examCategories.campos_vectoriales = {
             question: 'El gradiente de presión atmosférica genera:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Fenómeno?}',
+            latex: '',
             options: [
                 { latex: '\\text{Viento}' },
                 { latex: '\\text{Lluvia}' },
@@ -643,7 +643,7 @@ window.examCategories.campos_vectoriales = {
             question: 'En resonancia magnética (MRI), se usan campos:',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Tipo?}',
+            latex: '',
             options: [
                 { latex: '\\text{Magnéticos fuertes y gradientes}' },
                 { latex: '\\text{Gravitatorios}' },
@@ -657,7 +657,7 @@ window.examCategories.campos_vectoriales = {
             question: 'El flujo sanguíneo en arterias se modela (Poiseuille) con perfil:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Perfil?}',
+            latex: '',
             options: [
                 { latex: '\\text{Parabólico}' },
                 { latex: '\\text{Plano}' },
@@ -671,7 +671,7 @@ window.examCategories.campos_vectoriales = {
             question: 'La difusión de un neurotransmisor en la sinapsis es un proceso de:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Proceso?}',
+            latex: '',
             options: [
                 { latex: '\\text{Transporte por gradiente}' },
                 { latex: '\\text{Transporte activo}' },
@@ -685,7 +685,7 @@ window.examCategories.campos_vectoriales = {
             question: 'En ingeniería eléctrica, la densidad de corriente J es un campo:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Tipo?}',
+            latex: '',
             options: [
                 { latex: '\\text{Vectorial}' },
                 { latex: '\\text{Escalar}' },
@@ -699,10 +699,10 @@ window.examCategories.campos_vectoriales = {
             question: 'El campo de velocidades en un tornado tiene:',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Característica?}',
+            latex: '',
             options: [
                 { latex: '\\text{Alta vorticidad (rotacional)}' },
-                { latex: '\\text{Divergencia cero}' },
+                { latex: '\\text{Rotacional cero}' },
                 { latex: '\\text{Velocidad cero}' },
                 { latex: '\\text{Flujo laminar}' }
             ],
@@ -715,7 +715,7 @@ window.examCategories.campos_vectoriales = {
             question: 'En GeoGebra, el comando para graficar un campo vectorial 2D es:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Comando?}',
+            latex: '',
             options: [
                 { latex: '\\text{CampoDirecciones(f(x,y)) o Vector(...)}' },
                 { latex: '\\text{GraficaVector}' },
@@ -729,7 +729,7 @@ window.examCategories.campos_vectoriales = {
             question: 'Un campo con vectores de igual magnitud y dirección constante es:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Tipo?}',
+            latex: '',
             options: [
                 { latex: '\\text{Uniforme}' },
                 { latex: '\\text{Radial}' },
@@ -743,7 +743,7 @@ window.examCategories.campos_vectoriales = {
             question: 'Si los vectores apuntan hacia afuera de un punto, la divergencia es:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Signo?}',
+            latex: '',
             options: [
                 { latex: '\\text{Positiva (Fuente)}' },
                 { latex: '\\text{Negativa (Sumidero)}' },
@@ -757,7 +757,7 @@ window.examCategories.campos_vectoriales = {
             question: 'Si los vectores apuntan hacia adentro de un punto, la divergencia es:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Signo?}',
+            latex: '',
             options: [
                 { latex: '\\text{Negativa (Sumidero)}' },
                 { latex: '\\text{Positiva}' },
@@ -771,7 +771,7 @@ window.examCategories.campos_vectoriales = {
             question: 'Un campo F = (-y, x) representa:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Movimiento?}',
+            latex: '',
             options: [
                 { latex: '\\text{Rotación pura}' },
                 { latex: '\\text{Expansión}' },
@@ -785,7 +785,7 @@ window.examCategories.campos_vectoriales = {
             question: 'Un campo F = (x, y) representa:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Movimiento?}',
+            latex: '',
             options: [
                 { latex: '\\text{Expansión radial (Fuente)}' },
                 { latex: '\\text{Rotación}' },
@@ -799,7 +799,7 @@ window.examCategories.campos_vectoriales = {
             question: 'Para visualizar un campo 3D en GeoGebra usamos la vista:',
             geogebraAppName: '3d',
             geogebraState: '0',
-            latex: '\\text{Vista?}',
+            latex: '',
             options: [
                 { latex: '\\text{Vista Gráfica 3D}' },
                 { latex: '\\text{Hoja de Cálculo}' },
@@ -813,7 +813,7 @@ window.examCategories.campos_vectoriales = {
             question: 'La longitud de las flechas en un gráfico de campo suele representar:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Magnitud?}',
+            latex: '',
             options: [
                 { latex: '\\text{La magnitud del vector (intensidad)}' },
                 { latex: '\\text{La dirección}' },
@@ -827,7 +827,7 @@ window.examCategories.campos_vectoriales = {
             question: 'Un punto donde el campo es cero se llama:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Punto?}',
+            latex: '',
             options: [
                 { latex: '\\text{Punto crítico o de equilibrio}' },
                 { latex: '\\text{Punto de fuga}' },
@@ -841,7 +841,7 @@ window.examCategories.campos_vectoriales = {
             question: 'El campo gradiente siempre es perpendicular a:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Curvas?}',
+            latex: '',
             options: [
                 { latex: '\\text{Las curvas de nivel}' },
                 { latex: '\\text{El eje X}' },

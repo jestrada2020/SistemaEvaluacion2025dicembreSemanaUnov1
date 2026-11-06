@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Manual de usuario - Evaluación matemática</title>
+<style>
+/* Estilo de impresión de los manuales de usuario (se convierten a PDF con Chrome) */
+@page {
+    size: A4;
+    margin: 18mm 17mm 20mm 17mm;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    font-family: 'Segoe UI', 'Noto Sans', 'DejaVu Sans', Arial, sans-serif;
+    font-size: 10.5pt;
+    line-height: 1.5;
+    color: #212529;
+    margin: 0;
+}
+
+h1, h2, h3, h4 { color: #343a40; line-height: 1.25; }
+h2 {
+    font-size: 17pt;
+    margin: 0 0 10pt;
+    padding-bottom: 5pt;
+    border-bottom: 2pt solid #007bff;
+    break-before: page;
+}
+h3 { font-size: 13pt; margin: 16pt 0 6pt; color: #0d47a1; break-after: avoid; }
+/* Cada herramienta empieza en una página nueva */
+h3.nueva-pagina { break-before: page; margin-top: 0; }
+h4 { font-size: 11pt; margin: 12pt 0 4pt; break-after: avoid; }
+p { margin: 0 0 7pt; }
+ul, ol { margin: 0 0 8pt; padding-left: 18pt; }
+li { margin-bottom: 3pt; }
+code, kbd {
+    font-family: 'DejaVu Sans Mono', 'Courier New', monospace;
+    font-size: 9.5pt;
+    background: #f1f3f5;
+    border: 1px solid #dee2e6;
+    border-radius: 3px;
+    padding: 0 3px;
+}
+strong { color: #000; }
+
+/* ---- Portada ---- */
+.portada {
+    height: 250mm;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.portada .franja {
+    background: #343a40;
+    color: #fff;
+    padding: 28pt 20pt;
+    border-radius: 6pt;
+    margin-bottom: 24pt;
+}
+.portada .franja h1 { color: #fff; font-size: 26pt; margin: 0 0 8pt; }
+.portada .franja p { font-size: 13pt; margin: 0; color: #dee2e6; }
+.portada .subtitulo { font-size: 20pt; color: #007bff; font-weight: 600; margin-bottom: 30pt; }
+.portada .datos { font-size: 11pt; color: #495057; }
+.portada img { max-width: 100%; border: 1px solid #dee2e6; border-radius: 4pt; margin: 0 auto 20pt; }
+
+/* ---- Índice ---- */
+.indice { break-before: page; }
+.indice h2 { break-before: avoid; }
+.indice ol { list-style: none; padding-left: 0; }
+.indice ol ol { padding-left: 16pt; }
+.indice li { margin-bottom: 4pt; }
+.indice a { color: #212529; text-decoration: none; }
+.indice > ol > li > a { font-weight: 600; }
+
+/* ---- Figuras ---- */
+figure {
+    margin: 10pt 0 12pt;
+    text-align: center;
+    break-inside: avoid;
+}
+figure img {
+    max-width: 100%;
+    max-height: 165mm;
+    border: 1px solid #ced4da;
+    border-radius: 3pt;
+}
+figcaption { font-size: 9pt; color: #6c757d; margin-top: 4pt; font-style: italic; }
+
+/* ---- Tablas ---- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 6pt 0 10pt;
+    font-size: 9.5pt;
+    break-inside: avoid;
+}
+th, td { border: 1px solid #ced4da; padding: 4pt 6pt; text-align: left; vertical-align: top; }
+th { background: #e9ecef; }
+
+/* ---- Cajas de nota ---- */
+.nota, .consejo, .atencion {
+    border-left: 4pt solid;
+    border-radius: 3pt;
+    padding: 6pt 10pt;
+    margin: 8pt 0 10pt;
+    break-inside: avoid;
+}
+.nota { background: #e7f1ff; border-color: #0d6efd; }
+.consejo { background: #e8f5e9; border-color: #198754; }
+.atencion { background: #fff8e1; border-color: #ffc107; }
+.nota p:last-child, .consejo p:last-child, .atencion p:last-child { margin-bottom: 0; }
+
+.pasos li { margin-bottom: 4pt; }
+.ficha {
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4pt;
+    padding: 6pt 10pt;
+    margin-bottom: 8pt;
+    font-size: 9.5pt;
+}
+</style>
+<!-- Fórmulas con KaTeX (la misma copia local que usa la aplicación) -->
+<link rel="stylesheet" href="../lib/katex/katex.min.css">
+<script src="../lib/katex/katex.min.js"></script>
+<script src="../lib/katex/contrib/auto-render.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    renderMathInElement(document.body, {
+        delimiters: [{ left: '$$', right: '$$', display: true }, { left: '$', right: '$', display: false }],
+        ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+        throwOnError: false
+    });
+});
+</script>
+<style> figure img { max-height: 120mm; } .portada img { max-height: none; } #interfaz figure img { max-height: 92mm; } </style>
+</head>
+<body>
+
+<section class="portada">
+    <div class="franja">
+        <h1>Práctica, evaluaciones y análisis</h1>
+        <p>Caja de Herramientas Matemáticas</p>
+    </div>
+    <p class="subtitulo">Manual de usuario</p>
+    <img src="img/interfaz.jpg" alt="Interfaz de la aplicación">
+    <div class="datos">
+        <p>Facultad de Ciencias y Biotecnología</p>
+        <p>Versión 2.0 · noviembre de 2026</p>
+    </div>
+</section>
+
+<section class="indice">
+    <h2>Contenido</h2>
+    <ol>
+        <li><a href="#presentacion">Presentación</a></li>
+        <li><a href="#requisitos">Requisitos y cómo abrir la aplicación</a></li>
+        <li><a href="#interfaz">La interfaz</a></li>
+        <li><a href="#practica">Práctica por categorías</a></li>
+        <li><a href="#generador">Generador de evaluaciones</a>
+            <ol><li><a href="#gen-armar">Armar la evaluación</a></li><li><a href="#gen-previsualizar">Previsualizar, imprimir y exportar</a></li><li><a href="#gen-versiones">Versiones A, B, C con su clave</a></li><li><a href="#gen-guardar">Guardar y volver a cargar</a></li></ol></li>
+        <li><a href="#enlinea">La evaluación en línea</a>
+            <ol><li><a href="#enlinea-repartir">Cómo llega la evaluación al estudiante</a></li><li><a href="#enlinea-estudiante">Lo que ve el estudiante</a></li><li><a href="#enlinea-resultados">Resultados y Google Sheets</a></li></ol></li>
+        <li><a href="#tipos">Tipos de preguntas</a></li>
+        <li><a href="#analisis">Análisis de resultados por pregunta</a></li>
+        <li><a href="#banco">El banco de preguntas (para el docente)</a></li>
+        <li><a href="#videos">Aprendo con videos</a></li>
+        <li><a href="#geogebra">GeoGebra y guía rápida de comandos</a></li>
+        <li><a href="#manual">La pestaña «Manual de usuario»</a></li>
+        <li><a href="#problemas">Solución de problemas</a></li>
+    </ol>
+</section>
+
+<section id="presentacion">
+    <h2>1. Presentación</h2>
+    <p>Esta aplicación de la Caja de Herramientas sirve para <strong>practicar</strong> y para <strong>evaluar</strong> matemáticas con un banco de más de 1300 preguntas en 24 categorías: aritmética, álgebra, ecuaciones, geometría, cálculo diferencial, integral y en varias variables, ecuaciones diferenciales, álgebra lineal, estadística, análisis numérico y más.</p>
+    <ul>
+        <li>El <strong>estudiante</strong> practica por categorías y ve al final su nota, las respuestas correctas y las pistas.</li>
+        <li>El <strong>docente</strong> arma evaluaciones de 50 puntos, las imprime (con varias versiones) o las presenta en línea, recibe los resultados y analiza qué preguntas funcionaron.</li>
+    </ul>
+    <p>Las opciones de cada pregunta se barajan para cada estudiante. Hay preguntas <strong>paramétricas</strong>, en las que cada estudiante recibe sus propios números, y <strong>tareas de GeoGebra</strong>, que se responden moviendo una construcción.</p>
+    <div class="consejo"><strong>Idea de uso:</strong> 1) arme la evaluación en el Generador; 2) imprímala en versiones A/B/C o preséntela en línea; 3) reciba los resultados en Google Sheets o en Excel; 4) revise en «Análisis de resultados» qué preguntas conviene corregir; 5) recomiende a los estudiantes los videos de los temas con más errores.</div>
+</section>
+
+<section id="requisitos">
+    <h2>2. Requisitos y cómo abrir la aplicación</h2>
+    <ul>
+        <li>Un navegador actual (Chrome, Edge o Firefox).</li>
+        <li>Abra la carpeta de la aplicación y haga doble clic en <code>index.html</code>. No necesita instalación ni servidor.</li>
+        <li><strong>Sin internet</strong> funcionan las fórmulas, la práctica, el generador, las exportaciones a Excel y PDF, y el análisis (las librerías están en la carpeta <code>lib/</code>).</li>
+        <li><strong>Con internet</strong> funcionan además GeoGebra, los videos y el envío de resultados a Google Sheets.</li>
+    </ul>
+    <div class="nota">El archivo <code>exam.html</code> es la página del estudiante para la evaluación en línea. Normalmente se abre sola desde el generador (sección 6).</div>
+</section>
+
+<section id="interfaz">
+    <h2>3. La interfaz</h2>
+    <figure><img src="img/interfaz.jpg" alt="Interfaz"><figcaption>Figura 1. Menú lateral (izquierda) y área de trabajo (derecha) con la Introducción.</figcaption></figure>
+    <table>
+        <thead><tr><th>Botón del menú</th><th>Para qué sirve</th></tr></thead>
+        <tbody>
+            <tr><td>Introducción</td><td>Presentación de la Caja de Herramientas y tarjetas «Abrir» para cada herramienta.</td></tr>
+            <tr><td>Práctica por categorías</td><td>Práctica libre del estudiante (sección 4).</td></tr>
+            <tr><td>Generador de evaluaciones</td><td>Armar, imprimir, exportar y presentar evaluaciones (secciones 5 y 6).</td></tr>
+            <tr><td>Análisis de resultados</td><td>Dificultad, discriminación y distractores de cada pregunta (sección 8).</td></tr>
+            <tr><td>Aprendo con videos</td><td>Videos del canal del profesor asociados a las categorías (sección 10).</td></tr>
+            <tr><td>Geogebra Clásico</td><td>Enlaces a GeoGebra y comandos para comprobar respuestas (sección 11).</td></tr>
+            <tr><td>Manual de usuario</td><td>Este manual (sección 12).</td></tr>
+        </tbody>
+    </table>
+    <p>Cada pestaña <strong>conserva su estado</strong>: si sale del generador a mirar un video y vuelve, la evaluación en construcción sigue ahí. La dirección cambia según la pestaña (por ejemplo, <code>index.html#generador</code>), así que puede guardar un marcador a una pestaña concreta.</p>
+    <p>Los <strong>avisos</strong> aparecen arriba a la derecha, dentro de la página: azul (información), amarillo (atención), verde (hecho) y rojo (error). Las confirmaciones (por ejemplo, «¿Finalizar la evaluación?») se muestran en una ventana propia que se responde con el ratón o con el teclado (Escape cancela).</p>
+    <div class="consejo">La aplicación se puede usar solo con teclado: <kbd>Tab</kbd> recorre los controles, las flechas cambian de opción en una pregunta y <kbd>Enter</kbd> pasa a la siguiente.</div>
+</section>
+
+<section id="practica">
+    <h2>4. Práctica por categorías</h2>
+    <p>Sirve para estudiar: el estudiante elige los temas, responde y al final ve qué acertó, la respuesta correcta y la pista de cada pregunta.</p>
+    <ol class="pasos">
+        <li>Pulse <strong>Seleccionar</strong> en una o varias categorías: la tarjeta se marca en verde y el botón cambia a «Seleccionada». Con <strong>Seleccionar todas</strong> y <strong>Quitar todas</strong> se marcan o desmarcan las 24 de una vez.</li>
+        <li>La barra superior, que permanece visible al desplazarse por las tarjetas, indica cuántas categorías hay elegidas y cuántas preguntas tienen en total.</li>
+        <li>Escriba el <strong>número de preguntas</strong> (20 por defecto), un entero mayor que 0. Se eligen al azar entre las categorías seleccionadas; si pide más de las disponibles, la aplicación avisa y usa todas.</li>
+        <li>Pulse <strong>Comenzar Práctica</strong>.</li>
+        <li>Marque una opción y pulse <strong>Siguiente</strong>. Con <strong>Anterior</strong> puede volver y cambiar una respuesta; la barra muestra cuántas lleva respondidas.</li>
+        <li>Pulse <strong>Finalizar</strong> cuando quiera: el botón está disponible en todas las preguntas. Si quedan preguntas sin responder, la aplicación avisa que contarán como incorrectas.</li>
+    </ol>
+    <figure><img src="img/practica_elegir.jpg" alt="Elegir categorías"><figcaption>Figura 2. Cálculo Integral seleccionada (tarjeta en verde); la barra superior resume la selección: 3 categorías y 147 preguntas disponibles.</figcaption></figure>
+    <h3 class="nueva-pagina">Responder y ver los resultados</h3>
+    <p>La fórmula de cada pregunta aparece debajo del enunciado. Las preguntas que pueden resolverse con una calculadora muestran el botón <strong>Abrir calculadora GeoGebra (opcional)</strong>: GeoGebra se carga solo cuando se pide (necesita internet) y, una vez abierta, se mantiene en las preguntas siguientes. Con <strong>Ampliar</strong>, <strong>Reducir</strong> y <strong>Ventana Emergente</strong> se ajusta su tamaño.</p>
+    <figure><img src="img/practica_pregunta.jpg" alt="Pregunta de práctica"><figcaption>Figura 3. Pregunta de práctica con una opción marcada, la pista visible y los botones Siguiente y Finalizar.</figcaption></figure>
+    <figure><img src="img/practica_resultados_parte1.jpg" alt="Resultados"><figcaption>Figura 4. Resultados: la nota (1 punto por pregunta en la práctica) y el detalle de cada pregunta.</figcaption></figure>
+    <figure><img src="img/practica_resultados_parte2.jpg" alt="Resultados: detalle"><figcaption>Figura 5. En verde las preguntas acertadas; en rojo las falladas, con la respuesta correcta y la pista.</figcaption></figure>
+    <p>Con <strong>Nueva práctica</strong> se vuelve a la elección de categorías, con las mismas categorías ya marcadas.</p>
+</section>
+
+<section id="generador">
+    <h2>5. Generador de evaluaciones</h2>
+    <h3 id="gen-armar">5.1 Armar la evaluación</h3>
+    <p>La evaluación necesita al menos <strong>20 preguntas</strong> que sumen exactamente <strong>50 puntos</strong>.</p>
+    <ol class="pasos">
+        <li><strong>A mano:</strong> en el <em>Banco de Preguntas</em> busque por texto (no importan tildes ni mayúsculas; también por ID, como <code>calculodiferencial_51</code>) o filtre por categoría, y pulse <strong>+</strong>. El banco se muestra de 40 en 40, con los botones «Anterior» y «Siguiente». Las preguntas ya agregadas se marcan con ✓.</li>
+        <li><strong>Al azar:</strong> en <em>Generación Aleatoria</em> marque los módulos, escriba la cantidad y pulse <strong>Generar</strong>. Los 50 puntos se reparten en partes iguales. Las tareas de GeoGebra solo entran si marca «Incluir tareas que se responden en GeoGebra».</li>
+        <li>Ajuste los puntos de cada pregunta en su casilla, o pulse <strong>Repartir puntos</strong> para dividir los 50 puntos en partes iguales.</li>
+        <li>Con <strong>×</strong> quita una pregunta y con <strong>Limpiar</strong> borra todas (pide confirmación).</li>
+        <li>Pulse <strong>Previsualizar Evaluación</strong>.</li>
+    </ol>
+    <figure><img src="img/generador.jpg" alt="Generador"><figcaption>Figura 6. Búsqueda «derive» en el banco: la pregunta paramétrica calculodiferencial_51 aparece con ✓ porque ya está en la evaluación (20 preguntas, 50 puntos).</figcaption></figure>
+
+    <h3 id="gen-previsualizar" class="nueva-pagina">5.2 Previsualizar, imprimir y exportar</h3>
+    <p>La previsualización muestra la hoja tal como se imprimirá: encabezado con título, fecha, líneas para el nombre, el ID y la fecha de realización, y las preguntas con sus opciones a), b), c)… ya barajadas.</p>
+    <ul>
+        <li>Con <strong>▲ Subir</strong>, <strong>▼ Bajar</strong>, <strong>+ Espacio</strong> y <strong>Salto de Página</strong> se ordena y se reparte la hoja (estos controles no se imprimen).</li>
+        <li>El <strong>Título</strong> aparece en la hoja impresa, en el LaTeX y en la evaluación en línea.</li>
+        <li><strong>Tiempo límite</strong>, <strong>Mostrar pistas</strong> y <strong>Mostrar las respuestas correctas al finalizar</strong> se aplican solo a la evaluación en línea (sección 6).</li>
+        <li><strong>Cuadro de instrucciones</strong>: debajo de Estudiante, ID y Fecha aparece un recuadro con las instrucciones («¡Por favor, muestre todo el desarrollo de su trabajo de forma ordenada!», «No se dará crédito a las respuestas que no tengan trabajo argumentado.», «No se responden dudas durante el desarrollo del quiz.» y «Tiene 45 minutos para dar respuesta a todo el quiz.»). En <strong>Tipo de evaluación</strong> elija quiz, parcial, examen, examen final, taller, seguimiento, evaluación o prueba (el texto ajusta «del/de la» y «todo el/toda la»), y en <strong>Duración (min)</strong> el tiempo. Desmarque la casilla para quitar el cuadro. Aparece también en las versiones impresas y en el LaTeX (como <code>\ExamInstrBox</code>), y se guarda con la evaluación (JSON).</li>
+    </ul>
+    <figure><img src="img/previsualizacion.jpg" alt="Previsualización"><figcaption>Figura 7. Previsualización de «Parcial de Cálculo»: cuadro de instrucciones para un parcial de 60 minutos, opciones y botones de exportación.</figcaption></figure>
+    <table>
+        <thead><tr><th>Botón</th><th>Qué produce</th></tr></thead>
+        <tbody>
+            <tr><td>Descargar PDF</td><td>Abre el diálogo de impresión del navegador; elija «Guardar como PDF» o una impresora.</td></tr>
+            <tr><td>Descargar Excel</td><td>Hoja «Evaluación» (pregunta, tipo, opciones, respuesta correcta y puntos) y hoja «Clave» para calificar la versión impresa.</td></tr>
+            <tr><td>Descargar LaTeX</td><td>Archivo <code>.tex</code> listo para compilar, con las opciones etiquetadas a), b), c).</td></tr>
+            <tr><td>Guardar evaluación (JSON)</td><td>Para volver a cargarla después en el generador (sección 5.4).</td></tr>
+            <tr><td>Realizar Evaluación en Línea / Descargar archivo para estudiantes / Copiar enlace</td><td>Evaluación en línea (sección 6).</td></tr>
+        </tbody>
+    </table>
+
+    <h3 id="gen-versiones">5.3 Versiones A, B, C con su clave</h3>
+    <p>Para que estudiantes vecinos no tengan la misma hoja, elija el número de versiones (de 2 a 6) y pulse <strong>Imprimir versiones + clave (Excel)</strong>.</p>
+    <ul>
+        <li>La versión A conserva el orden que usted dejó. Las demás cambian el orden de las preguntas y de las opciones, y las preguntas paramétricas cambian de números.</li>
+        <li>Cada versión empieza en una página nueva, con «— Versión B» en el título.</li>
+        <li>Se descarga el Excel <code>Claves_versiones_….xlsx</code>, con la hoja «Claves» (la respuesta de cada número en cada versión) y una hoja por versión (equivalencia con la pregunta de la versión A, ID, texto de la respuesta y puntos).</li>
+    </ul>
+    <div class="atencion">Las tareas de GeoGebra no se imprimen: se omiten en las versiones y la aplicación lo avisa.</div>
+
+    <h3 id="gen-guardar">5.4 Guardar y volver a cargar</h3>
+    <p><strong>Guardar evaluación (JSON)</strong> conserva el título, la configuración, los puntos, los saltos de página, el orden de las opciones y los números de las paramétricas. Con <strong>Cargar evaluación guardada (JSON)</strong>, debajo de «Previsualizar», se recupera idéntica. Si después de guardarla se modificó el banco y cambió el ID de una pregunta, la aplicación la reconoce por su contenido y lo informa.</p>
+</section>
+
+<section id="enlinea">
+    <h2>6. La evaluación en línea</h2>
+    <h3 id="enlinea-repartir">6.1 Cómo llega la evaluación al estudiante</h3>
+    <table>
+        <thead><tr><th>Situación</th><th>Qué hacer</th></tr></thead>
+        <tbody>
+            <tr><td>El estudiante presenta en el mismo computador del docente</td><td><strong>Realizar Evaluación en Línea</strong>: se abre <code>exam.html</code> en una ventana nueva.</td></tr>
+            <tr><td>Cada estudiante en su computador, con la carpeta de la aplicación</td><td><strong>Descargar archivo para estudiantes</strong> → archivo <code>.examen</code>. El estudiante abre <code>exam.html</code> y pulsa <strong>Cargar archivo de evaluación</strong>.</td></tr>
+            <tr><td>La aplicación está publicada en internet (por ejemplo, GitHub Pages)</td><td><strong>Copiar enlace para estudiantes</strong> y compartir el enlace.</td></tr>
+        </tbody>
+    </table>
+    <div class="nota">La evaluación viaja <strong>codificada</strong>: las respuestas no se leen a simple vista y se borran del navegador al cargarla. No es un cifrado fuerte; para notas con mucho peso, vigile la sesión.</div>
+
+    <h3 id="enlinea-estudiante" class="nueva-pagina">6.2 Lo que ve el estudiante</h3>
+    <ol class="pasos">
+        <li>Escribe sus <strong>apellidos y nombres</strong> y su <strong>ID o cédula</strong>, y pulsa <strong>Iniciar Evaluación</strong>.</li>
+        <li>Responde como en la práctica. Si hay tiempo límite, el reloj está siempre visible y se pone rojo en los últimos 5 minutos; al llegar a cero, la evaluación se entrega sola.</li>
+        <li>Si recarga la página por error, vuelve a la misma pregunta con sus respuestas y el reloj sigue corriendo.</li>
+        <li>Al finalizar ve su nota. Ve la respuesta correcta y las pistas solo si el docente lo permitió.</li>
+    </ol>
+    <figure><img src="img/examen_ingreso.jpg" alt="Ingreso del estudiante"><figcaption>Figura 8. Ingreso del estudiante en <code>exam.html</code>.</figcaption></figure>
+    <figure><img src="img/examen_pregunta.jpg" alt="Pregunta paramétrica"><figcaption>Figura 9. Pregunta paramétrica «Derive la función» con el reloj de 60 minutos: cada estudiante recibe otros números.</figcaption></figure>
+
+    <h3 id="enlinea-resultados" class="nueva-pagina">6.3 Resultados y Google Sheets</h3>
+    <p>Al finalizar, el estudiante puede descargar su detalle en Excel. Si el docente configuró Google Sheets (archivo <code>google_apps_script/INSTRUCCIONES.md</code> y dirección en <code>js/config.js</code>), la nota y el detalle de cada pregunta llegan solos a su hoja de cálculo. Sin internet, el resultado queda guardado en el equipo y se reenvía la próxima vez que se abra la aplicación con conexión; también hay un botón «Reintentar ahora».</p>
+    <figure><img src="img/examen_resultados.jpg" alt="Resultados en línea"><figcaption>Figura 10. Resultados de la evaluación en línea con el envío a Google Sheets confirmado.</figcaption></figure>
+</section>
+
+<section id="tipos">
+    <h2>7. Tipos de preguntas</h2>
+    <table>
+        <thead><tr><th>Tipo</th><th>Cómo se reconoce</th><th>Cómo se responde</th></tr></thead>
+        <tbody>
+            <tr><td>Opción múltiple</td><td>La mayoría del banco.</td><td>Se marca una opción. Las opciones se barajan para cada estudiante.</td></tr>
+            <tr><td>Paramétrica</td><td>Etiqueta «🎲 Paramétrica» en el generador.</td><td>Igual que la de opción múltiple, pero los números cambian para cada estudiante, en cada práctica y en cada versión impresa.</td></tr>
+            <tr><td>Tarea de GeoGebra</td><td>Etiqueta «🖐 Se responde en GeoGebra».</td><td>Se mueve un punto, se ajusta un deslizador, etc. La respuesta se guarda al pasar a otra pregunta. Solo en línea.</td></tr>
+        </tbody>
+    </table>
+    <p>En una tarea de GeoGebra, la aplicación comprueba una condición al salir de la pregunta. Por ejemplo, que el punto $A$ esté a menos de 0,2 del vértice $(h, k)$ de la parábola $y = (x - h)^2 + k$. Si el estudiante vuelve a la pregunta, encuentra la construcción como la dejó. Si no la toca, cuenta como no respondida.</p>
+    <figure><img src="img/examen_tarea.jpg" alt="Tarea de GeoGebra"><figcaption>Figura 11. Tarea «Mueva el punto A hasta el vértice de la parábola» con $f(x) = (x - 4)^2 + 2$: la respuesta correcta es $A = (4, 2)$.</figcaption></figure>
+</section>
+
+<section id="analisis">
+    <h2>8. Análisis de resultados por pregunta</h2>
+    <p>Indica qué preguntas funcionaron y cuáles conviene revisar.</p>
+    <ol class="pasos">
+        <li>Descargue los resultados. Sirven el libro de Google Sheets como Excel (Archivo → Descargar → .xlsx), la hoja «Detalle» como .csv (también si Excel la guardó con «;» o con tildes en Windows-1252) o los Excel individuales <code>Detalle_Nombre_ID.xlsx</code> de los estudiantes, incluidos los de la versión 1 (diciembre de 2025). El histórico <code>Resultados_Evaluacion_Generada.xlsx</code> no sirve: trae solo la nota de cada estudiante, y la aplicación lo indica.</li>
+        <li>Abra <strong>Análisis de resultados</strong> y arrastre los archivos al recuadro (pueden ser varios). Si un mismo envío aparece en dos archivos (el Excel del estudiante y Google Sheets), se cuenta una sola vez.</li>
+        <li>Si los archivos traen varias evaluaciones, elija en <strong>Evaluación que se analiza</strong> cuál revisar: la discriminación compara a los estudiantes que presentaron la misma prueba. «Todas mezcladas» se ofrece, con aviso.</li>
+        <li>Revise primero las preguntas con borde rojo («Revisar»). En las barras de opciones, la correcta va en verde.</li>
+        <li>Con <strong>Quitar todos los archivos</strong> se empieza de nuevo sin recargar la página.</li>
+    </ol>
+    <table>
+        <thead><tr><th>Indicador</th><th>Qué significa</th><th>Valores de referencia</th></tr></thead>
+        <tbody>
+            <tr><td>Dificultad $p$</td><td>Proporción de aciertos</td><td>Ideal entre 0,3 y 0,8; más de 0,9 muy fácil; menos de 0,2 muy difícil</td></tr>
+            <tr><td>Discriminación $D$</td><td>Aciertos del 27 % con mejor nota menos aciertos del 27 % con peor nota</td><td>$\ge 0{,}4$ excelente; 0,2–0,4 aceptable; negativa: revisar la clave</td></tr>
+            <tr><td>Ítem-resto $r$</td><td>Relación entre acertar la pregunta y la nota en las demás</td><td>$\ge 0{,}3$ buena; cerca de 0 o negativa: no mide lo mismo que el resto</td></tr>
+        </tbody>
+    </table>
+    <figure><img src="img/analisis_parte1.jpg" alt="Análisis"><figcaption>Figura 12. Los archivos traen dos evaluaciones y se analiza EV1 (30 envíos). La pregunta q10 tiene discriminación negativa ($D = -0{,}63$) y la opción «c» atrae al grupo superior más que la registrada como correcta (barra verde): la clave está equivocada</figcaption></figure>
+    <figure><img src="img/analisis_parte2.jpg" alt="Análisis: más preguntas"><figcaption>Figura 13. Una pregunta muy difícil y dos que discriminan bien. Al pasar el ratón (o el foco del teclado) sobre una barra se ven los conteos del grupo superior e inferior</figcaption></figure>
+    <p>Con <strong>Solo preguntas con alertas</strong> se filtra la lista, y con <strong>Ordenar por</strong> se cambia el orden. <strong>Descargar análisis (Excel)</strong> guarda las hojas «Preguntas», «Distractores», «Categorías» y «Estudiantes» de la evaluación elegida (su ID va en el nombre del archivo).</p>
+    <div class="consejo">Con menos de 5 respuestas por pregunta solo se muestran los datos; con menos de 4 envíos no se calcula la discriminación, y con menos de 10 sus alertas son orientativas («Atención», no «Revisar»), porque los grupos superior e inferior tienen 1 o 2 estudiantes. Lo recomendable son 20 envíos o más.</div>
+</section>
+
+<section id="banco">
+    <h2>9. El banco de preguntas (para el docente)</h2>
+    <p>Las preguntas están en <code>js/modules/</code>, un archivo por categoría. Después de editar un módulo, ejecute en una terminal, dentro de la carpeta de la aplicación:</p>
+    <pre>node merge_questions.js</pre>
+    <p>El comando valida el banco: la respuesta debe estar dentro del rango, no puede haber opciones repetidas y cada fórmula debe mostrarse bien. De las preguntas paramétricas genera 40 versiones y las revisa todas. Luego reescribe <code>js/data/questions.js</code>, que es el que usan la práctica y el generador. Si encuentra un error, <strong>no modifica nada</strong> e indica la pregunta por su ID.</p>
+    <ul>
+        <li>Para retirar una pregunta sin borrarla, añada <code>disabled: 'motivo',</code>. Los ID de las demás no cambian.</li>
+        <li>Agregue las preguntas nuevas al final del módulo, para no cambiar los ID de las existentes.</li>
+        <li>Cuando varias preguntas usan la misma construcción de GeoGebra, cada una lleva un <code>geogebraState</code> (1, 2, 3…). En <code>js/geogebraEstados.js</code> se define qué valores toman los deslizadores en cada estado; por ejemplo, el triángulo de Herón se muestra con lados 7, 9 y 12 en el estado 1. La construcción se ajusta sola al abrir la pregunta, también en la ventana emergente.</li>
+        <li>Una pregunta paramétrica lleva <code>params</code> y las expresiones entre llaves dobles, por ejemplo <code>{{a*n}}</code>. Las instrucciones completas están al comienzo de <code>js/parametric.js</code>.</li>
+    </ul>
+</section>
+
+<section id="videos">
+    <h2>10. Aprendo con videos</h2>
+    <p>Videos del canal de YouTube del profesor <strong>John Jairo Estrada</strong>, del equipo de la Caja de Herramientas, asociados a las categorías del banco. Cada tema tiene botones <strong>Practicar: …</strong> que abren la práctica con esa categoría ya elegida. Con <strong>Ver el canal completo</strong> se abre el canal.</p>
+    <table>
+        <thead><tr><th>Tema</th><th>Videos</th><th>Categorías</th></tr></thead>
+        <tbody>
+            <tr><td>Sistemas de ecuaciones lineales 2 × 2</td><td>3</td><td>Sistemas de Ecuaciones</td></tr>
+            <tr><td>Expresiones y ecuaciones cuadráticas</td><td>4</td><td>Factorización y Simplificación; Ecuaciones y Despejes</td></tr>
+            <tr><td>Antiderivadas y técnicas de integración</td><td>5</td><td>Cálculo Integral</td></tr>
+            <tr><td>Raíces de ecuaciones: bisección y secante</td><td>2</td><td>Análisis Numérico</td></tr>
+            <tr><td>Ecuaciones diferenciales (apoyo)</td><td>1</td><td>Ecuaciones Diferenciales (PVI)</td></tr>
+            <tr><td>La recta en el plano</td><td>1</td><td>Geometría del Plano Cartesiano</td></tr>
+            <tr><td>El espacio tridimensional y las superficies</td><td>2</td><td>Superficies en el Espacio 3D; Geometría Vectorial</td></tr>
+            <tr><td>Varias variables: derivadas parciales e integrales dobles</td><td>4</td><td>Cálculo multivariado</td></tr>
+            <tr><td>Áreas y volúmenes (apoyo)</td><td>1</td><td>Geometría; Geometría del Triángulo</td></tr>
+            <tr><td>Regla de tres directa</td><td>1</td><td>Regla de Tres (Agro); Regla de Tres (Simple e Inversa)</td></tr>
+        </tbody>
+    </table>
+    <div class="nota">Los videos se abren en una pestaña nueva y necesitan internet. La pestaña lista también las categorías que aún no tienen videos.</div>
+    <figure><img src="img/videos_parte1.jpg" alt="Aprendo con videos"><figcaption>Figura 14. Pestaña «Aprendo con videos»: temas, videos y botones «Practicar».</figcaption></figure>
+</section>
+
+<section id="geogebra">
+    <h2>11. GeoGebra y guía rápida de comandos</h2>
+    <p>La pestaña <strong>Geogebra Clásico</strong> enlaza a las aplicaciones oficiales en español (Clásico, Cálculo simbólico, Calculadora gráfica y 3D) y trae una tabla de comandos para comprobar respuestas. Cada comando tiene un botón para copiarlo.</p>
+    <figure><img src="img/geogebra.jpg" alt="GeoGebra"><figcaption>Figura 15. Enlaces a GeoGebra y comandos, comprobados en el CAS en español.</figcaption></figure>
+    <table>
+        <thead><tr><th>Para</th><th>Escriba</th><th>Resultado</th></tr></thead>
+        <tbody>
+            <tr><td>Derivada</td><td><code>Derivada(3x^4)</code></td><td>$12x^3$</td></tr>
+            <tr><td>Integral definida</td><td><code>Integral(x^2, 0, 3)</code></td><td>$9$</td></tr>
+            <tr><td>Resolver un sistema</td><td><code>Resuelve({2x + y = 7, x - y = -1}, {x, y})</code></td><td>$x = 2,\ y = 3$</td></tr>
+            <tr><td>Factorizar</td><td><code>Factoriza(x^2 - 5x + 6)</code></td><td>$(x - 2)(x - 3)$</td></tr>
+            <tr><td>Probabilidad normal</td><td><code>Normal(0, 1, 1.96)</code></td><td>$P(Z \le 1{,}96) \approx 0{,}975$</td></tr>
+        </tbody>
+    </table>
+    <div class="consejo">En el CAS, para $e^x$ escriba <code>exp(x)</code>; con <code>e^x</code> el CAS puede tomar <em>e</em> como una variable.</div>
+</section>
+
+<section id="manual">
+    <h2>12. La pestaña «Manual de usuario»</h2>
+    <p>Muestra este manual. Con <strong>Ver en ventana emergente</strong> se abre aparte, para consultarlo mientras trabaja; si el navegador bloquea la ventana, aparece un aviso en la página. Con <strong>Descargar PDF</strong> se guarda una copia.</p>
+    <figure><img src="img/manual.jpg" alt="Pestaña del manual"><figcaption>Figura 16. Pestaña «Manual de usuario» con el visor del PDF.</figcaption></figure>
+</section>
+
+<section id="problemas">
+    <h2>13. Solución de problemas</h2>
+    <table>
+        <thead><tr><th>Situación</th><th>Causa y solución</th></tr></thead>
+        <tbody>
+            <tr><td>GeoGebra no aparece o dice que no pudo cargarse</td><td>Necesita internet. Sin conexión, la pregunta se puede responder igual (salvo las tareas de GeoGebra).</td></tr>
+            <tr><td>«La construcción de GeoGebra de esta pregunta no está disponible»</td><td>El material fue retirado de geogebra.org o no hay conexión. Pulse «Abrir calculadora GeoGebra» para usar la calculadora genérica.</td></tr>
+            <tr><td><code>exam.html</code> dice que no encontró la evaluación</td><td>Por seguridad, los datos se borran al cargarlos. Vuelva a pulsar «Realizar Evaluación en Línea» o use «Cargar archivo de evaluación» con el <code>.examen</code>.</td></tr>
+            <tr><td>No se abre la ventana de la evaluación o del manual</td><td>El navegador bloqueó la ventana emergente: permítalas para esta página.</td></tr>
+            <tr><td>Los resultados no llegan a Google Sheets</td><td>Revise la dirección y la palabra clave en <code>js/config.js</code> (deben coincidir con <code>Codigo.gs</code>) y la conexión. Los resultados pendientes se reenvían al abrir la aplicación con internet.</td></tr>
+            <tr><td>«Previsualizar» no avanza</td><td>Se necesitan al menos 20 preguntas y exactamente 50 puntos: use «Repartir puntos».</td></tr>
+            <tr><td>Cambié un módulo y no veo el cambio</td><td>Ejecute <code>node merge_questions.js</code> y recargue la página.</td></tr>
+            <tr><td>Un video no abre</td><td>Necesita internet; se abre en una pestaña nueva de YouTube.</td></tr>
+            <tr><td>El análisis dice «no se reconoció el formato»</td><td>Cargue la hoja «Detalle» de Google Sheets (xlsx o csv) o los Excel «Detalle_…» que descargan los estudiantes.</td></tr>
+        </tbody>
+    </table>
+</section>
+
+</body>
+</html>

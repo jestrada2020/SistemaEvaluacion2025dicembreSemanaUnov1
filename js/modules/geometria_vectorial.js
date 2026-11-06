@@ -215,7 +215,7 @@ window.examCategories.geometria_vectorial = {
                 { latex: '(4, 4)' }
             ],
             correct: 0,
-            hint: 'cos(60)=0.5, sin(60)=sqrt(3)/2.'
+            hint: 'cos(60)=0,5, sin(60)=sqrt(3)/2.'
         },
 
         // 3. Producto Punto y Ángulo (10 preguntas)
@@ -270,7 +270,7 @@ window.examCategories.geometria_vectorial = {
                 { latex: '2' },
                 { latex: '4' },
                 { latex: '1' },
-                { latex: '2.5' }
+                { latex: '2{,}5' }
             ],
             correct: 0,
             hint: '(2*1 + 4*0) / 1.'
@@ -283,11 +283,11 @@ window.examCategories.geometria_vectorial = {
             options: [
                 { latex: '6' },
                 { latex: '12' },
-                { latex: '3.5' },
+                { latex: '3{,}5' },
                 { latex: '0' }
             ],
             correct: 0,
-            hint: '3 * 4 * 0.5.'
+            hint: '3 * 4 * 0,5.'
         },
         {
             question: 'Determine k para que u = (1, k) y v = (2, -4) sean ortogonales.',
@@ -295,10 +295,10 @@ window.examCategories.geometria_vectorial = {
             geogebraState: '0',
             latex: '1(2) + k(-4) = 0',
             options: [
-                { latex: 'k = 0.5' },
+                { latex: 'k = 0{,}5' },
                 { latex: 'k = 2' },
                 { latex: 'k = -2' },
-                { latex: 'k = -0.5' }
+                { latex: 'k = -0{,}5' }
             ],
             correct: 0,
             hint: '2 - 4k = 0.'
@@ -365,7 +365,7 @@ window.examCategories.geometria_vectorial = {
             question: 'El producto cruz u x v da como resultado:',
             geogebraAppName: 'cas',
             geogebraState: '0',
-            latex: '\\text{Resultado?}',
+            latex: '',
             options: [
                 { latex: '\\text{Un vector perpendicular a u y v}' },
                 { latex: '\\text{Un escalar}' },
@@ -393,10 +393,10 @@ window.examCategories.geometria_vectorial = {
             question: 'La magnitud |u x v| representa geométricamente:',
             geogebraAppName: 'cas',
             geogebraState: '0',
-            latex: '\\text{Área de?}',
+            latex: '',
             options: [
-                { latex: '\\text{El paralelogramo formado por u y v}' },
-                { latex: '\\text{El triángulo formado por u y v}' },
+                { latex: '\\text{El área del paralelogramo formado por } u \\text{ y } v' },
+                { latex: '\\text{El área del triángulo formado por } u \\text{ y } v' },
                 { latex: '\\text{El volumen del paralelepípedo}' },
                 { latex: '\\text{La longitud de la suma}' }
             ],
@@ -421,9 +421,9 @@ window.examCategories.geometria_vectorial = {
             question: 'El producto mixto u · (v x w) calcula:',
             geogebraAppName: 'cas',
             geogebraState: '0',
-            latex: '\\text{Volumen de?}',
+            latex: '',
             options: [
-                { latex: '\\text{El paralelepípedo formado por u, v, w}' },
+                { latex: '\\text{El volumen (con signo) del paralelepípedo formado por } u, v, w' },
                 { latex: '\\text{El área del triángulo}' },
                 { latex: '\\text{Un vector 4D}' },
                 { latex: '\\text{La proyección}' }
@@ -465,7 +465,7 @@ window.examCategories.geometria_vectorial = {
             question: 'Dos planos son paralelos si sus vectores normales son:',
             geogebraAppName: 'cas',
             geogebraState: '0',
-            latex: 'n_1 \\parallel n_2',
+            latex: 'n_1 \\ \\text{?} \\ n_2',
             options: [
                 { latex: '\\text{Paralelos}' },
                 { latex: '\\text{Perpendiculares}' },
@@ -493,7 +493,7 @@ window.examCategories.geometria_vectorial = {
             question: 'El ángulo entre dos planos es el ángulo entre:',
             geogebraAppName: 'cas',
             geogebraState: '0',
-            latex: '\\text{Ángulo entre?}',
+            latex: '',
             options: [
                 { latex: '\\text{Sus vectores normales}' },
                 { latex: '\\text{Sus puntos de corte}' },
@@ -507,7 +507,7 @@ window.examCategories.geometria_vectorial = {
             question: 'Si dos rectas en el espacio no se cortan y no son paralelas, se llaman:',
             geogebraAppName: 'cas',
             geogebraState: '0',
-            latex: '\\text{Nombre?}',
+            latex: '',
             options: [
                 { latex: '\\text{Rectas que se cruzan (alabeadas)}' },
                 { latex: '\\text{Rectas coincidentes}' },
@@ -521,7 +521,7 @@ window.examCategories.geometria_vectorial = {
             question: 'La ecuación simétrica de la recta que pasa por (1,2,3) con dirección (2, -1, 1) es:',
             geogebraAppName: 'cas',
             geogebraState: '0',
-            latex: '\\frac{x-1}{2} = \\frac{y-2}{-1} = \\frac{z-3}{1}',
+            latex: 'P_0 = (1,2,3), \\quad \\vec{d} = (2,-1,1)',
             options: [
                 { latex: '\\frac{x-1}{2} = \\frac{y-2}{-1} = z-3' },
                 { latex: '\\frac{x-2}{1} = \\frac{y+1}{2} = z-1' },
@@ -549,7 +549,7 @@ window.examCategories.geometria_vectorial = {
             question: 'La intersección de dos planos no paralelos es:',
             geogebraAppName: 'cas',
             geogebraState: '0',
-            latex: '\\text{Objeto?}',
+            latex: '',
             options: [
                 { latex: '\\text{Una recta}' },
                 { latex: '\\text{Un punto}' },
@@ -563,7 +563,7 @@ window.examCategories.geometria_vectorial = {
             question: 'Para hallar la distancia entre dos rectas paralelas, se toma:',
             geogebraAppName: 'cas',
             geogebraState: '0',
-            latex: '\\text{Procedimiento?}',
+            latex: '',
             options: [
                 { latex: '\\text{Un punto de una y la distancia a la otra}' },
                 { latex: '\\text{La distancia entre sus vectores directores}' },
@@ -584,7 +584,7 @@ window.examCategories.geometria_vectorial = {
                 { latex: '2' }, // |3+8-1|/5 = 10/5 = 2
                 { latex: '1' },
                 { latex: '3' },
-                { latex: '2.5' }
+                { latex: '2{,}5' }
             ],
             correct: 0,
             hint: '10/5.'
@@ -607,7 +607,7 @@ window.examCategories.geometria_vectorial = {
             question: 'En Biofísica, las fuerzas musculares se modelan como:',
             geogebraAppName: 'cas',
             geogebraState: '0',
-            latex: '\\text{Modelado?}',
+            latex: '',
             options: [
                 { latex: '\\text{Vectores con magnitud y dirección}' },
                 { latex: '\\text{Escalares}' },
@@ -626,7 +626,7 @@ window.examCategories.geometria_vectorial = {
                 { latex: '\\sqrt{3}' }, // |4-1|/sqrt(3) = 3/sqrt(3) = sqrt(3)
                 { latex: '3' },
                 { latex: '1' },
-                { latex: '\\frac{3}{\\sqrt{3}}' } // Same as sqrt(3), let's keep sqrt(3) as simplify
+                { latex: '\\frac{5}{\\sqrt{3}}' } // Same as sqrt(3), let's keep sqrt(3) as simplify
             ],
             correct: 0,
             hint: '3 sobre raíz de 3.'
@@ -637,10 +637,10 @@ window.examCategories.geometria_vectorial = {
             geogebraState: '0',
             latex: 'A = \\frac{1}{2}|AB \\times AC|',
             options: [
-                { latex: '0.5' },
+                { latex: '0{,}5' },
                 { latex: '1' },
                 { latex: '2' },
-                { latex: '0.25' }
+                { latex: '0{,}25' }
             ],
             correct: 0,
             hint: 'Base 1, altura 1.'
@@ -649,7 +649,7 @@ window.examCategories.geometria_vectorial = {
             question: 'En Química, el momento dipolar de una molécula es una magnitud:',
             geogebraAppName: 'cas',
             geogebraState: '0',
-            latex: '\\text{Tipo?}',
+            latex: '',
             options: [
                 { latex: '\\text{Vectorial}' },
                 { latex: '\\text{Escalar}' },
@@ -668,7 +668,7 @@ window.examCategories.geometria_vectorial = {
                 { latex: '0' },
                 { latex: 'ma' },
                 { latex: 'mg' },
-                { latex: 'Infinito' }
+                { latex: '\\text{Infinito}' }
             ],
             correct: 0,
             hint: 'Primera ley de Newton.'
@@ -688,7 +688,7 @@ window.examCategories.geometria_vectorial = {
             hint: 'Volumen del paralelepípedo dividido área base.'
         },
         {
-            question: 'Si un avión vuela con velocidad v_a y hay viento v_v, la velocidad respecto a tierra es:',
+            question: 'Si un avión vuela con velocidad $\\vec{v}_a$ y hay viento $\\vec{v}_v$, la velocidad respecto a tierra es:',
             geogebraAppName: 'cas',
             geogebraState: '0',
             latex: 'v_t = ?',

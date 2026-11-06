@@ -8,7 +8,7 @@ window.examCategories.calculomultivariado = {
             question: 'Con base en la construcción, ¿cuál es la integral doble?',
             geogebraId: 'skyzrtkm',
             geogebraState: '0',
-            latex: '\\text{Si } \\ R = \\{(x, y) \\mid 0 \\le x \\le 1,\\, 0 \\le y \\le 0.5\\}, \\ \\text{evalúe la integral}  \\iint_R \\left(2 - x - 2y\\right) \\ dA ',
+            latex: '\\text{Si } \\ R = \\{(x, y) \\mid 0 \\le x \\le 1,\\, 0 \\le y \\le 0{,}5\\}, \\ \\text{evalúe la integral}  \\iint_R \\left(2 - x - 2y\\right) \\ dA ',
             options: [
                 { latex: '1/3\\text{ U.V.}' },
                 { latex: '1/4\\text{ U.V.}' },
@@ -30,7 +30,7 @@ window.examCategories.calculomultivariado = {
                 { latex: '1/6\\text{ U.V.}' }
             ],
             correct: 3,
-            hint: 'Recuerda que la pendiente de la recta tangente a una curva es la derivada de la curva evaluada en el punto de tangencia.'
+            hint: 'Plantea la integral iterada con los límites de la región e integra una variable a la vez.'
         },
         {
             question: 'Con base en la construcción, ¿cuál es el valor de la integral doble?',
@@ -44,7 +44,7 @@ window.examCategories.calculomultivariado = {
                 { latex: '20\\text{ U.V.}' }
             ],
             correct: 1,
-            hint: 'Recuerda que la pendiente de la recta tangente a una curva es la derivada de la curva evaluada en el punto de tangencia.'
+            hint: 'Plantea la integral iterada con los límites de la región e integra una variable a la vez.'
         },
         {
             question: 'Con base en la construcción, ¿cuál es el valor de la integral doble?',
@@ -58,7 +58,7 @@ window.examCategories.calculomultivariado = {
                 { latex: '20\\text{ U.V.}' }
             ],
             correct: 0,
-            hint: 'Recuerda que la pendiente de la recta tangente a una curva es la derivada de la curva evaluada en el punto de tangencia.'
+            hint: 'Plantea la integral iterada con los límites de la región e integra una variable a la vez.'
         },
         {
             question: 'Con base en la construcción, ¿cuál es el valor de la integral doble?',
@@ -81,9 +81,9 @@ window.examCategories.calculomultivariado = {
             latex: '\\text{Si } R = [0,1] \\times [0,1], \\text{ evalúe } \\iint_R (x + y) \\ dA',
             options: [
                 { latex: '1' },
-                { latex: '0.5' },
+                { latex: '0{,}5' },
                 { latex: '2' },
-                { latex: '1.5' }
+                { latex: '1{,}5' }
             ],
             correct: 0,
             hint: 'Integra primero respecto a x y luego respecto a y (o viceversa).'
@@ -95,12 +95,12 @@ window.examCategories.calculomultivariado = {
             latex: '\\text{Área del triángulo con vértices } (0,0), (1,0), (0,1)',
             options: [
                 { latex: '1\\text{ u}^2' },
-                { latex: '0.5\\text{ u}^2' },
-                { latex: '0.25\\text{ u}^2' },
+                { latex: '0{,}5\\text{ u}^2' },
+                { latex: '0{,}25\\text{ u}^2' },
                 { latex: '2\\text{ u}^2' }
             ],
             correct: 1,
-            hint: 'El área se puede calcular como \\iint_D 1 dA.'
+            hint: 'El área se puede calcular como $\\iint_D 1\\, dA$.'
         },
         {
             question: 'Calcule el volumen del cubo:',
@@ -128,7 +128,7 @@ window.examCategories.calculomultivariado = {
                 { latex: '\\pi/4' }
             ],
             correct: 1,
-            hint: 'Recuerda que x^2 + y^2 = r^2 y dA = r dr d\\theta.'
+            hint: 'Recuerda que $x^2 + y^2 = r^2$ y $dA = r\\, dr\\, d\\theta$.'
         },
         {
             question: 'Evalúe la integral triple:',
@@ -137,7 +137,7 @@ window.examCategories.calculomultivariado = {
             latex: '\\text{Si } B = [0,1]^3, \\text{ evalúe } \\iiint_B (x + y + z) \\ dV',
             options: [
                 { latex: '1' },
-                { latex: '1.5' },
+                { latex: '1{,}5' },
                 { latex: '2' },
                 { latex: '3' }
             ],
@@ -164,9 +164,9 @@ window.examCategories.calculomultivariado = {
             geogebraState: '0',
             latex: '\\text{Si } R = [0,1] \\times [0,1], \\text{ evalúe } \\iint_R (2x + 3y) \\ dA',
             options: [
-                { latex: '2.5' },
+                { latex: '2{,}5' },
                 { latex: '5' },
-                { latex: '1.5' },
+                { latex: '1{,}5' },
                 { latex: '3' }
             ],
             correct: 0,
@@ -181,7 +181,7 @@ window.examCategories.calculomultivariado = {
                 { latex: '2' },
                 { latex: '1' },
                 { latex: '4' },
-                { latex: '0.5' }
+                { latex: '0{,}5' }
             ],
             correct: 0,
             hint: 'Los límites para z son de 0 a 2.'
@@ -198,7 +198,7 @@ window.examCategories.calculomultivariado = {
                 { latex: '8\\pi' }
             ],
             correct: 0,
-            hint: 'El área es \\int_0^{2\\pi} \\int_0^2 r dr d\\theta.'
+            hint: 'El área es $\\int_0^{2\\pi} \\int_0^2 r\\, dr\\, d\\theta$.'
         },
         {
             question: 'Calcule el volumen de la caja:',
@@ -314,7 +314,7 @@ window.examCategories.calculomultivariado = {
         },
         {
             question: 'Calcule el vector gradiente:',
-            geogebraId: 'k6w7u2j9',
+            geogebraAppName: '3d', // material k6w7u2j9 ya no existe en geogebra.org (404, verificado 2026-11-06)
             geogebraState: '0',
             latex: '\\text{Si } f(x,y) = 3x - 4y, \\text{ calcule } \\nabla f',
             options: [
@@ -328,7 +328,7 @@ window.examCategories.calculomultivariado = {
         },
         {
             question: 'Calcule la derivada direccional:',
-            geogebraId: 'k6w7u2j9',
+            geogebraAppName: '3d', // material k6w7u2j9 ya no existe en geogebra.org (404, verificado 2026-11-06)
             geogebraState: '0',
             latex: '\\text{Si } f(x,y) = xy, \\text{ calcule } D_u f(1,1) \\text{ en dirección } \\langle 1/\\sqrt{2}, 1/\\sqrt{2} \\rangle',
             options: [
@@ -338,7 +338,7 @@ window.examCategories.calculomultivariado = {
                 { latex: '2' }
             ],
             correct: 0,
-            hint: 'D_u f = \\nabla f \\cdot u.'
+            hint: '$D_u f = \\nabla f \\cdot u$.'
         },
         {
             question: 'Encuentre la ecuación del plano tangente:',
@@ -352,11 +352,11 @@ window.examCategories.calculomultivariado = {
                 { latex: 'x - y + z = 2' }
             ],
             correct: 0,
-            hint: 'El vector normal es \\langle f_x, f_y, -1 \\rangle.'
+            hint: 'El vector normal es $\\langle f_x, f_y, -1 \\rangle$.'
         },
         {
             question: 'Determine la dirección de máximo ascenso:',
-            geogebraId: 'k6w7u2j9',
+            geogebraAppName: '3d', // material k6w7u2j9 ya no existe en geogebra.org (404, verificado 2026-11-06)
             geogebraState: '0',
             latex: '\\text{Para } f(x,y) = x^2 + y^2 \\text{ en el punto } (1,1)',
             options: [
@@ -412,7 +412,7 @@ window.examCategories.calculomultivariado = {
         },
         {
             question: 'Calcule el valor máximo de la derivada direccional:',
-            geogebraId: 'k6w7u2j9',
+            geogebraAppName: '3d', // material k6w7u2j9 ya no existe en geogebra.org (404, verificado 2026-11-06)
             geogebraState: '0',
             latex: '\\text{Si } \\nabla f = \\langle 3, 4 \\rangle',
             options: [

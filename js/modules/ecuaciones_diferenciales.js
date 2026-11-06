@@ -252,7 +252,7 @@ window.examCategories.ecuaciones_diferenciales = {
             latex: '\\begin{cases} y\' - 2y = 4 \\\\ y(0) = -1 \\end{cases}',
             options: [
                 { latex: 'y = e^{2x} - 2' },
-                { latex: 'y = -2 + e^{2x}' },
+                { latex: 'y = e^{-2x} - 2' },
                 { latex: 'y = 2e^{2x} - 3' },
                 { latex: 'y = -2' }
             ],
@@ -312,7 +312,7 @@ window.examCategories.ecuaciones_diferenciales = {
                 { latex: 'xy = 6' },
                 { latex: 'x + y = 5' },
                 { latex: 'x^2 + y^2 = 13' },
-                { latex: 'y = 1.5x' }
+                { latex: 'y = 1{,}5x' }
             ],
             correct: 0,
             hint: 'd(xy) = 0.'
@@ -468,7 +468,7 @@ window.examCategories.ecuaciones_diferenciales = {
                 { latex: 'x^2 - y^2 = x' },
                 { latex: 'x^2 + y^2 = 1' },
                 { latex: 'y = x - 1' },
-                { latex: 'y^2 = x^2 - x' }
+                { latex: 'y^2 = x^2 + x' }
             ],
             correct: 0,
             hint: 'Homogénea grado 2.'
@@ -493,40 +493,30 @@ window.examCategories.ecuaciones_diferenciales = {
             geogebraState: '0',
             latex: '\\begin{cases} xy\' = y + x \\\\ y(1) = 2 \\end{cases}',
             options: [
-                { latex: 'y = x(1 + \\ln|x|) + x' }, // Check solution: y' = 1+lnx+1+1 = 3+lnx. (y+x)/x = (2x+xlnx)/x = 2+lnx. Wait.
-                // y = x lnx + Cx. y(1)=2 -> C=2. y = x lnx + 2x.
-                // y' = lnx + 1 + 2 = lnx + 3.
-                // (y+x)/x = (xlnx + 3x)/x = lnx + 3. Correct.
                 { latex: 'y = x \\ln|x| + 2x' },
+                { latex: 'y = x(1 + \\ln|x|)' },
                 { latex: 'y = x^2 + 1' },
                 { latex: 'y = 2x' },
                 { latex: 'y = x \\ln|x| + 1' }
             ],
             correct: 0,
-            hint: 'y = vx.'
+            hint: 'Divida por x: y\' - y/x = 1. Con y = vx queda x v\' = 1, así que v = ln|x| + C.'
         },
         {
             question: 'Resuelva el PVI:',
             geogebraAppName: 'cas',
             geogebraState: '0',
-            latex: '\\begin{cases} y\' = (x+y)/(x-y) \\\\ y(0) = -1 \\end{cases}',
+            latex: '\\begin{cases} y\' = \\dfrac{x-y}{x+y} \\\\ y(0) = -1 \\end{cases}',
             options: [
-                { latex: '\\arctan(y/x) = \\ln(\\sqrt{x^2+y^2}) + C' }, // Implicit form usually
-                { latex: 'x^2 - 2xy - y^2 = -1' }, // Let's check. 2x - 2y - 2xy' - 2yy' = 0.
-                // x - y - (x+y)y' = 0 -> y' = (x-y)/(x+y). Inverse.
-                // Actually y' = (x+y)/(x-y).
-                // Solution is arctan(y/x) - 1/2 ln(x^2+y^2) = C.
-                // Let's stick to simple ones or verify carefully.
-                // Let's try: y' = y/x + x/y.
-                { latex: 'y^2 = x^2 + 1' }, // y' = x/y. x/y != (x+y)/(x-y).
+                { latex: 'x^2 - 2xy - y^2 = -1' },
+                { latex: '\\arctan(y/x) = \\ln\\sqrt{x^2+y^2} + C' },
+                { latex: 'y^2 = x^2 + 1' },
                 { latex: 'y = x - 1' },
                 { latex: 'y = -x - 1' }
             ],
-            correct: 1, // Placeholder, need to solve properly or replace.
-            // Let's replace with simpler: y' = (y/x)^2 + y/x.
-            hint: 'Sustitución v = y/x.'
+            correct: 0,
+            hint: 'Es exacta: (x - y)dx - (x + y)dy = 0. Busque F(x, y) con F_x = x - y y F_y = -(x + y).'
         },
-        // Replacing the above with a simpler one
         {
             question: 'Resuelva el PVI:',
             geogebraAppName: 'cas',
@@ -536,10 +526,10 @@ window.examCategories.ecuaciones_diferenciales = {
                 { latex: 'y = -x \\ln(1 - \\ln x)' },
                 { latex: 'y = x \\ln x' },
                 { latex: 'y = x' },
-                { latex: 'y = -x \\ln|1 - \\ln x|' }
+                { latex: 'y = x \\ln(1 - \\ln x)' }
             ],
             correct: 0,
-            hint: 'v\' x + v = v + e^v -> v\' x = e^v.'
+            hint: 'Con v = y/x: x v\' = e^v, es decir, e^{-v} dv = dx/x.'
         },
         {
             question: 'Resuelva el PVI:',
@@ -547,15 +537,14 @@ window.examCategories.ecuaciones_diferenciales = {
             geogebraState: '0',
             latex: '\\begin{cases} y\' = y/x + (y/x)^2 \\\\ y(1) = 1 \\end{cases}',
             options: [
-                { latex: 'y = x / (2 - \\ln x)' }, // Check. v'x = v^2. -1/v = lnx + C. -x/y = lnx + C.
-                // y(1)=1 -> -1 = C. -x/y = lnx - 1. y/x = 1/(1-lnx). y = x/(1-lnx).
-                { latex: 'y = x / (1 - \\ln x)' },
+                { latex: 'y = \\dfrac{x}{1 - \\ln x}' },
+                { latex: 'y = \\dfrac{x}{2 - \\ln x}' },
                 { latex: 'y = x (1 + \\ln x)' },
                 { latex: 'y = x^2' },
                 { latex: 'y = x' }
             ],
             correct: 0,
-            hint: 'Bernoulli o Homogénea.'
+            hint: 'Con v = y/x: x v\' = v², así que -1/v = ln x + C.'
         },
         {
             question: 'Resuelva el PVI:',
@@ -563,13 +552,14 @@ window.examCategories.ecuaciones_diferenciales = {
             geogebraState: '0',
             latex: '\\begin{cases} x^2 y\' = y^2 + xy \\\\ y(1) = -1 \\end{cases}',
             options: [
-                { latex: 'y = x / (\\ln|x| - 1)' },
+                { latex: 'y = -\\dfrac{x}{1 + \\ln|x|}' },
+                { latex: 'y = \\dfrac{x}{\\ln|x| - 1}' },
                 { latex: 'y = -x' },
                 { latex: 'y = x \\ln|x| - x' },
-                { latex: 'y = x / (1 + \\ln|x|)' }
+                { latex: 'y = \\dfrac{x}{1 + \\ln|x|}' }
             ],
             correct: 0,
-            hint: 'y\' = (y/x)^2 + y/x.'
+            hint: 'Divida por x²: y\' = (y/x)² + y/x. Con v = y/x: -1/v = ln|x| + C.'
         },
         {
             question: 'Resuelva el PVI:',
@@ -577,16 +567,14 @@ window.examCategories.ecuaciones_diferenciales = {
             geogebraState: '0',
             latex: '\\begin{cases} y\' = \\frac{y}{x} + \\sec(\\frac{y}{x}) \\\\ y(1) = \\pi \\end{cases}',
             options: [
-                { latex: 'y = x \\arcsin(\\ln x)' }, // v'x = sec(v). cos(v)dv = dx/x. sin(v) = lnx + C.
-                // sin(pi) = 0. C=0. sin(y/x) = lnx. y/x = arcsin(lnx).
-                // Wait, sin(pi)=0.
+                { latex: 'y = x\\left(\\pi - \\arcsin(\\ln x)\\right)' },
                 { latex: 'y = x \\arcsin(\\ln x)' },
                 { latex: 'y = x \\pi' },
                 { latex: 'y = x \\arccos(\\ln x)' },
                 { latex: 'y = x (\\pi + \\ln x)' }
             ],
             correct: 0,
-            hint: 'v\' x = \\sec v.'
+            hint: 'Con v = y/x: x v\' = sec v, es decir, cos v dv = dx/x. Como v(1) = π, use la rama v = π - arcsen(ln x).'
         },
         {
             question: 'Resuelva el PVI:',
@@ -594,18 +582,14 @@ window.examCategories.ecuaciones_diferenciales = {
             geogebraState: '0',
             latex: '\\begin{cases} x y\' = y + \\sqrt{x^2+y^2} \\\\ y(1) = 0 \\end{cases}',
             options: [
-                { latex: 'y + \\sqrt{x^2+y^2} = x^2' }, // v'x = sqrt(1+v^2). arcsinh(v) = lnx + C.
-                // v=0 -> 0 = 0 + C. C=0. arcsinh(y/x) = lnx.
-                // y/x = sinh(lnx) = (x - 1/x)/2.
-                // 2y = x^2 - 1. y = (x^2-1)/2.
-                // Let's check options.
                 { latex: 'y = (x^2 - 1)/2' },
+                { latex: 'y = (x^2 + 1)/2' },
                 { latex: 'y = x^2 - 1' },
                 { latex: 'y = x - 1' },
                 { latex: 'y = \\sqrt{x^2-1}' }
             ],
             correct: 0,
-            hint: 'v\' x = \\sqrt{1+v^2}.'
+            hint: 'Con v = y/x: x v\' = √(1 + v²), así que arcsenh v = ln x + C.'
         },
 
         // 5. Orden Superior (Coeficientes Constantes) (10 preguntas)
@@ -701,7 +685,7 @@ window.examCategories.ecuaciones_diferenciales = {
             options: [
                 { latex: 'y = e^{-x}' },
                 { latex: 'y = e^{-x} + xe^{-x}' },
-                { latex: 'y = (1+x)e^{-x}' },
+                { latex: 'y = (1-x)e^{-x}' },
                 { latex: 'y = e^x' }
             ],
             correct: 0, // c1=1. -c1+c2=-1 -> c2=0. y=e^{-x}.

@@ -55,7 +55,7 @@ window.examCategories.sistemas_ecuaciones = {
             options: [
                 { latex: 'x=2, y=3' },
                 { latex: 'x=3, y=2' },
-                { latex: 'x=1, y=3.5' },
+                { latex: 'x=1, y=3{,}5' },
                 { latex: 'x=4, y=2' }
             ],
             correct: 0,
@@ -70,7 +70,7 @@ window.examCategories.sistemas_ecuaciones = {
                 { latex: 'x=1, y=2' },
                 { latex: 'x=2, y=1' },
                 { latex: 'x=0, y=4' },
-                { latex: 'x=2.5, y=0' }
+                { latex: 'x=2{,}5, y=0' }
             ],
             correct: 0,
             hint: 'Multiplica la segunda por -2.'
@@ -83,7 +83,7 @@ window.examCategories.sistemas_ecuaciones = {
             options: [
                 { latex: 'x=1, y=3' },
                 { latex: 'x=3, y=1' },
-                { latex: 'x=2, y=2.5' },
+                { latex: 'x=2, y=2{,}5' },
                 { latex: 'x=0, y=2' }
             ],
             correct: 0,
@@ -154,7 +154,7 @@ window.examCategories.sistemas_ecuaciones = {
                 { latex: 'x=1, y=2' },
                 { latex: 'x=2, y=1' },
                 { latex: 'x=3, y=-1' },
-                { latex: 'x=0, y=3.5' }
+                { latex: 'x=0, y=3{,}5' }
             ],
             correct: 0,
             hint: 'Reducción.'
@@ -195,8 +195,8 @@ window.examCategories.sistemas_ecuaciones = {
             options: [
                 { latex: 'x=2, y=1' },
                 { latex: 'x=1, y=2' },
-                { latex: 'x=3, y=0.25' },
-                { latex: 'x=0, y=2.5' }
+                { latex: 'x=3, y=0{,}25' },
+                { latex: 'x=0, y=2{,}5' }
             ],
             correct: 0,
             hint: 'y = 5 - 2x.'
@@ -249,7 +249,7 @@ window.examCategories.sistemas_ecuaciones = {
             question: 'Resuelva el sistema 3x3:',
             geogebraAppName: 'cas',
             geogebraState: '0',
-            latex: '\\begin{cases} 2x+y-z=3 \\\\ x+y+z=6 \\\\ x-2y+z=0 \\end{cases}',
+            latex: '\\begin{cases} 2x+y-z=1 \\\\ x+y+z=6 \\\\ x-2y+z=0 \\end{cases}',
             options: [
                 { latex: 'x=1, y=2, z=3' },
                 { latex: 'x=2, y=1, z=3' },
@@ -277,15 +277,15 @@ window.examCategories.sistemas_ecuaciones = {
             question: 'Resuelva el sistema 3x3:',
             geogebraAppName: 'cas',
             geogebraState: '0',
-            latex: '\\begin{cases} 3x-y+z=5 \\\\ x+y-z=1 \\\\ 2x+2y+z=10 \\end{cases}',
+            latex: '\\begin{cases} 3x-y+z=4 \\\\ x+y-z=0 \\\\ 2x+2y+z=9 \\end{cases}',
             options: [
-                { latex: 'x=1.5, y=2, z=3' }, // Note: Adjusted for simplicity, let's assume integer solutions for now or verify
-                { latex: 'x=1, y=2, z=4' }, // Placeholder, need to verify solution
-                { latex: 'x=2, y=2, z=2' }, // Placeholder
-                { latex: 'x=1.5, y=2.5, z=3' } // Placeholder
+                { latex: 'x=1, y=2, z=3' },
+                { latex: 'x=1, y=2, z=4' },
+                { latex: 'x=2, y=2, z=2' },
+                { latex: 'x=1{,}5, y=2, z=3' }
             ],
-            correct: 0, // Need to verify correct index for this specific system
-            hint: 'Suma la primera y la segunda.'
+            correct: 0,
+            hint: 'Suma la primera y la segunda: 4x = 4.'
         },
         // Correcting the above question with a simpler one for guaranteed integer solution
         {
@@ -311,7 +311,7 @@ window.examCategories.sistemas_ecuaciones = {
                 { latex: 'x=1, y=1, z=0' }, // 1+1=2, 1-0=1, 1-0=1. Correct.
                 { latex: 'x=2, y=0, z=1' },
                 { latex: 'x=0, y=2, z=-1' },
-                { latex: 'x=1.5, y=0.5, z=0.5' }
+                { latex: 'x=1{,}5, y=0{,}5, z=0{,}5' }
             ],
             correct: 0,
             hint: 'Sustitución.'
@@ -336,18 +336,13 @@ window.examCategories.sistemas_ecuaciones = {
             geogebraState: '0',
             latex: '\\begin{cases} 2x+y+z=4 \\\\ x+2y+z=4 \\\\ x+y+2z=4 \\end{cases}',
             options: [
-                { latex: 'x=1, y=1, z=1' }, // 2+1+1=4. Correct.
+                { latex: 'x=1, y=1, z=1' },
                 { latex: 'x=2, y=0, z=2' },
                 { latex: 'x=0, y=2, z=2' },
-                { latex: 'x=4/3, y=4/3, z=4/3' } // 8/3+4/3+4/3 = 16/3 != 4
+                { latex: 'x=4/3, y=4/3, z=4/3' }
             ],
-            correct: 3, // Wait, 4/3 * 2 + 4/3 + 4/3 = 8/3 + 8/3 = 16/3. No.
-            // Let's re-evaluate. 4x = 4 -> x=1? No.
-            // Sum: 4x+4y+4z=12 -> x+y+z=3.
-            // 2x+y+z=4 -> x + (x+y+z) = 4 -> x+3=4 -> x=1.
-            // So x=1, y=1, z=1.
-            // Option 0 is correct.
-            hint: 'Simetría.'
+            correct: 0,
+            hint: 'Suma las tres: 4(x+y+z) = 12, así que x+y+z = 3. Luego 2x+y+z = x + 3 = 4.'
         },
         {
             question: 'Resuelva el sistema 3x3:',
@@ -369,13 +364,13 @@ window.examCategories.sistemas_ecuaciones = {
             geogebraState: '0',
             latex: '\\begin{cases} x-y=1 \\\\ y-z=1 \\\\ z-x=-2 \\end{cases}',
             options: [
-                { latex: 'Infinitas soluciones' }, // x-y=1, y-z=1 -> x-z=2. z-x=-2 -> x-z=2. Consistent.
-                { latex: 'x=1, y=0, z=-1' },
-                { latex: 'x=2, y=1, z=0' },
-                { latex: 'x=3, y=2, z=1' }
+                { latex: '\\text{Infinitas soluciones}' },
+                { latex: '\\text{No tiene solución}' },
+                { latex: '\\text{Solución única: } x=0, y=0, z=0' },
+                { latex: '\\text{Solución única: } x=2, y=1, z=1' }
             ],
-            correct: 0, // Actually dependent system.
-            hint: 'Suma las tres ecuaciones.'
+            correct: 0,
+            hint: 'Al sumar las tres ecuaciones queda 0 = 0: una ecuación depende de las otras dos.'
         },
 
         // 3. Sistemas No Lineales 2x2 (15 preguntas)
@@ -581,10 +576,10 @@ window.examCategories.sistemas_ecuaciones = {
             geogebraState: '0',
             latex: '\\begin{cases} y = 1/x \\\\ y = x \\end{cases}',
             options: [
-                { latex: '(1,1), (-1,-1)' },
-                { latex: '(1,1)' },
-                { latex: '(-1,-1)' },
-                { latex: '(2,0.5)' }
+                { latex: '(1;\\ 1),\\ (-1;\\ -1)' },
+                { latex: '(1;\\ 1)' },
+                { latex: '(-1;\\ -1)' },
+                { latex: '(2;\\ 0{,}5)' }
             ],
             correct: 0,
             hint: 'x^2 = 1.'
@@ -625,10 +620,10 @@ window.examCategories.sistemas_ecuaciones = {
             geogebraState: '0',
             latex: '\\begin{cases} x+y+z=3 \\\\ xy=1 \\\\ z=1 \\end{cases}',
             options: [
-                { latex: '(1,1,1)' },
-                { latex: '(1,1,1), (2,0.5,1)' },
-                { latex: '(0.5,2,1)' },
-                { latex: '(2,2,1)' }
+                { latex: '(1;\\ 1;\\ 1)' },
+                { latex: '(1;\\ 1;\\ 1),\\ (2;\\ 0{,}5;\\ 1)' },
+                { latex: '(0{,}5;\\ 2;\\ 1)' },
+                { latex: '(2;\\ 2;\\ 1)' }
             ],
             correct: 0,
             hint: 'x+y=2, xy=1 -> (x-1)^2=0.'
@@ -653,13 +648,13 @@ window.examCategories.sistemas_ecuaciones = {
             geogebraState: '0',
             latex: '\\begin{cases} x+y=2 \\\\ y+z=2 \\\\ xz=1 \\end{cases}',
             options: [
-                { latex: '(1,1,1)' },
-                { latex: '(2,0,2)' },
-                { latex: '(0,2,0)' },
-                { latex: '(0.5,1.5,2)' }
+                { latex: '(1;\\ 1;\\ 1),\\ (-1;\\ 3;\\ -1)' },
+                { latex: '(1;\\ 1;\\ 1)' },
+                { latex: '(2;\\ 0;\\ 2)' },
+                { latex: '(0{,}5;\\ 1{,}5;\\ 2)' }
             ],
             correct: 0,
-            hint: 'y = 2-x, y=2-z -> x=z. x^2=1.'
+            hint: 'De las dos primeras, x = z; entonces x² = 1, es decir, x = 1 o x = -1.'
         },
         {
             question: 'Resuelva el sistema no lineal:',

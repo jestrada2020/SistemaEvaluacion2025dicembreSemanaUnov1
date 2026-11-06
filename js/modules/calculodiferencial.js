@@ -16,39 +16,39 @@ window.examCategories.calculodiferencial = {
                 { latex: '-2' }
             ],
             correct: 1,
-            hint: 'Recuerda que la pendiente de la rectagente a una curva es la derivada de la curva evaluada en el punto de tangencia.'
+            hint: 'Recuerda que la pendiente de la recta tangente a una curva es la derivada de la curva evaluada en el punto de tangencia.'
         },
         {
             question: 'Con base en la construcción, ¿cuál es la pendiente de la recta tangente?',
             geogebraId: 'kwrmu79x',
             geogebraState: '1',
-            latex: '\\text{Obtener la pendiente de la recta tangente al circulo  en el punto de tangencia cuando } \\ \\alpha = 244 \\ \\text{grados}',
+            latex: '\\text{Obtener la pendiente de la recta tangente al círculo en el punto de tangencia cuando } \\ \\alpha = 244 \\ \\text{grados}',
             options: [
-                { latex: '1.4615' },
-                { latex: '0.4615' },
-                { latex: '2.4615' },
-                { latex: '3.4615' }
+                { latex: '1{,}4615' },
+                { latex: '0{,}4615' },
+                { latex: '2{,}4615' },
+                { latex: '3{,}4615' }
             ],
             correct: 1,
-            hint: 'Recuerda que la pendiente de la rectagente a una curva es la derivada de la curva evaluada en el punto de tangencia.'
+            hint: 'Recuerda que la pendiente de la recta tangente a una curva es la derivada de la curva evaluada en el punto de tangencia.'
         },
         {
             question: 'Con base en la construcción, ¿cuál es la pendiente de la recta tangente?',
             geogebraId: 'kwrmu79x',
             geogebraState: '2',
-            latex: '\\text{Obtener la pendiente de la recta tangente al circulo  en el punto de tangencia cuando } \\ \\alpha = 30 \\ \\text{grados}',
+            latex: '\\text{Obtener la pendiente de la recta tangente al círculo en el punto de tangencia cuando } \\ \\alpha = 30 \\ \\text{grados}',
             options: [
-                { latex: '2.1624' },
-                { latex: '-2.1624' },
-                { latex: '-0.1624' },
-                { latex: '0.1624' }
+                { latex: '2{,}1624' },
+                { latex: '-2{,}1624' },
+                { latex: '-0{,}1624' },
+                { latex: '0{,}1624' }
             ],
             correct: 2,
-            hint: 'Recuerda que la pendiente de la rectagente a una curva es la derivada de la curva evaluada en el punto de tangencia.'
+            hint: 'Recuerda que la pendiente de la recta tangente a una curva es la derivada de la curva evaluada en el punto de tangencia.'
         },
         {
             question: 'Calcule el límite:',
-            geogebraId: 'kGf9gP7v',
+            geogebraAppName: 'classic', // material kGf9gP7v ya no existe en geogebra.org (404, verificado 2026-11-06)
             geogebraState: '0',
             latex: '\\lim_{x \\to 2} x^2',
             options: [
@@ -62,7 +62,7 @@ window.examCategories.calculodiferencial = {
         },
         {
             question: 'Calcule el límite al infinito:',
-            geogebraId: 'kGf9gP7v',
+            geogebraAppName: 'classic', // material kGf9gP7v ya no existe en geogebra.org (404, verificado 2026-11-06)
             geogebraState: '0',
             latex: '\\lim_{x \\to \\infty} \\frac{1}{x}',
             options: [
@@ -76,7 +76,7 @@ window.examCategories.calculodiferencial = {
         },
         {
             question: 'Límite trigonométrico especial:',
-            geogebraId: 'kGf9gP7v',
+            geogebraAppName: 'classic', // material kGf9gP7v ya no existe en geogebra.org (404, verificado 2026-11-06)
             geogebraState: '0',
             latex: '\\lim_{x \\to 0} \\frac{\\sin x}{x}',
             options: [
@@ -90,7 +90,7 @@ window.examCategories.calculodiferencial = {
         },
         {
             question: 'Calcule el límite factorizando:',
-            geogebraId: 'kGf9gP7v',
+            geogebraAppName: 'classic', // material kGf9gP7v ya no existe en geogebra.org (404, verificado 2026-11-06)
             geogebraState: '0',
             latex: '\\lim_{x \\to 3} \\frac{x^2-9}{x-3}',
             options: [
@@ -104,7 +104,7 @@ window.examCategories.calculodiferencial = {
         },
         {
             question: 'Analice el límite lateral:',
-            geogebraId: 'kGf9gP7v',
+            geogebraAppName: 'classic', // material kGf9gP7v ya no existe en geogebra.org (404, verificado 2026-11-06)
             geogebraState: '0',
             latex: '\\lim_{x \\to 0^+} \\frac{|x|}{x}',
             options: [
@@ -118,7 +118,7 @@ window.examCategories.calculodiferencial = {
         },
         {
             question: 'Límite infinito:',
-            geogebraId: 'kGf9gP7v',
+            geogebraAppName: 'classic', // material kGf9gP7v ya no existe en geogebra.org (404, verificado 2026-11-06)
             geogebraState: '0',
             latex: '\\lim_{x \\to 0} \\frac{1}{x^2}',
             options: [
@@ -132,21 +132,21 @@ window.examCategories.calculodiferencial = {
         },
         {
             question: 'Continuidad en un punto:',
-            geogebraId: 'kGf9gP7v',
+            geogebraAppName: 'classic', // material kGf9gP7v ya no existe en geogebra.org (404, verificado 2026-11-06)
             geogebraState: '0',
             latex: 'f(x) = \\begin{cases} x+1 & x<1 \\\\ 2 & x=1 \\\\ 3-x & x>1 \\end{cases} \\text{ ¿Es continua en } x=1?',
             options: [
                 { latex: '\\text{Sí}' },
                 { latex: '\\text{No, límite no existe}' },
                 { latex: '\\text{No, f(1) no definida}' },
-                { latex: '\\text{No, límite != f(1)}' }
+                { latex: '\\text{No, el límite} \\neq f(1)' }
             ],
             correct: 0,
             hint: 'Verifica si lim izq = lim der = f(1).'
         },
         {
             question: 'Discontinuidad removible:',
-            geogebraId: 'kGf9gP7v',
+            geogebraAppName: 'classic', // material kGf9gP7v ya no existe en geogebra.org (404, verificado 2026-11-06)
             geogebraState: '0',
             latex: 'f(x) = \\frac{x^2-1}{x-1} \\text{ en } x=1',
             options: [
@@ -160,7 +160,7 @@ window.examCategories.calculodiferencial = {
         },
         {
             question: 'Derivada de potencia:',
-            geogebraId: 'kGf9gP7v',
+            geogebraAppName: 'classic', // material kGf9gP7v ya no existe en geogebra.org (404, verificado 2026-11-06)
             geogebraState: '0',
             latex: '\\frac{d}{dx}(x^2)',
             options: [
@@ -174,7 +174,7 @@ window.examCategories.calculodiferencial = {
         },
         {
             question: 'Derivada trigonométrica:',
-            geogebraId: 'kGf9gP7v',
+            geogebraAppName: 'classic', // material kGf9gP7v ya no existe en geogebra.org (404, verificado 2026-11-06)
             geogebraState: '0',
             latex: '\\frac{d}{dx}(\\sin x)',
             options: [
@@ -188,7 +188,7 @@ window.examCategories.calculodiferencial = {
         },
         {
             question: 'Derivada exponencial:',
-            geogebraId: 'kGf9gP7v',
+            geogebraAppName: 'classic', // material kGf9gP7v ya no existe en geogebra.org (404, verificado 2026-11-06)
             geogebraState: '0',
             latex: '\\frac{d}{dx}(e^x)',
             options: [
@@ -202,7 +202,7 @@ window.examCategories.calculodiferencial = {
         },
         {
             question: 'Derivada logarítmica:',
-            geogebraId: 'kGf9gP7v',
+            geogebraAppName: 'classic', // material kGf9gP7v ya no existe en geogebra.org (404, verificado 2026-11-06)
             geogebraState: '0',
             latex: '\\frac{d}{dx}(\\ln x)',
             options: [
@@ -216,7 +216,7 @@ window.examCategories.calculodiferencial = {
         },
         {
             question: 'Regla del producto:',
-            geogebraId: 'kGf9gP7v',
+            geogebraAppName: 'classic', // material kGf9gP7v ya no existe en geogebra.org (404, verificado 2026-11-06)
             geogebraState: '0',
             latex: '\\frac{d}{dx}(x \\sin x)',
             options: [
@@ -230,7 +230,7 @@ window.examCategories.calculodiferencial = {
         },
         {
             question: 'Regla del cociente:',
-            geogebraId: 'kGf9gP7v',
+            geogebraAppName: 'classic', // material kGf9gP7v ya no existe en geogebra.org (404, verificado 2026-11-06)
             geogebraState: '0',
             latex: '\\frac{d}{dx}(\\frac{x}{x+1})',
             options: [
@@ -244,7 +244,7 @@ window.examCategories.calculodiferencial = {
         },
         {
             question: 'Regla de la cadena:',
-            geogebraId: 'kGf9gP7v',
+            geogebraAppName: 'classic', // material kGf9gP7v ya no existe en geogebra.org (404, verificado 2026-11-06)
             geogebraState: '0',
             latex: '\\frac{d}{dx}(\\sin(x^2))',
             options: [
@@ -258,7 +258,7 @@ window.examCategories.calculodiferencial = {
         },
         {
             question: 'Regla de la cadena exp:',
-            geogebraId: 'kGf9gP7v',
+            geogebraAppName: 'classic', // material kGf9gP7v ya no existe en geogebra.org (404, verificado 2026-11-06)
             geogebraState: '0',
             latex: '\\frac{d}{dx}(e^{2x})',
             options: [
@@ -272,7 +272,7 @@ window.examCategories.calculodiferencial = {
         },
         {
             question: 'Derivación implícita:',
-            geogebraId: 'kGf9gP7v',
+            geogebraAppName: 'classic', // material kGf9gP7v ya no existe en geogebra.org (404, verificado 2026-11-06)
             geogebraState: '0',
             latex: 'x^2 + y^2 = 1, \\text{ hallar } y\'',
             options: [
@@ -286,7 +286,7 @@ window.examCategories.calculodiferencial = {
         },
         {
             question: 'Derivación logarítmica:',
-            geogebraId: 'kGf9gP7v',
+            geogebraAppName: 'classic', // material kGf9gP7v ya no existe en geogebra.org (404, verificado 2026-11-06)
             geogebraState: '0',
             latex: '\\frac{d}{dx}(x^x)',
             options: [
@@ -300,7 +300,7 @@ window.examCategories.calculodiferencial = {
         },
         {
             question: 'Pendiente de la tangente:',
-            geogebraId: 'kGf9gP7v',
+            geogebraAppName: 'classic', // material kGf9gP7v ya no existe en geogebra.org (404, verificado 2026-11-06)
             geogebraState: '0',
             latex: 'f(x)=x^2 \\text{ en } x=1',
             options: [
@@ -314,7 +314,7 @@ window.examCategories.calculodiferencial = {
         },
         {
             question: 'Pendiente de la normal:',
-            geogebraId: 'kGf9gP7v',
+            geogebraAppName: 'classic', // material kGf9gP7v ya no existe en geogebra.org (404, verificado 2026-11-06)
             geogebraState: '0',
             latex: 'f(x)=x^2 \\text{ en } x=1',
             options: [
@@ -328,7 +328,7 @@ window.examCategories.calculodiferencial = {
         },
         {
             question: 'Segunda derivada:',
-            geogebraId: 'kGf9gP7v',
+            geogebraAppName: 'classic', // material kGf9gP7v ya no existe en geogebra.org (404, verificado 2026-11-06)
             geogebraState: '0',
             latex: '\\frac{d^2}{dx^2}(x^3)',
             options: [
@@ -342,7 +342,7 @@ window.examCategories.calculodiferencial = {
         },
         {
             question: 'Posición a velocidad:',
-            geogebraId: 'kGf9gP7v',
+            geogebraAppName: 'classic', // material kGf9gP7v ya no existe en geogebra.org (404, verificado 2026-11-06)
             geogebraState: '0',
             latex: 's(t) = t^2 + t, \\text{ hallar } v(1)',
             options: [
@@ -356,7 +356,7 @@ window.examCategories.calculodiferencial = {
         },
         {
             question: 'Velocidad a aceleración:',
-            geogebraId: 'kGf9gP7v',
+            geogebraAppName: 'classic', // material kGf9gP7v ya no existe en geogebra.org (404, verificado 2026-11-06)
             geogebraState: '0',
             latex: 'v(t) = 3t^2, \\text{ hallar } a(1)',
             options: [
@@ -370,7 +370,7 @@ window.examCategories.calculodiferencial = {
         },
         {
             question: 'Razones de cambio relacionadas:',
-            geogebraId: 'kGf9gP7v',
+            geogebraAppName: 'classic', // material kGf9gP7v ya no existe en geogebra.org (404, verificado 2026-11-06)
             geogebraState: '0',
             latex: 'A=\\pi r^2. \\text{ Si } dr/dt=1, r=2, \\text{ hallar } dA/dt',
             options: [
@@ -380,16 +380,16 @@ window.examCategories.calculodiferencial = {
                 { latex: '8\\pi' }
             ],
             correct: 0,
-            hint: 'dA/dt = 2\\pi r (dr/dt).'
+            hint: '$dA/dt = 2\\pi r \\, (dr/dt)$.'
         },
         {
             question: 'Razones relacionadas (Escalera):',
-            geogebraId: 'kGf9gP7v',
+            geogebraAppName: 'classic', // material kGf9gP7v ya no existe en geogebra.org (404, verificado 2026-11-06)
             geogebraState: '0',
             latex: 'x^2+y^2=25. x=3, dx/dt=2. \\text{ Hallar } dy/dt',
             options: [
-                { latex: '-1.5' },
-                { latex: '1.5' },
+                { latex: '-1{,}5' },
+                { latex: '1{,}5' },
                 { latex: '-2' },
                 { latex: '2' }
             ],
@@ -398,7 +398,7 @@ window.examCategories.calculodiferencial = {
         },
         {
             question: 'Puntos críticos:',
-            geogebraId: 'kGf9gP7v',
+            geogebraAppName: 'classic', // material kGf9gP7v ya no existe en geogebra.org (404, verificado 2026-11-06)
             geogebraState: '0',
             latex: 'f(x) = x^3 - 3x',
             options: [
@@ -412,7 +412,7 @@ window.examCategories.calculodiferencial = {
         },
         {
             question: 'Intervalo creciente:',
-            geogebraId: 'kGf9gP7v',
+            geogebraAppName: 'classic', // material kGf9gP7v ya no existe en geogebra.org (404, verificado 2026-11-06)
             geogebraState: '0',
             latex: 'f(x) = x^2',
             options: [
@@ -426,7 +426,7 @@ window.examCategories.calculodiferencial = {
         },
         {
             question: 'Intervalo decreciente:',
-            geogebraId: 'kGf9gP7v',
+            geogebraAppName: 'classic', // material kGf9gP7v ya no existe en geogebra.org (404, verificado 2026-11-06)
             geogebraState: '0',
             latex: 'f(x) = x^2',
             options: [
@@ -440,7 +440,7 @@ window.examCategories.calculodiferencial = {
         },
         {
             question: 'Máximo local:',
-            geogebraId: 'kGf9gP7v',
+            geogebraAppName: 'classic', // material kGf9gP7v ya no existe en geogebra.org (404, verificado 2026-11-06)
             geogebraState: '0',
             latex: 'f(x) = -x^2',
             options: [
@@ -454,7 +454,7 @@ window.examCategories.calculodiferencial = {
         },
         {
             question: 'Mínimo local:',
-            geogebraId: 'kGf9gP7v',
+            geogebraAppName: 'classic', // material kGf9gP7v ya no existe en geogebra.org (404, verificado 2026-11-06)
             geogebraState: '0',
             latex: 'f(x) = x^2',
             options: [
@@ -468,7 +468,7 @@ window.examCategories.calculodiferencial = {
         },
         {
             question: 'Concavidad hacia arriba:',
-            geogebraId: 'kGf9gP7v',
+            geogebraAppName: 'classic', // material kGf9gP7v ya no existe en geogebra.org (404, verificado 2026-11-06)
             geogebraState: '0',
             latex: 'f(x) = x^2',
             options: [
@@ -482,7 +482,7 @@ window.examCategories.calculodiferencial = {
         },
         {
             question: 'Concavidad hacia abajo:',
-            geogebraId: 'kGf9gP7v',
+            geogebraAppName: 'classic', // material kGf9gP7v ya no existe en geogebra.org (404, verificado 2026-11-06)
             geogebraState: '0',
             latex: 'f(x) = -x^2',
             options: [
@@ -496,7 +496,7 @@ window.examCategories.calculodiferencial = {
         },
         {
             question: 'Punto de inflexión:',
-            geogebraId: 'kGf9gP7v',
+            geogebraAppName: 'classic', // material kGf9gP7v ya no existe en geogebra.org (404, verificado 2026-11-06)
             geogebraState: '0',
             latex: 'f(x) = x^3',
             options: [
@@ -510,7 +510,7 @@ window.examCategories.calculodiferencial = {
         },
         {
             question: 'Máximo absoluto en intervalo:',
-            geogebraId: 'kGf9gP7v',
+            geogebraAppName: 'classic', // material kGf9gP7v ya no existe en geogebra.org (404, verificado 2026-11-06)
             geogebraState: '0',
             latex: 'f(x) = x^2 \\text{ en } [-1, 2]',
             options: [
@@ -524,7 +524,7 @@ window.examCategories.calculodiferencial = {
         },
         {
             question: 'Teorema de Rolle:',
-            geogebraId: 'kGf9gP7v',
+            geogebraAppName: 'classic', // material kGf9gP7v ya no existe en geogebra.org (404, verificado 2026-11-06)
             geogebraState: '0',
             latex: 'f(x) = x^2 - 1 \\text{ en } [-1, 1]. \\text{ ¿Existe c tal que } f\'(c)=0?',
             options: [
@@ -538,13 +538,13 @@ window.examCategories.calculodiferencial = {
         },
         {
             question: 'Teorema del Valor Medio:',
-            geogebraId: 'kGf9gP7v',
+            geogebraAppName: 'classic', // material kGf9gP7v ya no existe en geogebra.org (404, verificado 2026-11-06)
             geogebraState: '0',
             latex: 'f(x) = x^2 \\text{ en } [0, 2]. \\text{ Hallar c tal que } f\'(c) = \\frac{f(2)-f(0)}{2-0}',
             options: [
                 { latex: '1' },
-                { latex: '0.5' },
-                { latex: '1.5' },
+                { latex: '0{,}5' },
+                { latex: '1{,}5' },
                 { latex: '0' }
             ],
             correct: 0,
@@ -552,7 +552,7 @@ window.examCategories.calculodiferencial = {
         },
         {
             question: 'Regla de L\'Hôpital (0/0):',
-            geogebraId: 'kGf9gP7v',
+            geogebraAppName: 'classic', // material kGf9gP7v ya no existe en geogebra.org (404, verificado 2026-11-06)
             geogebraState: '0',
             latex: '\\lim_{x \\to 1} \\frac{x^2-1}{x-1}',
             options: [
@@ -566,7 +566,7 @@ window.examCategories.calculodiferencial = {
         },
         {
             question: 'Regla de L\'Hôpital (inf/inf):',
-            geogebraId: 'kGf9gP7v',
+            geogebraAppName: 'classic', // material kGf9gP7v ya no existe en geogebra.org (404, verificado 2026-11-06)
             geogebraState: '0',
             latex: '\\lim_{x \\to \\infty} \\frac{2x}{x+1}',
             options: [
@@ -580,7 +580,7 @@ window.examCategories.calculodiferencial = {
         },
         {
             question: 'Optimización (Área):',
-            geogebraId: 'kGf9gP7v',
+            geogebraAppName: 'classic', // material kGf9gP7v ya no existe en geogebra.org (404, verificado 2026-11-06)
             geogebraState: '0',
             latex: '\\text{Max área de rectángulo con perímetro 20}',
             options: [
@@ -594,49 +594,49 @@ window.examCategories.calculodiferencial = {
         },
         {
             question: 'Optimización (Distancia):',
-            geogebraId: 'kGf9gP7v',
+            geogebraAppName: 'classic', // material kGf9gP7v ya no existe en geogebra.org (404, verificado 2026-11-06)
             geogebraState: '0',
-            latex: '\\text{Punto en } y=x \\text{ más cercano a } (1,0)',
+            latex: '\\text{Punto en } y=x \\text{ más cercano a } (1;\\ 0)',
             options: [
-                { latex: '(0.5, 0.5)' },
-                { latex: '(0, 0)' },
-                { latex: '(1, 1)' },
-                { latex: '(2, 2)' }
+                { latex: '(0{,}5;\\ 0{,}5)' },
+                { latex: '(0;\\ 0)' },
+                { latex: '(1;\\ 1)' },
+                { latex: '(2;\\ 2)' }
             ],
             correct: 0,
             hint: 'Minimiza la distancia al cuadrado.'
         },
         {
             question: 'Aproximación lineal:',
-            geogebraId: 'kGf9gP7v',
+            geogebraAppName: 'classic', // material kGf9gP7v ya no existe en geogebra.org (404, verificado 2026-11-06)
             geogebraState: '0',
-            latex: '\\text{Aproximar } \\sqrt{4.1} \\text{ usando } f(x)=\\sqrt{x} \\text{ en } a=4',
+            latex: '\\text{Aproximar } \\sqrt{4{,}1} \\text{ usando } f(x)=\\sqrt{x} \\text{ en } a=4',
             options: [
-                { latex: '2.025' },
-                { latex: '2.1' },
-                { latex: '2.05' },
-                { latex: '2.0' }
+                { latex: '2{,}025' },
+                { latex: '2{,}1' },
+                { latex: '2{,}05' },
+                { latex: '2{,}0' }
             ],
             correct: 0,
             hint: 'L(x) = f(a) + f\'(a)(x-a).'
         },
         {
             question: 'Diferencial dy:',
-            geogebraId: 'kGf9gP7v',
+            geogebraAppName: 'classic', // material kGf9gP7v ya no existe en geogebra.org (404, verificado 2026-11-06)
             geogebraState: '0',
-            latex: 'y=x^2, x=2, dx=0.1. \\text{ Hallar } dy',
+            latex: 'y=x^2, x=2, dx=0{,}1. \\text{ Hallar } dy',
             options: [
-                { latex: '0.4' },
-                { latex: '0.2' },
-                { latex: '0.1' },
-                { latex: '0.04' }
+                { latex: '0{,}4' },
+                { latex: '0{,}2' },
+                { latex: '0{,}1' },
+                { latex: '0{,}04' }
             ],
             correct: 0,
             hint: 'dy = f\'(x)dx.'
         },
         {
             question: 'Derivada inversa trig:',
-            geogebraId: 'kGf9gP7v',
+            geogebraAppName: 'classic', // material kGf9gP7v ya no existe en geogebra.org (404, verificado 2026-11-06)
             geogebraState: '0',
             latex: '\\frac{d}{dx}(\\arcsin x)',
             options: [
@@ -650,7 +650,7 @@ window.examCategories.calculodiferencial = {
         },
         {
             question: 'Derivada inversa trig:',
-            geogebraId: 'kGf9gP7v',
+            geogebraAppName: 'classic', // material kGf9gP7v ya no existe en geogebra.org (404, verificado 2026-11-06)
             geogebraState: '0',
             latex: '\\frac{d}{dx}(\\arctan x)',
             options: [
@@ -664,7 +664,7 @@ window.examCategories.calculodiferencial = {
         },
         {
             question: 'Derivada hiperbólica:',
-            geogebraId: 'kGf9gP7v',
+            geogebraAppName: 'classic', // material kGf9gP7v ya no existe en geogebra.org (404, verificado 2026-11-06)
             geogebraState: '0',
             latex: '\\frac{d}{dx}(\\cosh x)',
             options: [
@@ -678,11 +678,11 @@ window.examCategories.calculodiferencial = {
         },
         {
             question: 'Pendiente paramétrica:',
-            geogebraId: 'kGf9gP7v',
+            geogebraAppName: 'classic', // material kGf9gP7v ya no existe en geogebra.org (404, verificado 2026-11-06)
             geogebraState: '0',
             latex: 'x=t^2, y=t^3. \\text{ Hallar } dy/dx \\text{ en } t=1',
             options: [
-                { latex: '1.5' },
+                { latex: '1{,}5' },
                 { latex: '1' },
                 { latex: '2/3' },
                 { latex: '3' }
@@ -692,7 +692,7 @@ window.examCategories.calculodiferencial = {
         },
         {
             question: 'Pendiente polar:',
-            geogebraId: 'kGf9gP7v',
+            geogebraAppName: 'classic', // material kGf9gP7v ya no existe en geogebra.org (404, verificado 2026-11-06)
             geogebraState: '0',
             latex: 'r=\\theta. \\text{ Hallar } dy/dx \\text{ en } \\theta=\\pi/2',
             options: [
@@ -703,6 +703,35 @@ window.examCategories.calculodiferencial = {
             ],
             correct: 0,
             hint: 'Usa la fórmula de pendiente polar.'
+        },
+        // ===== Paramétricas (2026-11-06): cada estudiante recibe sus propios números =====
+        {
+            question: 'Derive la función:',
+            params: { a: { min: 2, max: 9 }, n: { min: 3, max: 7 } },
+            geogebraAppName: 'cas',
+            latex: '\\frac{d}{dx}\\left( {{a}}x^{ {{n}} } \\right)',
+            options: [
+                { latex: '{{a*n}}x^{ {{n-1}} }' },
+                { latex: '{{a}}x^{ {{n-1}} }' },     // olvidar multiplicar por el exponente
+                { latex: '{{a*n}}x^{ {{n}} }' },     // no bajar el exponente
+                { latex: '{{a*(n-1)}}x^{ {{n-1}} }' }
+            ],
+            correct: 0,
+            hint: 'Regla de la potencia: (x^n)\u2032 = n x^(n-1).'
+        },
+        {
+            question: 'Calcule la pendiente de la recta tangente a la curva en el punto indicado:',
+            params: { b: { min: -5, max: 5, exclude: [0] }, k: { min: -4, max: 4 } },
+            geogebraAppName: 'classic',
+            latex: 'f(x) = x^2 {{signed(b)}}x, \\quad x = {{k}}',
+            options: [
+                { latex: 'm = {{2*k + b}}' },
+                { latex: 'm = {{k*k + b*k}}' },      // confundir f(k) con f\u2032(k)
+                { latex: 'm = {{2*k}}' },            // olvidar el término lineal
+                { latex: 'm = {{k + b}}' }
+            ],
+            correct: 0,
+            hint: 'La pendiente es f\u2032(k).'
         }
     ]
 };

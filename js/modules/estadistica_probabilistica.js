@@ -9,7 +9,7 @@ window.examCategories.estadistica_probabilistica = {
             question: 'Un experimento aleatorio es aquel que:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Definición?}',
+            latex: '',
             options: [
                 { latex: '\\text{No se puede predecir el resultado con certeza}' },
                 { latex: '\\text{Siempre da el mismo resultado}' },
@@ -41,7 +41,7 @@ window.examCategories.estadistica_probabilistica = {
             options: [
                 { latex: '0' },
                 { latex: '1' },
-                { latex: '0.5' },
+                { latex: '0{,}5' },
                 { latex: '-1' }
             ],
             correct: 0,
@@ -56,7 +56,7 @@ window.examCategories.estadistica_probabilistica = {
                 { latex: '1' },
                 { latex: '0' },
                 { latex: '100' },
-                { latex: '0.99' }
+                { latex: '0{,}99' }
             ],
             correct: 0,
             hint: 'Siempre ocurre.'
@@ -67,9 +67,9 @@ window.examCategories.estadistica_probabilistica = {
             geogebraState: '0',
             latex: '\\Omega = ?',
             options: [
-                { latex: '\\{Cara, Cruz\\}' },
-                { latex: '\\{Cara\\}' },
-                { latex: '\\{Cruz\\}' },
+                { latex: '\\{\\text{Cara}, \\text{Cruz}\\}' },
+                { latex: '\\{\\text{Cara}\\}' },
+                { latex: '\\{\\text{Cruz}\\}' },
                 { latex: '\\{1, 2\\}' }
             ],
             correct: 0,
@@ -81,7 +81,7 @@ window.examCategories.estadistica_probabilistica = {
             geogebraState: '0',
             latex: 'P(\\text{Par}) = ?',
             options: [
-                { latex: '0.5' },
+                { latex: '0{,}5' },
                 { latex: '1/6' },
                 { latex: '1/3' },
                 { latex: '2/3' }
@@ -118,15 +118,15 @@ window.examCategories.estadistica_probabilistica = {
             hint: 'Favorables sobre posibles.'
         },
         {
-            question: 'Si P(A) = 0.3, la probabilidad del complemento A\' es:',
+            question: 'Si P(A) = 0,3, la probabilidad del complemento A\' es:',
             geogebraAppName: 'classic',
             geogebraState: '0',
             latex: 'P(A\') = 1 - P(A)',
             options: [
-                { latex: '0.7' },
-                { latex: '0.3' },
+                { latex: '0{,}7' },
+                { latex: '0{,}3' },
                 { latex: '0' },
-                { latex: '1.3' }
+                { latex: '1{,}3' }
             ],
             correct: 0,
             hint: 'Lo que falta para 1.'
@@ -165,7 +165,7 @@ window.examCategories.estadistica_probabilistica = {
             question: 'La probabilidad marginal se encuentra en:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Ubicación?}',
+            latex: '',
             options: [
                 { latex: '\\text{Los márgenes (totales de fila o columna)}' },
                 { latex: '\\text{El centro de la tabla}' },
@@ -181,9 +181,9 @@ window.examCategories.estadistica_probabilistica = {
             geogebraState: '0',
             latex: 'P(H \\cap F) = ?',
             options: [
-                { latex: '0.2' },
-                { latex: '0.02' },
-                { latex: '0.5' },
+                { latex: '0{,}2' },
+                { latex: '0{,}02' },
+                { latex: '0{,}5' },
                 { latex: '20' }
             ],
             correct: 0,
@@ -260,10 +260,10 @@ window.examCategories.estadistica_probabilistica = {
             hint: 'Proporcionalidad.'
         },
         {
-            question: 'Si P(A)=0.5, P(B)=0.4 y P(A y B)=0.2, ¿son independientes?',
+            question: 'Si P(A)=0,5, P(B)=0,4 y P(A y B)=0,2, ¿son independientes?',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '0.5 \\times 0.4 = 0.2',
+            latex: '0{,}5 \\times 0{,}4 = 0{,}2',
             options: [
                 { latex: '\\text{Sí}' },
                 { latex: '\\text{No}' },
@@ -298,7 +298,7 @@ window.examCategories.estadistica_probabilistica = {
                 { latex: '0' },
                 { latex: '1' },
                 { latex: '-1' },
-                { latex: '0.5' }
+                { latex: '0{,}5' }
             ],
             correct: 0,
             hint: 'No negativa.'
@@ -402,10 +402,10 @@ window.examCategories.estadistica_probabilistica = {
             hint: '1 - Probabilidad de ninguno.'
         },
         {
-            question: 'Si P(A)=0.6 y P(B)=0.5, ¿pueden ser mutuamente excluyentes?',
+            question: 'Si P(A)=0,6 y P(B)=0,5, ¿pueden ser mutuamente excluyentes?',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '0.6 + 0.5 = 1.1',
+            latex: '0{,}6 + 0{,}5 = 1{,}1',
             options: [
                 { latex: '\\text{No, la suma supera 1}' },
                 { latex: '\\text{Sí}' },
@@ -422,7 +422,7 @@ window.examCategories.estadistica_probabilistica = {
             latex: 'P(\\cup A_i) \\le ?',
             options: [
                 { latex: '\\sum P(A_i)' },
-                { latex: '1' },
+                { latex: '\\max P(A_i)' },
                 { latex: '\\prod P(A_i)' },
                 { latex: '0' }
             ],
@@ -435,7 +435,7 @@ window.examCategories.estadistica_probabilistica = {
             question: 'P(A|B) se lee como:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Lectura?}',
+            latex: '',
             options: [
                 { latex: '\\text{Probabilidad de A dado B}' },
                 { latex: '\\text{Probabilidad de A y B}' },
@@ -449,7 +449,7 @@ window.examCategories.estadistica_probabilistica = {
             question: 'Si P(A|B) = P(A), entonces A y B son:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Relación?}',
+            latex: '',
             options: [
                 { latex: '\\text{Independientes}' },
                 { latex: '\\text{Mutuamente excluyentes}' },
@@ -474,15 +474,15 @@ window.examCategories.estadistica_probabilistica = {
             hint: 'No cambia.'
         },
         {
-            question: 'Si P(A y B) = 0.1 y P(B) = 0.5, entonces P(A|B) es:',
+            question: 'Si P(A y B) = 0,1 y P(B) = 0,5, entonces P(A|B) es:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '0.1 / 0.5',
+            latex: '0{,}1 / 0{,}5',
             options: [
-                { latex: '0.2' },
-                { latex: '0.05' },
-                { latex: '0.6' },
-                { latex: '0.4' }
+                { latex: '0{,}2' },
+                { latex: '0{,}05' },
+                { latex: '0{,}6' },
+                { latex: '0{,}4' }
             ],
             correct: 0,
             hint: 'División.'
@@ -491,7 +491,7 @@ window.examCategories.estadistica_probabilistica = {
             question: 'Dos eventos independientes pueden ser mutuamente excluyentes (si prob > 0)?',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Posible?}',
+            latex: '',
             options: [
                 { latex: '\\text{No, nunca}' },
                 { latex: '\\text{Sí, siempre}' },
@@ -516,15 +516,15 @@ window.examCategories.estadistica_probabilistica = {
             hint: 'Hay 13 corazones, 1 es As.'
         },
         {
-            question: 'Si P(A|B) = 0.8 y P(B) = 0.5, P(A y B) es:',
+            question: 'Si P(A|B) = 0,8 y P(B) = 0,5, P(A y B) es:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '0.8 \\times 0.5',
+            latex: '0{,}8 \\times 0{,}5',
             options: [
-                { latex: '0.4' },
-                { latex: '1.3' },
-                { latex: '0.3' },
-                { latex: '0.8' }
+                { latex: '0{,}4' },
+                { latex: '1{,}3' },
+                { latex: '0{,}3' },
+                { latex: '0{,}8' }
             ],
             correct: 0,
             hint: 'Multiplicación.'
@@ -533,7 +533,7 @@ window.examCategories.estadistica_probabilistica = {
             question: 'El espacio muestral reducido en P(A|B) es:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Nuevo espacio?}',
+            latex: '',
             options: [
                 { latex: 'B' },
                 { latex: 'A' },
@@ -561,7 +561,7 @@ window.examCategories.estadistica_probabilistica = {
             question: 'La independencia de tres eventos A, B, C requiere:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Condición?}',
+            latex: '',
             options: [
                 { latex: '\\text{Independencia por pares y conjunta}' },
                 { latex: '\\text{Solo por pares}' },
@@ -574,10 +574,10 @@ window.examCategories.estadistica_probabilistica = {
 
         // 5. Teorema de la Probabilidad Total y Bayes (16 preguntas)
         {
-            question: 'Una partición del espacio muestral es un conjunto de eventos B_i que son:',
+            question: 'Una partición del espacio muestral es un conjunto de eventos $B_i$ que son:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Condición?}',
+            latex: '',
             options: [
                 { latex: '\\text{Mutuamente excluyentes y su unión es } \\Omega' },
                 { latex: '\\text{Independientes}' },
@@ -630,10 +630,10 @@ window.examCategories.estadistica_probabilistica = {
             hint: 'Favorables sobre totales.'
         },
         {
-            question: 'En Bayes, P(B_i) se llama:',
+            question: 'En Bayes, $P(B_i)$ se llama:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Nombre?}',
+            latex: '',
             options: [
                 { latex: '\\text{Probabilidad a priori}' },
                 { latex: '\\text{Probabilidad a posteriori}' },
@@ -644,10 +644,10 @@ window.examCategories.estadistica_probabilistica = {
             hint: 'Antes de la evidencia.'
         },
         {
-            question: 'En Bayes, P(A|B_i) se llama:',
+            question: 'En Bayes, $P(A \\mid B_i)$ se llama:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Nombre?}',
+            latex: '',
             options: [
                 { latex: '\\text{Verosimilitud (Likelihood)}' },
                 { latex: '\\text{A priori}' },
@@ -663,9 +663,9 @@ window.examCategories.estadistica_probabilistica = {
             geogebraState: '0',
             latex: 'P(+|E) = ?',
             options: [
-                { latex: '0.99' },
-                { latex: '0.01' },
-                { latex: '0.9' },
+                { latex: '0{,}99' },
+                { latex: '0{,}01' },
+                { latex: '0{,}9' },
                 { latex: '1' }
             ],
             correct: 0,
@@ -678,7 +678,7 @@ window.examCategories.estadistica_probabilistica = {
             latex: 'P(E|+) \\text{ es...}',
             options: [
                 { latex: '\\text{A menudo sorprendentemente baja (Falsos Positivos)}' },
-                { latex: '\\text{Siempre 100%}' },
+                { latex: '\\text{Siempre 100\\%}' },
                 { latex: '\\text{Igual a la sensibilidad}' },
                 { latex: '\\text{Cero}' }
             ],
@@ -689,7 +689,7 @@ window.examCategories.estadistica_probabilistica = {
             question: 'La probabilidad total P(A) actúa como:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Función?}',
+            latex: '',
             options: [
                 { latex: '\\text{Constante de normalización}' },
                 { latex: '\\text{Hipótesis}' },
@@ -705,23 +705,23 @@ window.examCategories.estadistica_probabilistica = {
             geogebraState: '0',
             latex: 'P(A) = ?',
             options: [
-                { latex: '0.2' },
-                { latex: '0.3' },
-                { latex: '0.5' },
+                { latex: '0{,}2' },
+                { latex: '0{,}3' },
+                { latex: '0{,}5' },
                 { latex: '1' }
             ],
             correct: 0,
             hint: 'A priori.'
         },
         {
-            question: 'Si P(D|A)=0.01 (Defectuosos de A), P(D|A) es:',
+            question: 'Si el 1 % de las piezas que produce la máquina A son defectuosas (D), ¿cuál es la verosimilitud $P(D \\mid A)$?',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Verosimilitud}',
+            latex: 'P(D \\mid A) = ?',
             options: [
-                { latex: '0.01' },
-                { latex: '0.99' },
-                { latex: '0.2' },
+                { latex: '0{,}01' },
+                { latex: '0{,}99' },
+                { latex: '0{,}2' },
                 { latex: '0' }
             ],
             correct: 0,
@@ -731,7 +731,7 @@ window.examCategories.estadistica_probabilistica = {
             question: 'Bayes se usa fundamentalmente para:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Uso?}',
+            latex: '',
             options: [
                 { latex: '\\text{Actualizar creencias con nueva evidencia}' },
                 { latex: '\\text{Calcular promedios}' },
@@ -750,7 +750,7 @@ window.examCategories.estadistica_probabilistica = {
                 { latex: '1' },
                 { latex: '0' },
                 { latex: 'P(B)' },
-                { latex: '0.5' }
+                { latex: '0{,}5' }
             ],
             correct: 0,
             hint: 'Siempre ocurre.'
@@ -778,7 +778,7 @@ window.examCategories.estadistica_probabilistica = {
                 { latex: '1' },
                 { latex: '100' },
                 { latex: '0' },
-                { latex: '0.5' }
+                { latex: '0{,}5' }
             ],
             correct: 0,
             hint: 'Probabilidad total del nodo.'
@@ -875,19 +875,19 @@ window.examCategories.estadistica_probabilistica = {
             geogebraState: '0',
             latex: 'P(CC) = ?',
             options: [
-                { latex: '0.25' },
-                { latex: '0.5' },
-                { latex: '0.75' },
-                { latex: '0.1' }
+                { latex: '0{,}25' },
+                { latex: '0{,}5' },
+                { latex: '0{,}75' },
+                { latex: '0{,}1' }
             ],
             correct: 0,
-            hint: '0.5 * 0.5.'
+            hint: '0,5 * 0,5.'
         },
         {
             question: 'Si importa el orden y hay repetición, usamos:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Fórmula?}',
+            latex: '',
             options: [
                 { latex: 'n^k' },
                 { latex: 'n!' },

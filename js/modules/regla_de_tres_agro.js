@@ -25,10 +25,10 @@ window.examCategories.regla_de_tres_agro = {
             geogebraState: '0',
             latex: '\\text{100 plantas} \\to 5 \\text{ kg} \\\\ \\text{350 plantas} \\to x',
             options: [
-                { latex: '17.5 \\text{ kg}' },
+                { latex: '17{,}5 \\text{ kg}' },
                 { latex: '15 \\text{ kg}' },
                 { latex: '20 \\text{ kg}' },
-                { latex: '18.5 \\text{ kg}' }
+                { latex: '18{,}5 \\text{ kg}' }
             ],
             correct: 0,
             hint: 'A más plantas, más abono (Directa).'
@@ -182,7 +182,7 @@ window.examCategories.regla_de_tres_agro = {
                 { latex: '5 \\text{ kg}' },
                 { latex: '4 \\text{ kg}' },
                 { latex: '6 \\text{ kg}' },
-                { latex: '4.5 \\text{ kg}' }
+                { latex: '4{,}5 \\text{ kg}' }
             ],
             correct: 0,
             hint: 'A más longitud, más peso (Directa).'
@@ -336,7 +336,7 @@ window.examCategories.regla_de_tres_agro = {
                 { latex: '5 \\text{ kg}' },
                 { latex: '4 \\text{ kg}' },
                 { latex: '6 \\text{ kg}' },
-                { latex: '4.5 \\text{ kg}' }
+                { latex: '4{,}5 \\text{ kg}' }
             ],
             correct: 0,
             hint: 'A más leche, más queso (Directa).'
@@ -447,10 +447,10 @@ window.examCategories.regla_de_tres_agro = {
             geogebraState: '0',
             latex: '\\text{60 km/h} \\to 2 \\text{ h} \\\\ \\text{80 km/h} \\to x',
             options: [
-                { latex: '1.5 \\text{ h}' },
-                { latex: '2.5 \\text{ h}' },
-                { latex: '1.8 \\text{ h}' },
-                { latex: '1.2 \\text{ h}' }
+                { latex: '1{,}5 \\text{ h}' },
+                { latex: '2{,}5 \\text{ h}' },
+                { latex: '1{,}8 \\text{ h}' },
+                { latex: '1{,}2 \\text{ h}' }
             ],
             correct: 0,
             hint: 'A más velocidad, menos tiempo (Inversa).'
@@ -462,7 +462,7 @@ window.examCategories.regla_de_tres_agro = {
             latex: '\\text{20 gallinas} \\to 15 \\text{ días} \\\\ \\text{30 gallinas} \\to x',
             options: [
                 { latex: '10 \\text{ días}' },
-                { latex: '22.5 \\text{ días}' },
+                { latex: '22{,}5 \\text{ días}' },
                 { latex: '12 \\text{ días}' },
                 { latex: '8 \\text{ días}' }
             ],
@@ -490,7 +490,7 @@ window.examCategories.regla_de_tres_agro = {
             latex: '\\text{4 mang} \\to 10 \\text{ h} \\\\ \\text{5 mang} \\to x',
             options: [
                 { latex: '8 \\text{ h}' },
-                { latex: '12.5 \\text{ h}' },
+                { latex: '12{,}5 \\text{ h}' },
                 { latex: '9 \\text{ h}' },
                 { latex: '7 \\text{ h}' }
             ],
@@ -574,7 +574,7 @@ window.examCategories.regla_de_tres_agro = {
             latex: '\\text{15 trab} \\to 10 \\text{ días} \\\\ \\text{25 trab} \\to x',
             options: [
                 { latex: '6 \\text{ días}' },
-                { latex: '16.6 \\text{ días}' },
+                { latex: '16{,}6 \\text{ días}' },
                 { latex: '8 \\text{ días}' },
                 { latex: '5 \\text{ días}' }
             ],
@@ -587,8 +587,8 @@ window.examCategories.regla_de_tres_agro = {
             geogebraState: '0',
             latex: '\\text{50 km/h} \\to 4 \\text{ h} \\\\ \\text{80 km/h} \\to x',
             options: [
-                { latex: '2.5 \\text{ h}' },
-                { latex: '6.4 \\text{ h}' },
+                { latex: '2{,}5 \\text{ h}' },
+                { latex: '6{,}4 \\text{ h}' },
                 { latex: '3 \\text{ h}' },
                 { latex: '2 \\text{ h}' }
             ],
@@ -602,7 +602,7 @@ window.examCategories.regla_de_tres_agro = {
             latex: '\\text{12 patos} \\to 8 \\text{ días} \\\\ \\text{16 patos} \\to x',
             options: [
                 { latex: '6 \\text{ días}' },
-                { latex: '10.6 \\text{ días}' },
+                { latex: '10{,}6 \\text{ días}' },
                 { latex: '5 \\text{ días}' },
                 { latex: '7 \\text{ días}' }
             ],
@@ -630,9 +630,9 @@ window.examCategories.regla_de_tres_agro = {
             latex: '\\text{8 pers} \\to 5 \\text{ h} \\\\ \\text{20 pers} \\to x',
             options: [
                 { latex: '2 \\text{ h}' },
-                { latex: '12.5 \\text{ h}' },
+                { latex: '12{,}5 \\text{ h}' },
                 { latex: '3 \\text{ h}' },
-                { latex: '1.5 \\text{ h}' }
+                { latex: '1{,}5 \\text{ h}' }
             ],
             correct: 0,
             hint: 'A más personas, menos tiempo (Inversa).'
@@ -672,7 +672,7 @@ window.examCategories.regla_de_tres_agro = {
             latex: '\\text{4 asp} \\to 15 \\text{ h} \\\\ \\text{10 asp} \\to x',
             options: [
                 { latex: '6 \\text{ h}' },
-                { latex: '37.5 \\text{ h}' },
+                { latex: '37{,}5 \\text{ h}' },
                 { latex: '8 \\text{ h}' },
                 { latex: '5 \\text{ h}' }
             ],
@@ -688,7 +688,7 @@ window.examCategories.regla_de_tres_agro = {
                 { latex: '1 \\text{ h}' },
                 { latex: '9 \\text{ h}' },
                 { latex: '2 \\text{ h}' },
-                { latex: '0.5 \\text{ h}' }
+                { latex: '0{,}5 \\text{ h}' }
             ],
             correct: 0,
             hint: 'A más personas, menos tiempo (Inversa).'

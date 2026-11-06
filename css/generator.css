@@ -204,7 +204,7 @@
 }
 
 /* Modal Styles */
-.modal {
+.preview-modal {
     position: fixed;
     z-index: 1000;
     left: 0;
@@ -217,11 +217,11 @@
     align-items: center;
 }
 
-.modal.hidden {
+.preview-modal.hidden {
     display: none;
 }
 
-.modal-content {
+.preview-modal-content {
     background-color: #fefefe;
     padding: 20px;
     border: 1px solid #888;
@@ -246,6 +246,9 @@
     display: flex;
     justify-content: center;
     /* Center the A4 sheet */
+    align-items: flex-start;
+    /* La hoja crece con su contenido (con «stretch» medía lo que la ventana y las
+       preguntas siguientes quedaban fuera del recuadro blanco) */
 }
 
 .close-modal {
@@ -431,7 +434,7 @@
         position: static !important;
     }
 
-    .modal-content {
+    .preview-modal-content {
         border: none;
         width: 100%;
         max-width: 100%;
@@ -492,9 +495,397 @@
         margin: 0;
     }
 
+    /* Antes: "h2 { display: none }" también ocultaba el título de la evaluación */
     .close-modal,
     .modal-actions,
-    h2 {
+    .online-options,
+    #preview-title {
         display: none;
     }
+
+    /* Antes solo se ocultaba con visibility: el resto de la página seguía ocupando
+       espacio y la evaluación se imprimía desde la 2.ª página (la 1.ª salía en blanco). */
+    body > *:not(#preview-modal) {
+        display: none !important;
+    }
 }
+/* ===== Opciones de la evaluación en línea ===== */
+.online-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+    align-items: center;
+    padding: 10px 0;
+    font-size: 0.9em;
+}
+.online-options input[type="text"] {
+    padding: 4px 8px;
+    width: 260px;
+}
+@media print {
+    .online-options { display: none !important; }
+}
+
+/* ===== Banco paginado e importación ===== */
+.questions-pager {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 0;
+    font-size: 0.85em;
+}
+.question-item.already-added {
+    opacity: 0.55;
+}
+.question-item .add-btn:disabled {
+    background: #28a745;
+    cursor: default;
+}
+.q-id {
+    font-size: 0.75em;
+    color: #6c757d;
+    margin-left: 6px;
+}
+.import-row {
+    margin-top: 10px;
+    text-align: center;
+}
+.secondary-action {
+    background: #6c757d;
+}
+
+/* ===== Clases que reemplazan los style="..." del generador ===== */
+.random-controls {
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #f8f9fa;
+    border-radius: 4px;
+}
+.module-actions { margin-bottom: 10px; }
+.module-checkboxes {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 5px;
+    margin: 0;
+}
+.module-label {
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 3px;
+}
+.controls-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+}
+#random-count { width: 60px; padding: 5px; }
+#exam-time-limit { width: 70px; }
+
+.btn-small { width: auto; padding: 5px 10px; font-size: 0.8em; }
+.btn-inline { width: auto; margin: 0; }
+/* Colores con contraste ≥ 4.5:1 sobre texto blanco (WCAG AA) */
+.btn-info { background: #117a8b; }
+.btn-gray { background: #5a6268; }
+.btn-purple { background: #6f42c1; }
+.btn-red { background: #c82333; }
+.btn-orange { background: #b35900; }
+.btn-green { background: #1e7e34; }
+.btn-teal { background: #117a6b; }
+.btn-info:hover, .btn-gray:hover, .btn-purple:hover, .btn-red:hover,
+.btn-orange:hover, .btn-green:hover, .btn-teal:hover { filter: brightness(0.88); }
+
+.preview-bar-label { font-size: 12px; font-weight: bold; margin-right: 10px; }
+.print-title { text-align: center; margin-bottom: 20px; }
+.print-title h2 { margin: 0; }
+.print-title p { margin: 5px 0 0 0; }
+.print-fields { margin-top: 20px; }
+.print-row { display: flex; gap: 20px; align-items: flex-end; margin-bottom: 15px; }
+.print-row-last { margin-bottom: 0; }
+.flex-1 { flex: 1; }
+.flex-2 { flex: 2; }
+.preview-option { margin: 6px 0 6px 20px; line-height: 1.6; }
+.preview-question .latex-display { margin: 8px 0; }
+.preview-option .option-letter { font-weight: bold; }
+
+/* La "×" de cerrar ahora es un botón real (accesible con teclado) */
+.close-modal {
+    background: none;
+    border: none;
+    color: #555;
+    line-height: 1;
+    padding: 4px 8px;
+}
+
+/* Botón principal: #007bff tenía contraste 3.98:1 con texto blanco */
+.action-btn { background: #0062cc; }
+.action-btn:hover { background: #004c9e; }
+.secondary-action { background: #5a6268; }
+
+/* Botón "+" del banco: #28a745 tenía contraste 3.1:1 */
+.add-btn { background: #1e7e34; }
+
+/* Antes la barra estaba al 30 % de opacidad hasta pasar el ratón: ilegible e
+   invisible para quien usa teclado. En la impresión sigue oculta (@media print). */
+.preview-controls-bar { opacity: 1; }
+
+/* ===== Ideas: paramétricas, tareas GeoGebra y versiones ===== */
+.q-badge {
+    display: inline-block;
+    font-size: 0.72em;
+    font-weight: bold;
+    padding: 1px 6px;
+    margin-left: 4px;
+    border-radius: 10px;
+    background: #e8eaf6;
+    color: #283593;
+    white-space: nowrap;
+}
+.q-badge-ggb { background: #fff3e0; color: #8a4500; }
+.include-tasks { margin-top: 8px; }
+.versions-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    margin-top: 6px;
+}
+.versions-row .action-btn { width: auto; margin: 0; }
+.version-label { font-weight: normal; font-size: 0.8em; }
+@media print {
+    .q-badge { display: none !important; }
+}
+
+.analysis-link { display: table; text-decoration: none; text-align: center; }
+
+/* Fila de acciones de la previsualización: antes cada botón tomaba width: 100 % dentro de
+   una fila sin salto de línea y el primero quedaba cortado fuera de la ventana. */
+.modal-actions {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.modal-actions .action-btn {
+    width: auto;
+    flex: 0 1 auto;
+    margin: 0;
+    padding: 8px 14px;
+    font-size: 0.95rem;
+}
+.modal-actions .versions-row {
+    width: auto;
+    margin: 0;
+    padding: 4px 8px;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+}
+
+/* Cuadro de instrucciones bajo los datos del estudiante (como \ExamInstrBox en LaTeX) */
+.instr-box {
+    border: 1.5px solid #212529;
+    border-radius: 4px;
+    padding: 8px 14px;
+    margin: 16px auto 0;
+    width: 92%;
+    text-align: center;
+    font-size: 0.95em;
+    line-height: 1.4;
+    break-inside: avoid;
+}
+.instr-box p { margin: 0; }
+.instr-options { border-top: 1px dashed #dee2e6; padding-top: 6px; }
+.instr-options select, .instr-options input[type="number"] { margin-left: 4px; }
+.instr-options input[type="number"] { width: 5em; }
+@media print {
+    .instr-box { border-color: #000; color: #000; }
+}
+
+/* ======================================================================
+   Pestaña «Análisis de resultados» (antes css/analysis.css)
+   ====================================================================== */
+/* analisis.html — paleta de referencia validada (modo claro):
+   barra de datos = series-1 #2a78d6 (contraste ≥ 3:1 con la superficie);
+   estados con icono + etiqueta, nunca solo color. */
+.viz-root {
+    color-scheme: light;
+    --surface-1: #fcfcfb;
+    --surface-2: #f3f3f1;
+    --text-primary: #0b0b0b;
+    --text-secondary: #52514e;
+    --grid: #e4e3df;
+    --series-1: #2a78d6;
+    --status-good: #0ca30c;
+    --status-warning: #fab219;
+    --status-critical: #d03b3b;
+    --good-text: #006300;
+}
+
+.analysis-page {
+    max-width: 1100px;
+    margin: 0 auto;
+    color: var(--text-primary);
+}
+.analysis-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.analysis-header h1 { text-align: left; margin: 10px 0; }
+.back-link { color: #0d47a1; font-weight: bold; }
+.analysis-page section { margin-bottom: 28px; }
+.analysis-page h2 { text-align: left; color: #1a237e; }
+
+.loader-card, .item-card, .kpi-tile, .table-wrap, .guide {
+    background: var(--surface-1);
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+.loader-card { padding: 16px 20px; margin-bottom: 24px; }
+.drop-zone {
+    display: block;
+    border: 2px dashed #8a8984;
+    border-radius: 10px;
+    padding: 22px;
+    text-align: center;
+    cursor: pointer;
+    color: var(--text-secondary);
+    background: var(--surface-2);
+}
+.drop-zone.dragging { border-color: var(--series-1); background: #eaf2fc; }
+.drop-zone input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.drop-zone:focus-within { outline: 3px solid #ff9800; outline-offset: 2px; }
+.load-status { margin: 10px 0 0; color: var(--text-secondary); }
+.load-problem { color: #8a4500; }
+
+/* KPI row */
+.kpi-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 14px;
+}
+.kpi-tile { padding: 14px 16px; }
+.kpi-label { color: var(--text-secondary); font-size: 0.9em; }
+.kpi-value { font-size: 2em; font-weight: bold; line-height: 1.2; }
+.kpi-sub { color: var(--text-secondary); font-size: 0.85em; }
+.kpi-note { grid-column: 1 / -1; margin: 0; color: #8a4500; }
+
+.section-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.filters { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.filters .action-btn { margin: 0; }
+.guide { padding: 10px 16px; margin: 10px 0 16px; }
+.guide dt { font-weight: bold; margin-top: 8px; }
+.guide dd { margin: 2px 0 0 0; color: var(--text-secondary); }
+
+/* Tarjeta por pregunta */
+.item-card {
+    padding: 14px 16px;
+    margin-bottom: 14px;
+    border-left: 5px solid var(--grid);
+}
+.item-error { border-left-color: var(--status-critical); }
+.item-warn { border-left-color: var(--status-warning); }
+.item-ok { border-left-color: var(--status-good); }
+.item-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+.item-id { font-weight: bold; }
+.item-cat { color: var(--text-secondary); margin-left: 8px; font-size: 0.9em; }
+.item-q { margin: 4px 0 0; max-width: 560px; }
+.item-stats { display: flex; gap: 18px; margin: 0; flex-wrap: wrap; }
+.item-stats div { text-align: right; }
+.item-stats dt { color: var(--text-secondary); font-size: 0.8em; }
+.item-stats dd { margin: 0; font-size: 1.25em; font-weight: bold; font-variant-numeric: tabular-nums; }
+
+.flags { list-style: none; padding: 0; margin: 10px 0; }
+.flag { margin: 4px 0; font-size: 0.92em; }
+.flag-error strong { color: #a3262b; }
+.flag-warn strong { color: #8a4500; }
+.flag-info strong { color: var(--text-secondary); }
+.flag-ok-text { color: var(--good-text); margin: 10px 0; }
+
+/* Distractores: barras horizontales (≤ 24px, extremo de datos redondeado 4px) */
+.dist { margin: 8px 0 0; }
+.dist figcaption { color: var(--text-secondary); font-size: 0.85em; margin-bottom: 6px; }
+.dist-row {
+    display: grid;
+    grid-template-columns: 110px 1fr 150px;
+    align-items: center;
+    gap: 8px;
+    padding: 3px 0;           /* zona de hover más grande que la barra */
+    border-radius: 4px;
+}
+.dist-row:hover, .dist-row:focus { background: var(--surface-2); outline: none; }
+.dist-row:focus-visible { outline: 3px solid #ff9800; }
+.dist-key { text-align: right; color: var(--text-secondary); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.dist-track { position: relative; height: 14px; border-left: 1px solid var(--grid); }
+.dist-bar {
+    display: block;
+    height: 14px;
+    background: var(--series-1);
+    border-radius: 0 4px 4px 0;
+    min-width: 2px;
+}
+.dist-val { font-variant-numeric: tabular-nums; color: var(--text-primary); }
+.dist-correct { color: var(--good-text); margin-left: 6px; }
+
+/* Tablas */
+.table-wrap { overflow-x: auto; padding: 4px 8px; }
+.data-table { width: 100%; border-collapse: collapse; }
+.data-table th, .data-table td { text-align: left; padding: 8px; border-bottom: 1px solid var(--grid); }
+.data-table thead th { color: var(--text-secondary); font-weight: 600; }
+.data-table tbody th { font-weight: normal; }
+.data-table td { font-variant-numeric: tabular-nums; }
+.cell-bar {
+    display: inline-block;
+    width: 120px;
+    height: 10px;
+    vertical-align: middle;
+    margin-right: 6px;
+    border-left: 1px solid var(--grid);
+}
+.cell-bar span { display: block; height: 10px; background: var(--series-1); border-radius: 0 4px 4px 0; }
+
+.viz-tooltip {
+    position: fixed;
+    z-index: 2000;
+    max-width: 360px;
+    background: #1f1f1e;
+    color: #f0efec;
+    font-size: 0.85em;
+    padding: 6px 10px;
+    border-radius: 6px;
+    pointer-events: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 600px) {
+    .dist-row { grid-template-columns: 60px 1fr 110px; }
+    .item-stats div { text-align: left; }
+}
+
+/* Selector de evaluación cuando los archivos traen varias */
+.exam-filter { background: #fff8e1; border: 1px solid #f0d58a; border-radius: 6px; padding: 10px 14px; margin: 0 0 16px; }
+.exam-filter label { font-weight: 600; margin-right: 6px; }
+.exam-filter select { max-width: 100%; }
+.exam-filter .kpi-note { margin-top: 6px; }
+#clear-files-btn { margin-top: 6px; }
+/* La opción correcta se distingue de un vistazo */
+.dist-row.is-correct .dist-bar { background: #2e7d32; }

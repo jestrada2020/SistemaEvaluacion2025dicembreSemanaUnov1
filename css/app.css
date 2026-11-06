@@ -1,0 +1,195 @@
+/* ===== Reglas propias de Evaluación matemática =====
+   Se cargan después de css/caja_herramientas.css (estilo canónico de la Caja de Herramientas)
+   y de los estilos anteriores de la aplicación. */
+
+/* La página usa el diseño de barra lateral: sin el relleno ni el fondo anteriores */
+body.caja {
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #212529;
+}
+body.caja #tool-content h1,
+body.caja #tool-content h2 {
+    text-align: left;
+    color: #212529;
+}
+#sidebar h2 { color: #fff; }
+#sidebar button i { width: 1.25em; text-align: center; margin-right: 0.35rem; }
+
+/* Azul activo del menú: #007bff da 3,98:1 con texto blanco (WCAG AA pide 4,5:1);
+   se oscurece un poco conservando el mismo tono */
+#sidebar button:hover,
+#sidebar button.active { background: #0062cc; }
+#sidebar button:focus-visible { outline: 3px solid #ff9800; outline-offset: 2px; }
+#tool-content:focus { outline: none; }
+
+/* Las secciones ya están dentro de la tarjeta blanca (.tool-container) */
+.caja .exam-section,
+.caja #results-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0;
+    box-shadow: none;
+    background: transparent;
+}
+.caja #categories-container { padding: 0; margin: 10px 0; max-width: none; }
+.caja .category-card h3 { font-size: 1.15rem; }
+.caja .category-card { border: 1px solid #dee2e6; box-shadow: none; }
+.caja .practice-options { text-align: left; }
+.caja #start-button { margin: 15px 0; }
+.caja .analysis-page { max-width: none; }
+.caja .analysis-page h3 { color: #212529; }
+
+/* Avisos dentro de la página (en lugar de alert/confirm) */
+.avisos-zona {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    z-index: 3000;
+    width: min(440px, calc(100vw - 32px));
+}
+.avisos-zona .aviso { margin-bottom: 8px; white-space: normal; }
+.aviso-fondo {
+    position: fixed;
+    inset: 0;
+    z-index: 3100;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+.aviso-dialogo {
+    background: #fff;
+    border-radius: 0.5rem;
+    padding: 20px 24px;
+    max-width: 520px;
+    width: 100%;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+}
+
+/* Aprendo con videos */
+.text-youtube { color: #c4302b; }
+.videos-tabla td { vertical-align: top; }
+.videos-tema { width: 40%; }
+.videos-que { font-size: 0.875rem; color: #555; margin-top: 0.25rem; }
+.videos-lista { list-style: none; margin: 0; padding: 0; }
+.videos-lista li { margin-bottom: 0.4rem; }
+
+/* GeoGebra */
+.card-comandos { border-top: 4px solid #0d6efd; }
+.copiar-oculto { position: fixed; opacity: 0; }
+
+/* Contraste AA de los botones de Bootstrap usados aquí */
+.btn-primary { background-color: #0062cc; border-color: #0062cc; }
+.btn-primary:hover { background-color: #004c9e; border-color: #004c9e; }
+.btn-outline-primary { color: #0056b3; border-color: #0056b3; }
+.btn-outline-primary:hover { background-color: #0056b3; color: #fff; }
+.btn-success { background-color: #1e7e34; border-color: #1e7e34; }
+.btn-danger { background-color: #c82333; border-color: #c82333; }
+.btn-outline-danger { color: #b02a37; border-color: #b02a37; }
+.text-primary { color: #0056b3 !important; }
+.text-success { color: #1e7e34 !important; }
+
+@media print {
+    #sidebar, .avisos-zona, .skip-link { display: none !important; }
+    #content { margin: 0 !important; height: auto !important; overflow: visible !important; padding: 0 !important; }
+}
+
+/* ===== exam.html (estudiante): barra superior y tarjeta centrada ===== */
+body.caja-examen {
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #212529;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.examen-barra {
+    background: #343a40;
+    color: #fff;
+    padding: 14px 24px;
+    font-size: 1.15rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.examen-contenedor {
+    max-width: 1000px;
+    margin: 24px auto;
+}
+.caja-examen .tool-container {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 0.375rem;
+    padding: 30px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.caja-examen #exam-section,
+.caja-examen #results-section {
+    max-width: none;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    box-shadow: none;
+}
+.caja-examen .file-loader { box-shadow: none; margin: 0 auto 10px; }
+.caja-examen h1 { text-align: left; color: #212529; }
+@media (max-width: 600px) {
+    .examen-contenedor { margin: 8px; }
+    .caja-examen .tool-container { padding: 14px; }
+}
+
+/* Generador dentro de la tarjeta: títulos de panel moderados y filtro sin desbordar */
+.caja .generator-layout .panel h3 { font-size: 1.3rem; }
+.caja .random-controls h4 { font-size: 1.05rem; }
+.caja .filter-controls { display: flex; gap: 8px; flex-wrap: wrap; }
+.caja .filter-controls input,
+.caja .filter-controls select { flex: 1 1 180px; min-width: 0; max-width: 100%; }
+/* exam.html: el cargador de archivo queda centrado */
+.caja-examen .file-loader h1 { text-align: center; }
+
+/* Bootstrap 5.3.0-alpha1 usa textos de alerta con contraste insuficiente
+   (alert-info #087990 sobre #cff4fc = 4,33:1). Se usan los tonos de la versión final 5.3. */
+.alert-info { color: #055160; }
+.alert-warning { color: #664d03; }
+.alert-success { color: #0a3622; }
+.alert-danger { color: #58151c; }
+.alert-light { color: #343a40; }
+
+/* Pregunta ya agregada: antes se atenuaba con opacity (bajaba el contraste del texto) */
+.question-item.already-added { opacity: 1; background: #eef7ef; border-color: #b7dfbf; }
+
+/* ===== Práctica por categorías (noviembre de 2026) ===== */
+/* Barra fija con el resumen, la cantidad y «Comenzar»: siempre a la vista al recorrer las 24 categorías */
+.caja .practice-toolbar {
+    position: sticky; top: 0; z-index: 5;
+    background: #fff; border: 1px solid #dee2e6; border-radius: 0.5rem;
+    padding: 0.75rem 1rem; margin-bottom: 1rem; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+.caja .practice-summary { margin: 0 0 0.5rem; font-weight: 600; }
+.caja .practice-toolbar-row { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.75rem; }
+.caja .practice-toolbar .practice-options { display: inline-flex; align-items: center; gap: 0.4rem; margin: 0; }
+.caja .practice-toolbar .practice-options input { width: 5.5rem; margin: 0; }
+.caja .practice-toolbar #start-button { margin: 0 0 0 auto; }
+.caja #practice-message .alert { margin: 0.5rem 0 0; }
+/* La tarjeta elegida también se distingue (no solo el botón) */
+.caja .category-card.is-selected { border: 2px solid #2e7d32; background: #f1f8f1; }
+/* Calculadora GeoGebra opcional, aún cerrada: un botón, no un recuadro vacío de 450 px */
+.geogebra-optional { margin: 0.75rem 0; }
+.question-result .result-hint { margin: 0.25rem 0 0; color: #5d4037; font-style: italic; }
+
+/* ===== Generador: la lista generada se aplastaba en pantallas de portátil (noviembre de 2026) =====
+   El diseño medía exactamente 100vh - 100px; los controles del panel derecho ocupan unos 650 px,
+   así que con 768-900 px de alto la lista de preguntas generadas quedaba con 0 px de alto. */
+.caja .generator-layout { height: auto; min-height: 0; align-items: start; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+.caja .generator-layout .panel { overflow: visible; min-width: 0; }
+/* Una fórmula larga ensanchaba la columna y la página se desbordaba a lo ancho */
+.caja .generator-layout .question-item .q-content { min-width: 0; overflow-x: auto; }
+.caja #questions-list { flex: none; min-height: 320px; max-height: calc(100vh - 230px); }
+.caja #selected-list { flex: none; min-height: 320px; max-height: calc(100vh - 140px); }
+.caja #selected-list.recien-generada { animation: resaltar-lista 1.6s ease-out; }
+@keyframes resaltar-lista { from { box-shadow: 0 0 0 4px #2e7d32; } to { box-shadow: 0 0 0 0 transparent; } }
+@media (max-width: 1100px) {
+    .caja .generator-layout { grid-template-columns: minmax(0, 1fr); padding: 0; }
+}

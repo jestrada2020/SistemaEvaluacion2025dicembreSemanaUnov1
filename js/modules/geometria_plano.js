@@ -149,7 +149,7 @@ window.examCategories.geometria_plano = {
             question: 'La ecuación y = mx + b se llama:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Forma?}',
+            latex: '',
             options: [
                 { latex: '\\text{Pendiente-Ordenada al origen}' },
                 { latex: '\\text{General}' },
@@ -205,7 +205,7 @@ window.examCategories.geometria_plano = {
             question: 'Si dos rectas tienen la misma pendiente y diferente ordenada al origen, son:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Posición?}',
+            latex: '',
             options: [
                 { latex: '\\text{Paralelas distintas}' },
                 { latex: '\\text{Coincidentes}' },
@@ -246,10 +246,10 @@ window.examCategories.geometria_plano = {
             hint: 'Pitágoras simple.'
         },
         {
-            question: 'En la ecuación general x^2 + y^2 + Dx + Ey + F = 0, los coeficientes de x^2 y y^2 deben ser:',
+            question: 'En la ecuación general $x^2 + y^2 + Dx + Ey + F = 0$, los coeficientes de $x^2$ y $y^2$ deben ser:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Condición?}',
+            latex: '',
             options: [
                 { latex: '\\text{Iguales y del mismo signo}' },
                 { latex: '\\text{Diferentes}' },
@@ -260,7 +260,7 @@ window.examCategories.geometria_plano = {
             hint: 'Para ser un círculo perfecto.'
         },
         {
-            question: 'El radio de la circunferencia (x-2)^2 + (y+1)^2 = 16 es:',
+            question: 'El radio de la circunferencia $(x-2)^2 + (y+1)^2 = 16$ es:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
             latex: 'r = ?',
@@ -274,7 +274,7 @@ window.examCategories.geometria_plano = {
             hint: 'Raíz de 16.'
         },
         {
-            question: 'El centro de la circunferencia (x-2)^2 + (y+1)^2 = 16 es:',
+            question: 'El centro de la circunferencia $(x-2)^2 + (y+1)^2 = 16$ es:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
             latex: 'C = ?',
@@ -291,7 +291,7 @@ window.examCategories.geometria_plano = {
             question: 'Una recta que toca a la circunferencia en un solo punto se llama:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Nombre?}',
+            latex: '',
             options: [
                 { latex: '\\text{Tangente}' },
                 { latex: '\\text{Secante}' },
@@ -305,7 +305,7 @@ window.examCategories.geometria_plano = {
             question: 'La distancia del centro a cualquier punto de la circunferencia es:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Valor?}',
+            latex: '',
             options: [
                 { latex: '\\text{Constante e igual al radio}' },
                 { latex: '\\text{Variable}' },
@@ -316,10 +316,10 @@ window.examCategories.geometria_plano = {
             hint: 'Definición de radio.'
         },
         {
-            question: 'Si D^2 + E^2 - 4F < 0 en la general, la circunferencia es:',
+            question: 'Si $D^2 + E^2 - 4F < 0$ en la general, la circunferencia es:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Tipo?}',
+            latex: '',
             options: [
                 { latex: '\\text{Imaginaria (no existe en reales)}' },
                 { latex: '\\text{Un punto}' },
@@ -333,7 +333,7 @@ window.examCategories.geometria_plano = {
             question: 'La recta tangente es perpendicular al radio en el punto de tangencia:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Verdad?}',
+            latex: '',
             options: [
                 { latex: '\\text{Siempre verdadero}' },
                 { latex: '\\text{Falso}' },
@@ -347,7 +347,7 @@ window.examCategories.geometria_plano = {
             question: 'El diámetro es una cuerda que:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Condición?}',
+            latex: '',
             options: [
                 { latex: '\\text{Pasa por el centro}' },
                 { latex: '\\text{Es la más corta}' },
@@ -363,7 +363,7 @@ window.examCategories.geometria_plano = {
             question: 'La parábola es el lugar geométrico de puntos que equidistan de:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Elementos?}',
+            latex: '',
             options: [
                 { latex: '\\text{Un punto fijo (foco) y una recta fija (directriz)}' },
                 { latex: '\\text{Dos puntos fijos (focos)}' },
@@ -374,7 +374,7 @@ window.examCategories.geometria_plano = {
             hint: 'Definición clásica.'
         },
         {
-            question: 'El vértice de la parábola y = x^2 es:',
+            question: 'El vértice de la parábola $y = x^2$ es:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
             latex: 'V = ?',
@@ -416,10 +416,10 @@ window.examCategories.geometria_plano = {
             hint: 'Del vértice al foco.'
         },
         {
-            question: 'Si p > 0 en (x-h)^2 = 4p(y-k), la parábola abre hacia:',
+            question: 'Si $p > 0$ en $(x-h)^2 = 4p(y-k)$, la parábola abre hacia:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Dirección?}',
+            latex: '',
             options: [
                 { latex: '\\text{Arriba}' },
                 { latex: '\\text{Abajo}' },
@@ -444,10 +444,10 @@ window.examCategories.geometria_plano = {
             hint: 'Cuatro veces p.'
         },
         {
-            question: 'El eje de simetría de y = x^2 es:',
+            question: 'El eje de simetría de $y = x^2$ es:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Eje?}',
+            latex: '',
             options: [
                 { latex: '\\text{El eje Y (x=0)}' },
                 { latex: '\\text{El eje X (y=0)}' },
@@ -458,10 +458,10 @@ window.examCategories.geometria_plano = {
             hint: 'La parte por la mitad.'
         },
         {
-            question: 'Si la ecuación es y^2 = 4px, la parábola es:',
+            question: 'Si la ecuación es $y^2 = 4px$, la parábola es:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Orientación?}',
+            latex: '',
             options: [
                 { latex: '\\text{Horizontal}' },
                 { latex: '\\text{Vertical}' },
@@ -475,7 +475,7 @@ window.examCategories.geometria_plano = {
             question: 'La directriz es siempre perpendicular al:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Elemento?}',
+            latex: '',
             options: [
                 { latex: '\\text{Eje de simetría}' },
                 { latex: '\\text{Lado recto}' },
@@ -500,7 +500,7 @@ window.examCategories.geometria_plano = {
             hint: 'Unidad.'
         },
         {
-            question: 'En x^2 = -8y, el valor de p es:',
+            question: 'En $x^2 = -8y$, el valor de $p$ es:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
             latex: '4p = -8 \\implies p = ?',
@@ -517,7 +517,7 @@ window.examCategories.geometria_plano = {
             question: 'Si el vértice está en el origen y el foco en (3, 0), la ecuación es:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: 'p=3, Horizontal',
+            latex: 'p=3, \\text{ horizontal}',
             options: [
                 { latex: 'y^2 = 12x' },
                 { latex: 'x^2 = 12y' },
@@ -531,7 +531,7 @@ window.examCategories.geometria_plano = {
             question: 'La parábola tiene asíntotas:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Tiene?}',
+            latex: '',
             options: [
                 { latex: '\\text{No}' },
                 { latex: '\\text{Sí, dos}' },
@@ -545,7 +545,7 @@ window.examCategories.geometria_plano = {
             question: 'El punto medio del Lado Recto es:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Punto?}',
+            latex: '',
             options: [
                 { latex: '\\text{El Foco}' },
                 { latex: '\\text{El Vértice}' },
@@ -559,7 +559,7 @@ window.examCategories.geometria_plano = {
             question: 'En aplicaciones físicas, la parábola modela:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Fenómeno?}',
+            latex: '',
             options: [
                 { latex: '\\text{Tiro parabólico (proyectiles)}' },
                 { latex: '\\text{Órbitas planetarias}' },
@@ -645,7 +645,7 @@ window.examCategories.geometria_plano = {
             question: 'Si a = b, la elipse se convierte en:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Figura?}',
+            latex: '',
             options: [
                 { latex: '\\text{Circunferencia}' },
                 { latex: '\\text{Parábola}' },
@@ -659,7 +659,7 @@ window.examCategories.geometria_plano = {
             question: 'Los focos siempre están ubicados en:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Eje?}',
+            latex: '',
             options: [
                 { latex: '\\text{El eje mayor}' },
                 { latex: '\\text{El eje menor}' },
@@ -698,7 +698,7 @@ window.examCategories.geometria_plano = {
             hint: 'Fórmula específica.'
         },
         {
-            question: 'Si x^2/25 + y^2/9 = 1, el eje mayor mide:',
+            question: 'Si $\\dfrac{x^2}{25} + \\dfrac{y^2}{9} = 1$, el eje mayor mide:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
             latex: 'a^2=25 \\implies a=5',
@@ -712,7 +712,7 @@ window.examCategories.geometria_plano = {
             hint: '2a = 10.'
         },
         {
-            question: 'Si x^2/25 + y^2/9 = 1, los focos están en el eje:',
+            question: 'Si $\\dfrac{x^2}{25} + \\dfrac{y^2}{9} = 1$, los focos están en el eje:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
             latex: '25 > 9',
@@ -729,7 +729,7 @@ window.examCategories.geometria_plano = {
             question: 'La suma de distancias a los focos es igual a:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Valor?}',
+            latex: '',
             options: [
                 { latex: '\\text{La longitud del eje mayor (2a)}' },
                 { latex: '\\text{La distancia focal (2c)}' },
@@ -743,7 +743,7 @@ window.examCategories.geometria_plano = {
             question: 'Las órbitas planetarias son:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Forma?}',
+            latex: '',
             options: [
                 { latex: '\\text{Elipses con el Sol en un foco}' },
                 { latex: '\\text{Círculos perfectos}' },
@@ -757,7 +757,7 @@ window.examCategories.geometria_plano = {
             question: 'Si e se acerca a 0, la elipse se parece más a:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Forma?}',
+            latex: '',
             options: [
                 { latex: '\\text{Un círculo}' },
                 { latex: '\\text{Una línea}' },
@@ -771,7 +771,7 @@ window.examCategories.geometria_plano = {
             question: 'Si e se acerca a 1, la elipse se parece más a:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Forma?}',
+            latex: '',
             options: [
                 { latex: '\\text{Una línea (muy alargada)}' },
                 { latex: '\\text{Un círculo}' },
@@ -801,7 +801,7 @@ window.examCategories.geometria_plano = {
             question: 'La ecuación canónica de la hipérbola horizontal centrada en el origen es:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Signo menos?}',
+            latex: '',
             options: [
                 { latex: '\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1' },
                 { latex: '\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1' },
@@ -829,7 +829,7 @@ window.examCategories.geometria_plano = {
             question: 'La hipérbola tiene:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Ramas?}',
+            latex: '',
             options: [
                 { latex: '\\text{Dos ramas separadas}' },
                 { latex: '\\text{Una rama cerrada}' },
@@ -840,7 +840,7 @@ window.examCategories.geometria_plano = {
             hint: 'Dos curvas.'
         },
         {
-            question: 'Las asíntotas de la hipérbola x^2/a^2 - y^2/b^2 = 1 son:',
+            question: 'Las asíntotas de la hipérbola $\\dfrac{x^2}{a^2} - \\dfrac{y^2}{b^2} = 1$ son:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
             latex: 'y = ?',
@@ -871,7 +871,7 @@ window.examCategories.geometria_plano = {
             question: 'El eje transverso une:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Puntos?}',
+            latex: '',
             options: [
                 { latex: '\\text{Los vértices}' },
                 { latex: '\\text{Los focos}' }, // Technically true as segment, but vertices define its length 2a.
@@ -899,7 +899,7 @@ window.examCategories.geometria_plano = {
             question: 'Si a = b, la hipérbola se llama:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Nombre?}',
+            latex: '',
             options: [
                 { latex: '\\text{Equilátera}' },
                 { latex: '\\text{Isósceles}' },
@@ -910,24 +910,24 @@ window.examCategories.geometria_plano = {
             hint: 'Asíntotas perpendiculares.'
         },
         {
-            question: 'En la hipérbola equilátera x^2 - y^2 = a^2, las asíntotas son:',
+            question: 'En la hipérbola equilátera $x^2 - y^2 = a^2$, las asíntotas son:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Rectas?}',
+            latex: '',
             options: [
                 { latex: 'y = x, y = -x' },
                 { latex: 'x = 0, y = 0' },
                 { latex: 'y = 2x' },
-                { latex: 'y = 0.5x' }
+                { latex: 'y = 0{,}5x' }
             ],
             correct: 0,
             hint: 'A 45 grados.'
         },
         {
-            question: 'Si el término positivo es y^2, la hipérbola es:',
+            question: 'Si el término positivo es $y^2$, la hipérbola es:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Orientación?}',
+            latex: '',
             options: [
                 { latex: '\\text{Vertical}' },
                 { latex: '\\text{Horizontal}' },
@@ -952,10 +952,10 @@ window.examCategories.geometria_plano = {
             hint: 'Doble de c.'
         },
         {
-            question: 'En la ecuación general Ax^2 + Cy^2 + ... = 0, para ser hipérbola:',
+            question: 'En la ecuación general $Ax^2 + Cy^2 + \\dots = 0$, para ser hipérbola:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Signos?}',
+            latex: '',
             options: [
                 { latex: '\\text{A y C tienen signos opuestos}' },
                 { latex: '\\text{A y C tienen el mismo signo}' },
@@ -969,7 +969,7 @@ window.examCategories.geometria_plano = {
             question: 'El centro de la hipérbola es el punto medio de:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Segmento?}',
+            latex: '',
             options: [
                 { latex: '\\text{El eje transverso (entre vértices)}' },
                 { latex: '\\text{Una asíntota}' },
@@ -983,7 +983,7 @@ window.examCategories.geometria_plano = {
             question: 'Las hipérbolas conjugadas tienen:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Comparten?}',
+            latex: '',
             options: [
                 { latex: '\\text{Las mismas asíntotas}' },
                 { latex: '\\text{Los mismos focos}' },
@@ -992,6 +992,40 @@ window.examCategories.geometria_plano = {
             ],
             correct: 0,
             hint: 'Intercambian ejes.'
+        },
+        // ===== Tareas en GeoGebra (2026-11-06): se responden moviendo la construcción =====
+        {
+            question: 'Mueva el punto A hasta el vértice de la parábola.',
+            answerType: 'geogebra',
+            params: { h: { min: -4, max: 4 }, k: { min: -3, max: 4 } },
+            where: 'h != 0 || k != 0',
+            geogebraAppName: 'classic',
+            geogebraCommands: ['f(x) = (x {{signed(-h)}})^2 {{signed(k)}}', 'A = (0, 0)'],
+            geogebraCheck: {
+                condition: 'Distance(A, ({{h}}, {{k}})) < 0.2',
+                report: 'A',
+                expected: 'A = ({{h}}, {{k}})'
+            },
+            latex: 'f(x) = (x {{signed(-h)}})^2 {{signed(k)}}',
+            hint: 'En y = (x - h)^2 + k el vértice es (h, k).'
+        },
+        {
+            question: 'Ajuste el deslizador m para que la recta pase por el punto P.',
+            answerType: 'geogebra',
+            params: { m0: { min: -4, max: 4, step: 0.5, exclude: [0] }, x0: { min: 1, max: 4 }, b: { min: -3, max: 3 } },
+            geogebraAppName: 'classic',
+            geogebraCommands: [
+                'm = Slider(-5, 5, 0.5)', 'SetValue(m, 0)',
+                'P = ({{x0}}, {{m0*x0 + b}})', 'SetFixed(P, true)',
+                'g: y = m x {{signed(b)}}'
+            ],
+            geogebraCheck: {
+                condition: 'abs(m - ({{m0}})) < 0.01',
+                report: 'm',
+                expected: 'm = {{m0}}'
+            },
+            latex: 'y = m x {{signed(b)}}, \\quad P = ({{x0}}, {{m0*x0 + b}})',
+            hint: 'Sustituye las coordenadas de P en la ecuación y despeja m.'
         }
     ]
 };

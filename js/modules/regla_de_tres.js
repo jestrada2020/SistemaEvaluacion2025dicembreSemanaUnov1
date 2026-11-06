@@ -95,7 +95,7 @@ window.examCategories.regla_de_tres = {
             geogebraState: '0',
             latex: '\\text{2 kg} \\to 3 \\text{ euros} \\\\ \\text{5 kg} \\to x',
             options: [
-                { latex: '7.5 \\text{ euros}' },
+                { latex: '7{,}5 \\text{ euros}' },
                 { latex: '6 \\text{ euros}' },
                 { latex: '8 \\text{ euros}' },
                 { latex: '9 \\text{ euros}' }
@@ -188,14 +188,14 @@ window.examCategories.regla_de_tres = {
             hint: 'Proporcionalidad directa.'
         },
         {
-            question: 'Si 500 folios pesan 2.5 kg, ¿cuánto pesan 200 folios?',
+            question: 'Si 500 folios pesan 2,5 kg, ¿cuánto pesan 200 folios?',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{500 folios} \\to 2.5 \\text{ kg} \\\\ \\text{200 folios} \\to x',
+            latex: '\\text{500 folios} \\to 2{,}5 \\text{ kg} \\\\ \\text{200 folios} \\to x',
             options: [
                 { latex: '1 \\text{ kg}' },
-                { latex: '0.5 \\text{ kg}' },
-                { latex: '1.5 \\text{ kg}' },
+                { latex: '0{,}5 \\text{ kg}' },
+                { latex: '1{,}5 \\text{ kg}' },
                 { latex: '2 \\text{ kg}' }
             ],
             correct: 0,
@@ -216,24 +216,24 @@ window.examCategories.regla_de_tres = {
             hint: 'Proporcionalidad directa.'
         },
         {
-            question: 'Si 6 latas de refresco cuestan 3.60 euros, ¿cuánto cuestan 10 latas?',
+            question: 'Si 6 latas de refresco cuestan 3,60 euros, ¿cuánto cuestan 10 latas?',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{6 latas} \\to 3.60 \\text{ euros} \\\\ \\text{10 latas} \\to x',
+            latex: '\\text{6 latas} \\to 3{,}60 \\text{ euros} \\\\ \\text{10 latas} \\to x',
             options: [
                 { latex: '6 \\text{ euros}' },
                 { latex: '5 \\text{ euros}' },
                 { latex: '7 \\text{ euros}' },
-                { latex: '4.50 \\text{ euros}' }
+                { latex: '4{,}50 \\text{ euros}' }
             ],
             correct: 0,
             hint: 'Proporcionalidad directa.'
         },
         {
-            question: 'Un tren recorre 240 km en 2 horas. ¿Qué distancia recorrerá en 3.5 horas?',
+            question: 'Un tren recorre 240 km en 2 horas. ¿Qué distancia recorrerá en 3,5 horas?',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{2 h} \\to 240 \\text{ km} \\\\ \\text{3.5 h} \\to x',
+            latex: '\\text{2 h} \\to 240 \\text{ km} \\\\ \\text{3{,}5 h} \\to x',
             options: [
                 { latex: '420 \\text{ km}' },
                 { latex: '360 \\text{ km}' },
@@ -244,15 +244,15 @@ window.examCategories.regla_de_tres = {
             hint: 'Proporcionalidad directa.'
         },
         {
-            question: 'Si 12 huevos cuestan 2.40 euros, ¿cuánto cuestan 30 huevos?',
+            question: 'Si 12 huevos cuestan 2,40 euros, ¿cuánto cuestan 30 huevos?',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{12 huevos} \\to 2.40 \\text{ euros} \\\\ \\text{30 huevos} \\to x',
+            latex: '\\text{12 huevos} \\to 2{,}40 \\text{ euros} \\\\ \\text{30 huevos} \\to x',
             options: [
                 { latex: '6 \\text{ euros}' },
                 { latex: '5 \\text{ euros}' },
                 { latex: '7 \\text{ euros}' },
-                { latex: '4.80 \\text{ euros}' }
+                { latex: '4{,}80 \\text{ euros}' }
             ],
             correct: 0,
             hint: 'Proporcionalidad directa.'
@@ -272,13 +272,13 @@ window.examCategories.regla_de_tres = {
             hint: 'Proporcionalidad directa.'
         },
         {
-            question: 'Si 3 kg de naranjas dan 1.5 litros de zumo, ¿cuántos litros darán 10 kg?',
+            question: 'Si 3 kg de naranjas dan 1,5 litros de zumo, ¿cuántos litros darán 10 kg?',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{3 kg} \\to 1.5 \\text{ L} \\\\ \\text{10 kg} \\to x',
+            latex: '\\text{3 kg} \\to 1{,}5 \\text{ L} \\\\ \\text{10 kg} \\to x',
             options: [
                 { latex: '5 \\text{ L}' },
-                { latex: '4.5 \\text{ L}' },
+                { latex: '4{,}5 \\text{ L}' },
                 { latex: '6 \\text{ L}' },
                 { latex: '4 \\text{ L}' }
             ],
@@ -356,14 +356,14 @@ window.examCategories.regla_de_tres = {
             hint: 'Proporcionalidad directa.'
         },
         {
-            question: 'Si 5 litros de aceite pesan 4.6 kg, ¿cuánto pesan 8 litros?',
+            question: 'Si 5 litros de aceite pesan 4,6 kg, ¿cuánto pesan 8 litros?',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{5 L} \\to 4.6 \\text{ kg} \\\\ \\text{8 L} \\to x',
+            latex: '\\text{5 L} \\to 4{,}6 \\text{ kg} \\\\ \\text{8 L} \\to x',
             options: [
-                { latex: '7.36 \\text{ kg}' },
+                { latex: '7{,}36 \\text{ kg}' },
                 { latex: '7 \\text{ kg}' },
-                { latex: '6.5 \\text{ kg}' },
+                { latex: '6{,}5 \\text{ kg}' },
                 { latex: '8 \\text{ kg}' }
             ],
             correct: 0,
@@ -412,10 +412,10 @@ window.examCategories.regla_de_tres = {
             hint: 'Proporcionalidad directa.'
         },
         {
-            question: 'Si un dólar equivale a 0.90 euros, ¿cuántos euros son 50 dólares?',
+            question: 'Si un dólar equivale a 0,90 euros, ¿cuántos euros son 50 dólares?',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{1 dólar} \\to 0.90 \\text{ euros} \\\\ \\text{50 dólares} \\to x',
+            latex: '\\text{1 dólar} \\to 0{,}90 \\text{ euros} \\\\ \\text{50 dólares} \\to x',
             options: [
                 { latex: '45 \\text{ euros}' },
                 { latex: '40 \\text{ euros}' },
@@ -448,9 +448,9 @@ window.examCategories.regla_de_tres = {
             latex: '\\text{80 km/h} \\to 3 \\text{ h} \\\\ \\text{120 km/h} \\to x',
             options: [
                 { latex: '2 \\text{ h}' },
-                { latex: '4.5 \\text{ h}' },
-                { latex: '1.5 \\text{ h}' },
-                { latex: '2.5 \\text{ h}' }
+                { latex: '4{,}5 \\text{ h}' },
+                { latex: '1{,}5 \\text{ h}' },
+                { latex: '2{,}5 \\text{ h}' }
             ],
             correct: 0,
             hint: 'Proporcionalidad inversa.'
@@ -490,7 +490,7 @@ window.examCategories.regla_de_tres = {
             latex: '\\text{6 personas} \\to 20 \\text{ euros} \\\\ \\text{10 personas} \\to x',
             options: [
                 { latex: '12 \\text{ euros}' },
-                { latex: '33.3 \\text{ euros}' },
+                { latex: '33{,}3 \\text{ euros}' },
                 { latex: '15 \\text{ euros}' },
                 { latex: '10 \\text{ euros}' }
             ],
@@ -574,7 +574,7 @@ window.examCategories.regla_de_tres = {
             latex: '\\text{12 personas} \\to 10 \\text{ min} \\\\ \\text{4 personas} \\to x',
             options: [
                 { latex: '30 \\text{ min}' },
-                { latex: '3.3 \\text{ min}' },
+                { latex: '3{,}3 \\text{ min}' },
                 { latex: '20 \\text{ min}' },
                 { latex: '40 \\text{ min}' }
             ],
@@ -588,7 +588,7 @@ window.examCategories.regla_de_tres = {
             latex: '\\text{10 cm} \\to 6 \\text{ cm} \\\\ \\text{12 cm} \\to x',
             options: [
                 { latex: '5 \\text{ cm}' },
-                { latex: '7.2 \\text{ cm}' },
+                { latex: '7{,}2 \\text{ cm}' },
                 { latex: '4 \\text{ cm}' },
                 { latex: '8 \\text{ cm}' }
             ],
@@ -686,7 +686,7 @@ window.examCategories.regla_de_tres = {
             latex: '\\text{20 alum} \\to 15 \\text{ euros} \\\\ \\text{25 alum} \\to x',
             options: [
                 { latex: '12 \\text{ euros}' },
-                { latex: '18.75 \\text{ euros}' },
+                { latex: '18{,}75 \\text{ euros}' },
                 { latex: '10 \\text{ euros}' },
                 { latex: '14 \\text{ euros}' }
             ],
@@ -714,7 +714,7 @@ window.examCategories.regla_de_tres = {
             latex: '\\text{4 mang} \\to 9 \\text{ h} \\\\ \\text{6 mang} \\to x',
             options: [
                 { latex: '6 \\text{ h}' },
-                { latex: '13.5 \\text{ h}' },
+                { latex: '13{,}5 \\text{ h}' },
                 { latex: '5 \\text{ h}' },
                 { latex: '7 \\text{ h}' }
             ],
@@ -728,7 +728,7 @@ window.examCategories.regla_de_tres = {
             latex: '\\text{6 h} \\to 100 \\text{ km/h} \\\\ \\text{5 h} \\to x',
             options: [
                 { latex: '120 \\text{ km/h}' },
-                { latex: '83.3 \\text{ km/h}' },
+                { latex: '83{,}3 \\text{ km/h}' },
                 { latex: '110 \\text{ km/h}' },
                 { latex: '130 \\text{ km/h}' }
             ],
@@ -742,7 +742,7 @@ window.examCategories.regla_de_tres = {
             latex: '\\text{10 pers} \\to 15 \\text{ días} \\\\ \\text{25 pers} \\to x',
             options: [
                 { latex: '6 \\text{ días}' },
-                { latex: '37.5 \\text{ días}' },
+                { latex: '37{,}5 \\text{ días}' },
                 { latex: '5 \\text{ días}' },
                 { latex: '8 \\text{ días}' }
             ],
@@ -750,12 +750,12 @@ window.examCategories.regla_de_tres = {
             hint: 'Proporcionalidad inversa.'
         },
         {
-            question: 'Para embaldosar una sala se necesitan 300 baldosas de 20x20 cm. ¿Cuántas se necesitarían de 30x30 cm?',
+            question: 'Para embaldosar una sala se necesitan 300 baldosas de 20x20 cm. ¿Cuántas se necesitarían de 30x30 cm? (Las baldosas son enteras: redondee hacia arriba).',
             geogebraAppName: 'classic',
             geogebraState: '0',
             latex: '\\text{400 cm}^2 \\to 300 \\text{ bald} \\\\ \\text{900 cm}^2 \\to x',
             options: [
-                { latex: '133.3 \\text{ bald}' }, // 300 * 400 / 900 = 120000 / 900 = 133.33
+                { latex: '134 \\text{ bald}' }, // 300 * 400 / 900 = 120000 / 900 = 133.33
                 { latex: '200 \\text{ bald}' },
                 { latex: '150 \\text{ bald}' },
                 { latex: '100 \\text{ bald}' }
@@ -770,7 +770,7 @@ window.examCategories.regla_de_tres = {
             latex: '\\text{5 cam} \\to 6 \\text{ viajes} \\\\ \\text{3 cam} \\to x',
             options: [
                 { latex: '10 \\text{ viajes}' },
-                { latex: '3.6 \\text{ viajes}' },
+                { latex: '3{,}6 \\text{ viajes}' },
                 { latex: '8 \\text{ viajes}' },
                 { latex: '12 \\text{ viajes}' }
             ],
@@ -846,6 +846,21 @@ window.examCategories.regla_de_tres = {
             ],
             correct: 0,
             hint: 'Proporcionalidad inversa.'
+        },
+        // ===== Paramétrica (2026-11-06) =====
+        {
+            question: 'Si {{n1}} cuadernos cuestan {{p1}} pesos, ¿cuánto cuestan {{n2}} cuadernos?',
+            params: { n1: { min: 2, max: 6 }, u: { min: 1500, max: 4000, step: 500 }, n2: { min: 7, max: 15 }, p1: '= n1*u', p2: '= n2*u' },
+            geogebraAppName: 'classic',
+            latex: '{{n1}} \\to {{p1}}, \\quad {{n2}} \\to x',
+            options: [
+                { latex: 'x = {{p2}}' },
+                { latex: 'x = {{round(p1*n1/n2, 0)}}' }, // tratarla como inversa
+                { latex: 'x = {{p2 + u}}' },
+                { latex: 'x = {{p1*n2}}' }               // multiplicar sin dividir
+            ],
+            correct: 0,
+            hint: 'Regla de tres directa: x = (precio conocido × nueva cantidad) / cantidad conocida.'
         }
     ]
 };

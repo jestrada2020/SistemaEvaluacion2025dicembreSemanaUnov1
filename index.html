@@ -4,122 +4,258 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema Evaluativo de Matemáticas</title>
+    <title>Práctica, evaluaciones y análisis</title>
 
-    <!-- KaTeX -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
+    <!-- Estilo de la Caja de Herramientas (Bootstrap 5.3 y Font Awesome 6, copias locales en lib/) -->
+    <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css?v=2.10">
+    <link rel="stylesheet" href="lib/fontawesome/css/all.min.css?v=2.10">
 
-    <!-- GeoGebra -->
-    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <!-- KaTeX (copia local en lib/: funciona sin internet) -->
+    <link rel="stylesheet" href="lib/katex/katex.min.css?v=2.10">
+    <script src="lib/katex/katex.min.js?v=2.10"></script>
+    <script src="lib/katex/contrib/auto-render.min.js?v=2.10"></script>
 
-    <!-- SheetJS for Excel Export -->
-    <script src="https://cdn.sheetjs.com/xlsx-0.20.0/package/dist/xlsx.full.min.js"></script>
+    <!-- GeoGebra (requiere internet; no admite SRI porque geogebra.org actualiza este archivo) -->
+    <script async src="https://www.geogebra.org/apps/deployggb.js"></script>
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/generator.css">
+    <!-- SheetJS para exportar a Excel (copia local en lib/) -->
+    <script src="lib/sheetjs/xlsx.full.min.js?v=2.10"></script>
+
+    <link rel="stylesheet" href="css/caja_herramientas.css?v=2.10">
+    <link rel="stylesheet" href="css/styles.css?v=2.10">
+    <link rel="stylesheet" href="css/generator.css?v=2.10">
+    <link rel="stylesheet" href="css/app.css?v=2.10">
 </head>
 
-<body>
-    <div id="setup-section">
-        <h1>Sistema de Evaluación Matemática</h1>
-        <div id="categories-container"></div>
-        <button id="start-button">Comenzar Evaluación</button>
-        <button id="generator-button" class="secondary-btn"
-            onclick="document.getElementById('setup-section').classList.add('hidden'); document.getElementById('generator-section').classList.remove('hidden'); window.evaluationGenerator.init();">Generador
-            de Evaluación</button>
+<body class="caja">
+    <a class="skip-link" href="#tool-content">Saltar al contenido</a>
 
-    </div>
+    <nav id="sidebar" aria-label="Menú de la aplicación">
+        <h2>Práctica, evaluaciones y análisis</h2>
+        <ul>
+            <li><button type="button" data-tool="introduccion1" class="active">Introducción</button></li>
+            <li><button type="button" data-tool="practica" id="practice-button"><i class="fas fa-pen" aria-hidden="true"></i> Práctica por categorías</button></li>
+            <li><button type="button" data-tool="generador" id="generator-button"><i class="fas fa-list-check" aria-hidden="true"></i> Generador de evaluaciones</button></li>
+            <li><button type="button" data-tool="analisis" id="analysis-button"><i class="fas fa-chart-bar" aria-hidden="true"></i> Análisis de resultados</button></li>
+            <li><button type="button" class="sidebar-button" data-tool="videos"><i class="fab fa-youtube" aria-hidden="true"></i> Aprendo con videos</button></li>
+            <li><button type="button" class="sidebar-button" data-tool="g_Geogebra"><i class="fas fa-compass" aria-hidden="true"></i> Geogebra Clásico</button></li>
+            <li><button type="button" class="sidebar-button" data-tool="manualUsuario"><i class="fas fa-book" aria-hidden="true"></i> Manual de usuario</button></li>
+        </ul>
+    </nav>
 
-    <div id="generator-section" class="hidden">
-        <div class="header-row">
-            <h2>Generador de Evaluación</h2>
-            <button class="back-btn" onclick="location.reload()">Volver</button>
-        </div>
-        <div id="generator-container"></div>
-    </div>
+    <main id="content">
+        <div id="tool-content" class="tool-container" tabindex="-1">
 
-    <div id="exam-section" class="exam-section hidden">
-        <h2>Evaluación en Curso</h2>
-        <div id="question-container"></div>
-        <div class="nav-buttons">
-            <button id="prev-btn" class="nav-btn hidden">Anterior</button>
-            <button id="next-btn" class="nav-btn">Siguiente</button>
-            <button id="finish-btn" class="nav-btn hidden">Finalizar</button>
-        </div>
-    </div>
+            <!-- Introducción, Aprendo con videos, GeoGebra y Manual: contenido generado por js/app.js -->
+            <section id="intro-section" data-tool-section="introduccion1" aria-label="Introducción"></section>
+            <section id="videos-section" data-tool-section="videos" class="hidden" aria-label="Aprendo con videos"></section>
+            <section id="geogebra-section" data-tool-section="g_Geogebra" class="hidden" aria-label="GeoGebra"></section>
+            <section id="manual-section" data-tool-section="manualUsuario" class="hidden" aria-label="Manual de usuario"></section>
 
-    <div id="results-section" class="hidden">
-        <h2>Resultados de la Evaluación</h2>
-        <div class="score" id="final-score"></div>
-        <div id="feedback-container"></div>
-        <button class="restart-btn" onclick="location.reload()">Volver al Inicio</button>
-    </div>
-
-    <!-- Preview Modal -->
-    <div id="preview-modal" class="modal hidden">
-        <div class="modal-content">
-            <span class="close-modal"
-                onclick="document.getElementById('preview-modal').classList.add('hidden')">&times;</span>
-            <h2>Previsualización de Evaluación</h2>
-            <div id="preview-scroll-wrapper" class="preview-scroll-wrapper">
-                <div id="preview-container" class="preview-container">
-                    <!-- Exam content will be injected here -->
+            <!-- Práctica por categorías: elegir, responder y ver resultados -->
+            <section id="setup-section" data-tool-section="practica" class="hidden" aria-labelledby="setup-title">
+                <h2 id="setup-title" class="mb-3">Práctica por categorías</h2>
+                <p>Elija una o varias categorías y el número de preguntas. Las preguntas y sus opciones se ordenan al azar; las paramétricas cambian de números en cada práctica. Al terminar verá la nota, la respuesta correcta y las pistas.</p>
+                <!-- Barra fija: con 24 categorías, los controles quedaban al final de la página -->
+                <div class="practice-toolbar">
+                    <p id="practice-summary" class="practice-summary" aria-live="polite">Ninguna categoría seleccionada.</p>
+                    <div class="practice-toolbar-row">
+                        <button type="button" class="action-btn btn-small btn-info" id="select-all-cats">Seleccionar todas</button>
+                        <button type="button" class="action-btn btn-small btn-gray" id="clear-cats">Quitar todas</button>
+                        <span class="practice-options">
+                            <label for="practice-count">Número de preguntas:</label>
+                            <input type="number" id="practice-count" value="20" min="1" max="500" step="1" inputmode="numeric">
+                        </span>
+                        <button type="button" id="start-button">Comenzar Práctica</button>
+                    </div>
+                    <div id="practice-message" aria-live="polite"></div>
                 </div>
+                <div id="categories-container"></div>
+            </section>
+
+            <section id="exam-section" data-tool-section="practica" class="exam-section hidden" aria-labelledby="exam-title-heading">
+                <h2 id="exam-title-heading">Práctica en curso</h2>
+                <div id="question-container" aria-live="polite"></div>
+                <div class="nav-buttons">
+                    <button type="button" id="prev-btn" class="nav-btn hidden">Anterior</button>
+                    <button type="button" id="next-btn" class="nav-btn">Siguiente</button>
+                    <button type="button" id="finish-btn" class="nav-btn hidden">Finalizar</button>
+                </div>
+            </section>
+
+            <section id="results-section" data-tool-section="practica" class="hidden" aria-labelledby="results-title">
+                <h2 id="results-title" tabindex="-1">Resultados de la práctica</h2>
+                <div id="score-display" class="score"></div>
+                <div id="detailed-results"></div>
+                <button type="button" id="restart-btn" class="restart-btn">Nueva práctica</button>
+            </section>
+
+            <!-- Generador de evaluaciones -->
+            <section id="generator-section" data-tool-section="generador" class="hidden" aria-labelledby="generator-title">
+                <h2 id="generator-title" class="mb-3">Generador de evaluaciones</h2>
+                <p>Arme una evaluación con el banco de preguntas (a mano o al azar), reparta los 50 puntos y previsualícela para imprimirla, exportarla o presentarla en línea.</p>
+                <div id="generator-container"></div>
+            </section>
+
+            <!-- Análisis de resultados por pregunta -->
+            <section id="analysis-section" data-tool-section="analisis" class="hidden viz-root analysis-page" aria-labelledby="analysis-title">
+                <h2 id="analysis-title" class="mb-3">Análisis de resultados por pregunta</h2>
+
+                <div class="loader-card">
+                    <h3 class="h5">1. Cargue los resultados</h3>
+                    <p>Puede cargar varios archivos a la vez:</p>
+                    <ul>
+                        <li>El libro de <strong>Google Sheets</strong> descargado como Excel (Archivo → Descargar → .xlsx); se usa la hoja «Detalle».</li>
+                        <li>La hoja «Detalle» descargada como <strong>.csv</strong>.</li>
+                        <li>Los Excel individuales <strong>Detalle_Nombre_ID.xlsx</strong> que descargan los estudiantes.</li>
+                    </ul>
+                    <label class="drop-zone" id="drop-zone">
+                        <input type="file" id="files-input" accept=".xlsx,.xls,.csv" multiple>
+                        <span>Arrastre aquí los archivos o <u>haga clic para elegirlos</u></span>
+                    </label>
+                    <p id="load-status" class="load-status" role="status" aria-live="polite"></p>
+                    <button type="button" class="action-btn btn-inline btn-gray hidden" id="clear-files-btn">Quitar todos los archivos</button>
+                </div>
+
+                <div id="report" class="hidden">
+                    <!-- Varias evaluaciones en los archivos: se analiza una a la vez (o todas, con aviso) -->
+                    <div id="exam-filter" class="exam-filter hidden">
+                        <label for="exam-select">Evaluación que se analiza:</label>
+                        <select id="exam-select"></select>
+                        <p class="kpi-note" id="exam-filter-note"></p>
+                    </div>
+                    <h3 class="h5">2. Resumen</h3>
+                    <div class="kpi-row" id="kpi-row"></div>
+
+                    <div class="section-head mt-4">
+                        <h3 class="h5 mb-0">3. Preguntas</h3>
+                        <div class="filters">
+                            <label><input type="checkbox" id="only-flags"> Solo preguntas con alertas</label>
+                            <label for="sort-by">Ordenar por:</label>
+                            <select id="sort-by">
+                                <option value="alerts">Alertas primero</option>
+                                <option value="p">Dificultad (más difícil primero)</option>
+                                <option value="D">Discriminación (menor primero)</option>
+                                <option value="n">Número de respuestas</option>
+                                <option value="qid">ID de pregunta</option>
+                            </select>
+                            <button type="button" class="action-btn btn-inline btn-green" id="export-btn">Descargar análisis (Excel)</button>
+                        </div>
+                    </div>
+                    <details class="guide">
+                        <summary>¿Cómo leer estos indicadores?</summary>
+                        <dl>
+                            <dt>Dificultad (p)</dt>
+                            <dd>Proporción de estudiantes que acertaron. Ideal entre 0,3 y 0,8. Por encima de 0,9 la pregunta es muy fácil; por debajo de 0,2, muy difícil (o mal planteada).</dd>
+                            <dt>Discriminación (D)</dt>
+                            <dd>Aciertos del 27 % con mejor nota menos aciertos del 27 % con peor nota. ≥ 0,4 excelente; 0,2–0,4 aceptable; &lt; 0,2 discrimina poco. <strong>Negativa</strong>: los mejores fallan más que los demás, casi siempre por una <strong>clave equivocada</strong> o un enunciado ambiguo.</dd>
+                            <dt>Correlación ítem-resto (r)</dt>
+                            <dd>Relación entre acertar esta pregunta y la nota en las demás. ≥ 0,3 buena; cercana a 0 o negativa, la pregunta no mide lo mismo que el resto.</dd>
+                            <dt>Distractores</dt>
+                            <dd>Qué opción eligió cada estudiante (letra según el orden del banco). Un distractor que nadie elige no funciona; uno que eligen más los mejores que la respuesta correcta sugiere una clave equivocada.</dd>
+                        </dl>
+                        <p>Con pocos envíos los indicadores no son fiables: con menos de 5 respuestas por pregunta solo se muestran los datos, y con menos de 10 envíos las alertas de discriminación son orientativas («Atención», no «Revisar»). Lo recomendable son 20 envíos o más.</p>
+                    </details>
+                    <div id="items-container"></div>
+
+                    <h3 class="h5 mt-4">4. Por categoría</h3>
+                    <div class="table-wrap">
+                        <table class="data-table" id="cats-table"></table>
+                    </div>
+
+                    <h3 class="h5 mt-4">5. Estudiantes</h3>
+                    <div class="table-wrap">
+                        <table class="data-table" id="students-table"></table>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Previsualización del generador -->
+    <div id="preview-modal" class="preview-modal hidden" role="dialog" aria-modal="true" aria-labelledby="preview-title">
+        <div class="preview-modal-content">
+            <button type="button" class="close-modal" data-action="close-preview" aria-label="Cerrar la previsualización">&times;</button>
+            <h2 id="preview-title">Previsualización de la evaluación</h2>
+            <div id="preview-scroll-wrapper" class="preview-scroll-wrapper">
+                <div id="preview-container" class="preview-container"></div>
+            </div>
+            <div class="online-options">
+                <label>Título:
+                    <input type="text" id="exam-title" value="Evaluación de Matemáticas" maxlength="120">
+                </label>
+                <label title="0 = sin límite. Al acabarse el tiempo, la evaluación se entrega sola.">Tiempo límite (min):
+                    <input type="number" id="exam-time-limit" value="0" min="0" max="600">
+                </label>
+                <label title="Si se desmarca, el estudiante no ve las pistas durante la evaluación en línea">
+                    <input type="checkbox" id="opt-show-hints"> Mostrar pistas durante la evaluación en línea
+                </label>
+                <label title="Si se desmarca, al finalizar el estudiante ve su nota y qué preguntas acertó, pero no cuál era la respuesta correcta">
+                    <input type="checkbox" id="opt-show-correct"> Mostrar las respuestas correctas al finalizar
+                </label>
+            </div>
+            <!-- Cuadro de instrucciones bajo los datos del estudiante (hoja impresa, PDF y LaTeX) -->
+            <div class="online-options instr-options">
+                <label title="Cuadro con las instrucciones debajo de Estudiante, ID y Fecha">
+                    <input type="checkbox" id="instr-include" checked> Cuadro de instrucciones
+                </label>
+                <label>Tipo de evaluación:
+                    <select id="instr-type">
+                        <option value="quiz" selected>Quiz</option>
+                        <option value="parcial">Parcial</option>
+                        <option value="examen">Examen</option>
+                        <option value="examen-final">Examen final</option>
+                        <option value="taller">Taller</option>
+                        <option value="seguimiento">Seguimiento</option>
+                        <option value="evaluacion">Evaluación</option>
+                        <option value="prueba">Prueba</option>
+                    </select>
+                </label>
+                <label>Duración (min):
+                    <input type="number" id="instr-minutes" value="45" min="1" max="600" step="1">
+                </label>
             </div>
             <div class="modal-actions">
-                <button class="action-btn" style="background: #28a745;"
-                    onclick="evaluationGenerator.runOnlineExam()">Realizar Evaluación en Línea</button>
-                <button class="action-btn export-btn" onclick="evaluationGenerator.exportPDF()">Descargar PDF</button>
-                <button class="action-btn export-btn" onclick="evaluationGenerator.exportExcel()">Descargar
-                    Excel</button>
-                <button class="action-btn export-btn" onclick="evaluationGenerator.exportLaTeX()">Descargar
-                    LaTeX</button>
-                <button class="action-btn export-btn" onclick="evaluationGenerator.exportJSON()">Descargar JSON</button>
+                <button type="button" class="action-btn btn-green" data-action="run-online">Realizar Evaluación en Línea</button>
+                <button type="button" class="action-btn export-btn" data-action="export-pdf">Descargar PDF</button>
+                <div class="versions-row">
+                    <label for="version-count">Versiones impresas:</label>
+                    <select id="version-count">
+                        <option value="2">2 (A, B)</option>
+                        <option value="3" selected>3 (A, B, C)</option>
+                        <option value="4">4 (A–D)</option>
+                        <option value="5">5 (A–E)</option>
+                        <option value="6">6 (A–F)</option>
+                    </select>
+                    <button type="button" class="action-btn btn-purple" data-action="print-versions"
+                        title="Imprime varias versiones con distinto orden de preguntas y opciones y descarga la clave de cada una">Imprimir versiones + clave (Excel)</button>
+                </div>
+                <button type="button" class="action-btn export-btn" data-action="export-excel">Descargar Excel</button>
+                <button type="button" class="action-btn export-btn" data-action="export-latex">Descargar LaTeX</button>
+                <button type="button" class="action-btn export-btn" data-action="export-json" title="Para volver a cargar esta evaluación en el generador">Guardar evaluación (JSON)</button>
+                <button type="button" class="action-btn btn-purple" data-action="student-file" title="Archivo para presentar la evaluación en otros computadores">Descargar archivo para estudiantes</button>
+                <button type="button" class="action-btn btn-teal" data-action="student-link" title="Solo si la aplicación está publicada en internet">Copiar enlace para estudiantes</button>
             </div>
         </div>
     </div>
 
-    <!-- Modules -->
-    <script src="js/modules/aritmetica.js"></script>
-    <script src="js/modules/calculodiferencial.js"></script>
-    <script src="js/modules/calculointegral.js"></script>
-    <script src="js/modules/calculomultivariado.js"></script>
-    <script src="js/modules/geometria.js"></script>
-    <script src="js/modules/factorizacion.js"></script>
-    <script src="js/modules/ecuaciones.js"></script>
-    <script src="js/modules/sistemas_ecuaciones.js"></script>
-    <script src="js/modules/razonamiento_logico.js"></script>
-    <script src="js/modules/ecuaciones_diferenciales.js"></script>
-    <script src="js/modules/algebra_lineal.js"></script>
-    <script src="js/modules/regla_de_tres.js"></script>
-    <script src="js/modules/regla_de_tres_agro.js"></script>
-    <script src="js/modules/cambio_unidades.js"></script>
-    <script src="js/modules/analisis_numerico.js"></script>
-    <script src="js/modules/geometria_vectorial.js"></script>
-    <script src="js/modules/geometria_triangulo.js"></script>
-    <script src="js/modules/estadistica_descriptiva.js"></script>
-    <script src="js/modules/estadistica_probabilistica.js"></script>
-    <script src="js/modules/estadistica_inferencial.js"></script>
-    <script src="js/modules/geometria_plano.js"></script>
-    <script src="js/modules/superficies_3d.js"></script>
-    <script src="js/modules/campos_vectoriales.js"></script>
-    <script src="js/modules/combinatoria.js"></script>
+    <div id="viz-tooltip" class="viz-tooltip" role="tooltip" hidden></div>
 
-    <!-- Main System -->
-    <script src="js/data/questions.js"></script>
-    <script src="js/ExamSystem.js"></script>
-    <script src="js/EvaluationGenerator.js"></script>
+    <!-- Configuración (URL de Google Sheets) -->
+    <script src="js/config.js?v=2.10"></script>
 
-    <!-- Initialization -->
-    <script>
-        let examSystem;
-        document.addEventListener('DOMContentLoaded', () => {
-            examSystem = new ExamSystem();
-        });
-    </script>
+    <!-- Banco de preguntas generado por merge_questions.js (incluye las categorías) -->
+    <script src="js/data/questions.js?v=2.10"></script>
+    <script src="js/data/huellas_anteriores.js?v=2.10"></script>
+
+    <script src="js/avisos.js?v=2.10"></script>
+    <script src="js/parametric.js?v=2.10"></script>
+    <script src="js/geogebraEstados.js?v=2.10"></script>
+    <script src="js/ExamSystem.js?v=2.10"></script>
+    <script src="js/EvaluationGenerator.js?v=2.10"></script>
+    <script src="js/analysis.js?v=2.10"></script>
+    <script src="js/videos.js?v=2.10"></script>
+    <script src="js/app.js?v=2.10"></script>
 </body>
 
 </html>

@@ -4,122 +4,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evaluación en Línea</title>
+    <title>Evaluación en línea · Caja de Herramientas</title>
 
-    <!-- KaTeX -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
+    <!-- Estilo de la Caja de Herramientas (copias locales en lib/) -->
+    <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css?v=2.10">
+    <link rel="stylesheet" href="lib/fontawesome/css/all.min.css?v=2.10">
 
-    <!-- GeoGebra -->
-    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <!-- KaTeX (copia local en lib/: funciona sin internet) -->
+    <link rel="stylesheet" href="lib/katex/katex.min.css?v=2.10">
+    <script src="lib/katex/katex.min.js?v=2.10"></script>
+    <script src="lib/katex/contrib/auto-render.min.js?v=2.10"></script>
 
-    <!-- SheetJS for Excel Export -->
-    <script src="https://cdn.sheetjs.com/xlsx-0.20.0/package/dist/xlsx.full.min.js"></script>
+    <!-- GeoGebra (requiere internet; no admite SRI porque geogebra.org actualiza este archivo) -->
+    <script async src="https://www.geogebra.org/apps/deployggb.js"></script>
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/styles.css">
-    <style>
-        body {
-            padding: 20px;
-            background-color: #f0f2f5;
-        }
+    <!-- SheetJS para exportar a Excel (copia local en lib/) -->
+    <script src="lib/sheetjs/xlsx.full.min.js?v=2.10"></script>
 
-        #exam-section {
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .hidden {
-            display: none !important;
-        }
-    </style>
+    <link rel="stylesheet" href="css/styles.css?v=2.10">
+    <link rel="stylesheet" href="css/app.css?v=2.10">
 </head>
 
-<body>
+<!-- Página del estudiante: mismo estilo que la aplicación, pero sin el menú lateral
+     (el estudiante no debe poder abrir el generador ni el análisis desde aquí) -->
+<body class="exam-page caja-examen">
+    <a class="skip-link" href="#exam-main">Saltar a la evaluación</a>
 
-    <div id="setup-section" class="hidden"></div>
-    <!-- Placeholder to prevent errors if ExamSystem tries to access it -->
-    <div id="generator-section" class="hidden"></div> <!-- Placeholder -->
-    <div id="categories-container" class="hidden"></div> <!-- Placeholder -->
+    <header class="examen-barra">
+        <i class="fas fa-pen" aria-hidden="true"></i>
+        <span>Evaluación en línea · Caja de Herramientas</span>
+    </header>
 
-    <div id="exam-section">
-        <h2>Evaluación en Curso</h2>
-        <div id="question-container" style="border: 1px solid red; min-height: 100px; padding: 10px;"></div>
-        <div class="nav-buttons">
-            <button id="prev-btn" class="nav-btn hidden">Anterior</button>
-            <button id="next-btn" class="nav-btn">Siguiente</button>
-            <button id="finish-btn" class="nav-btn hidden">Finalizar</button>
-        </div>
-    </div>
+    <main id="exam-main" class="examen-contenedor tool-container" tabindex="-1">
+        <section id="exam-section" aria-labelledby="exam-heading">
+            <h1 id="exam-heading" class="h3 mb-3">Evaluación en curso</h1>
+            <div id="question-container" aria-live="polite"></div>
+            <div class="nav-buttons">
+                <button type="button" id="prev-btn" class="nav-btn hidden">Anterior</button>
+                <button type="button" id="next-btn" class="nav-btn">Siguiente</button>
+                <button type="button" id="finish-btn" class="nav-btn hidden">Finalizar</button>
+            </div>
+        </section>
 
-    <div id="results-section" class="hidden">
-        <h2>Resultados de la Evaluación</h2>
-        <div class="score" id="final-score"></div>
-        <div id="score-display" class="score"></div>
-        <div id="detailed-results"></div>
-        <button class="restart-btn" onclick="window.close()">Cerrar Evaluación</button>
-    </div>
+        <section id="results-section" class="hidden" aria-labelledby="results-title">
+            <h1 id="results-title" class="h3" tabindex="-1">Resultados de la evaluación</h1>
+            <div id="score-display" class="score"></div>
+            <div id="detailed-results"></div>
+            <button type="button" id="close-exam-btn" class="restart-btn">Cerrar evaluación</button>
+        </section>
+    </main>
 
-    <!-- Main System -->
-    <script src="js/ExamSystem.js"></script>
+    <!-- Configuración (URL de Google Sheets) -->
+    <script src="js/config.js?v=2.10"></script>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            let examData = null;
+    <script src="js/avisos.js?v=2.10"></script>
+    <script src="js/parametric.js?v=2.10"></script>
+    <script src="js/geogebraEstados.js?v=2.10"></script>
+    <script src="js/ExamSystem.js?v=2.10"></script>
 
-            // 1. Try localStorage
-            let examDataJSON = localStorage.getItem('examData');
-
-            // 2. Try sessionStorage
-            if (!examDataJSON) {
-                try {
-                    examDataJSON = sessionStorage.getItem('examData');
-                } catch (e) { console.warn("sessionStorage access failed", e); }
-            }
-
-            if (examDataJSON) {
-                try {
-                    examData = JSON.parse(examDataJSON);
-                } catch (e) {
-                    console.error("Error parsing exam data", e);
-                }
-            }
-
-            // 3. Fallback: Try reading from window.opener
-            if (!examData) {
-                try {
-                    if (window.opener && window.opener.evaluationGenerator) {
-                        console.log("Loading data from window.opener");
-                        examData = window.opener.evaluationGenerator.selectedQuestions;
-                    }
-                } catch (e) {
-                    console.error("Security error accessing window.opener:", e);
-                }
-            }
-
-            if (examData && examData.length > 0) {
-                window.examSystem = new ExamSystem();
-                // Small delay to ensure ExamSystem is ready
-                setTimeout(() => {
-                    window.examSystem.startCustomExam(examData);
-                }, 100);
-            } else {
-                document.body.innerHTML = `
-                    <div style="text-align: center; margin-top: 50px;">
-                        <h1>No se encontraron datos de evaluación.</h1>
-                        <p>Esto puede ocurrir si:</p>
-                        <ul style="display: inline-block; text-align: left;">
-                            <li>La ventana se abrió directamente y no desde el generador.</li>
-                            <li>El navegador bloqueó el acceso al almacenamiento local (común en modo incógnito o archivos locales).</li>
-                        </ul>
-                        <br>
-                        <button onclick="window.close()" class="nav-btn" style="background: #dc3545;">Cerrar</button>
-                    </div>
-                `;
-            }
-        });
-    </script>
+    <script src="js/exam-page.js?v=2.10"></script>
 </body>
 
 </html>

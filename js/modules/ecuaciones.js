@@ -20,15 +20,15 @@ window.examCategories.ecuaciones = {
             hint: 'Resta vi y divide por t.'
         },
         {
-            question: 'Física - Cinemática: Despeje la velocidad inicial (vi)',
+            question: 'Física - Cinemática: Despeje la velocidad inicial ($v_i$)',
             geogebraAppName: 'cas',
             geogebraState: '0',
             latex: 'd = v_i t + \\frac{1}{2}at^2',
             options: [
-                { latex: 'v_i = \\frac{d - 0.5at^2}{t}' },
-                { latex: 'v_i = \\frac{d}{t} - 0.5at' },
-                { latex: 'v_i = \\frac{d + 0.5at^2}{t}' },
-                { latex: 'v_i = d - 0.5at^2' }
+                { latex: 'v_i = \\frac{d - at^2}{t}' },
+                { latex: 'v_i = \\frac{d}{t} - 0{,}5at' },
+                { latex: 'v_i = \\frac{d + 0{,}5at^2}{t}' },
+                { latex: 'v_i = d - 0{,}5at^2' }
             ],
             correct: 1,
             hint: 'Resta el término de aceleración y divide por t.'
@@ -104,7 +104,7 @@ window.examCategories.ecuaciones = {
             hint: 'Ley de Ohm.'
         },
         {
-            question: 'Física - Termodinámica: Despeje la temperatura final (Tf)',
+            question: 'Física - Termodinámica: Despeje la temperatura final ($T_f$)',
             geogebraAppName: 'cas',
             geogebraState: '0',
             latex: 'Q = mc(T_f - T_i)',
@@ -190,7 +190,7 @@ window.examCategories.ecuaciones = {
             hint: 'Multiplica por V.'
         },
         {
-            question: 'Química - Ley de Charles: Despeje T2',
+            question: 'Química - Ley de Charles: Despeje $T_2$',
             geogebraAppName: 'cas',
             geogebraState: '0',
             latex: '\\frac{V_1}{T_1} = \\frac{V_2}{T_2}',
@@ -204,7 +204,7 @@ window.examCategories.ecuaciones = {
             hint: 'Regla de tres.'
         },
         {
-            question: 'Química - Ley de Boyle: Despeje P2',
+            question: 'Química - Ley de Boyle: Despeje $P_2$',
             geogebraAppName: 'cas',
             geogebraState: '0',
             latex: 'P_1 V_1 = P_2 V_2',
@@ -218,7 +218,7 @@ window.examCategories.ecuaciones = {
             hint: 'Divide por V2.'
         },
         {
-            question: 'Química - Dilución: Despeje V1',
+            question: 'Química - Dilución: Despeje $V_1$',
             geogebraAppName: 'cas',
             geogebraState: '0',
             latex: 'C_1 V_1 = C_2 V_2',
@@ -246,7 +246,7 @@ window.examCategories.ecuaciones = {
             hint: 'Suma TS.'
         },
         {
-            question: 'Química - pH: Despeje la concentración de H+',
+            question: 'Química - pH: Despeje la concentración $[H^+]$',
             geogebraAppName: 'cas',
             geogebraState: '0',
             latex: 'pH = -\\log[H^+]',
@@ -260,7 +260,7 @@ window.examCategories.ecuaciones = {
             hint: 'Usa la definición de logaritmo.'
         },
         {
-            question: 'Química - Ecuación de Nernst: Despeje E0',
+            question: 'Química - Ecuación de Nernst: Despeje $E^0$',
             geogebraAppName: 'cas',
             geogebraState: '0',
             latex: 'E = E^0 - \\frac{RT}{nF}\\ln Q',
@@ -274,7 +274,7 @@ window.examCategories.ecuaciones = {
             hint: 'Suma el término logarítmico.'
         },
         {
-            question: 'Química - Fracción Molar: Despeje n_A',
+            question: 'Química - Fracción Molar: Despeje $n_A$',
             geogebraAppName: 'cas',
             geogebraState: '0',
             latex: 'X_A = \\frac{n_A}{n_A + n_B}',
@@ -295,7 +295,7 @@ window.examCategories.ecuaciones = {
             geogebraState: '0',
             latex: 'P = 2b + 2h',
             options: [
-                { latex: 'b = \\frac{P - 2h}{2}' },
+                { latex: 'b = \\frac{P - h}{2}' },
                 { latex: 'b = \\frac{P}{2} - h' },
                 { latex: 'b = P - 2h' },
                 { latex: 'b = \\frac{P + 2h}{2}' }
@@ -402,7 +402,7 @@ window.examCategories.ecuaciones = {
             hint: 'Multiplica por 2 y divide por P.'
         },
         {
-            question: 'Geometría - Sector Circular: Despeje el ángulo (theta)',
+            question: 'Geometría - Sector Circular: Despeje el ángulo ($\\theta$)',
             geogebraAppName: 'cas',
             geogebraState: '0',
             latex: 'L = \\theta r',
@@ -494,7 +494,7 @@ window.examCategories.ecuaciones = {
             latex: 'A = P(1 + r)^t',
             options: [
                 { latex: 'P = \\frac{A}{(1 + r)^t}' },
-                { latex: 'P = A(1 + r)^{-t}' },
+                { latex: 'P = A(1 + r)^{t}' },
                 { latex: 'P = A - (1 + r)^t' },
                 { latex: 'P = \\frac{(1 + r)^t}{A}' }
             ],
@@ -608,7 +608,7 @@ window.examCategories.ecuaciones = {
             latex: 'e^{2x} = 5',
             options: [
                 { latex: 'x = \\frac{\\ln 5}{2}' },
-                { latex: 'x = \\ln 2.5' },
+                { latex: 'x = \\ln 2{,}5' },
                 { latex: 'x = \\frac{5}{2}' },
                 { latex: 'x = \\ln 5' }
             ],
@@ -680,7 +680,7 @@ window.examCategories.ecuaciones = {
                 { latex: 'y = \\frac{3x - 6}{2}' },
                 { latex: 'y = \\frac{6 - 3x}{2}' },
                 { latex: 'y = 3x - 3' },
-                { latex: 'y = 1.5x + 3' }
+                { latex: 'y = 1{,}5x + 3' }
             ],
             correct: 0,
             hint: 'Resta 3x y divide por -2.'
@@ -700,7 +700,7 @@ window.examCategories.ecuaciones = {
             hint: '1/x = 1/b - 1/a.'
         },
         {
-            question: 'Ecuación Trigonométrica: Despeje x en [0, 2pi]',
+            question: 'Ecuación Trigonométrica: Despeje $x$ en $[0, 2\\pi]$',
             geogebraAppName: 'cas',
             geogebraState: '0',
             latex: '2\\sin x = 1',
@@ -712,6 +712,21 @@ window.examCategories.ecuaciones = {
             ],
             correct: 0,
             hint: 'sin x = 1/2.'
+        },
+        // ===== Paramétrica (2026-11-06) =====
+        {
+            question: 'Resuelva la ecuación lineal:',
+            params: { a: { min: 2, max: 9 }, x0: { min: -9, max: 9, exclude: [0] }, b: { min: -15, max: 15, exclude: [0] }, c: '= a*x0 + b' },
+            geogebraAppName: 'cas',
+            latex: '{{a}}x {{signed(b)}} = {{c}}',
+            options: [
+                { latex: 'x = {{x0}}' },
+                { latex: 'x = {{frac(c + b, a)}}' }, // error de signo al trasponer b
+                { latex: 'x = {{frac(c, a)}}' },     // olvidar b
+                { latex: 'x = {{-x0}}' }
+            ],
+            correct: 0,
+            hint: 'Traspone el término independiente y luego divide por el coeficiente de x.'
         }
     ]
 };

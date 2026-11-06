@@ -16,35 +16,38 @@ window.examCategories.aritmetica = {
                 { latex: '\\dfrac{-2}{13}' }
             ],
             correct: 0,
-            hint: 'Recuerda que la pendiente de la rectagente a una curva es la derivada de la curva evaluada en el punto de tangencia.'
+            hint: 'Lleva las fracciones a un denominador común antes de sumar.'
         },
+        // Corregidas el 6 nov 2026: el diagrama de Venn numera las regiones del 1 al 8
+        // (1 solo A, 2 A∩C sin B, 3 A∩B sin C, 4 A∩B∩C, 5 solo B, 6 B∩C sin A, 7 solo C, 8 fuera).
+        // Antes ambas preguntaban «A ∩ B» con opciones en u² y clave «14», que no corresponde.
         {
-            question: 'Con base en la construcción gráfica de conjuntos, ¿cuál es la respuesta apropiada?',
+            question: 'En el diagrama de Venn de la construcción, ¿qué regiones forman el conjunto indicado?',
             geogebraId: 'gjapuhgm',
             geogebraState: '1',
-            latex: 'A \\cap B =  \\text{ ? } ',
+            latex: 'A \\cap B',
             options: [
-                { latex: '12\\text{ u}^2' },
-                { latex: '14\\text{ u}^2' },
-                { latex: '18\\text{ u}^2' },
-                { latex: '20\\text{ u}^2' }
+                { latex: '\\text{Regiones } 3 \\text{ y } 4' },
+                { latex: '\\text{Regiones } 1 \\text{ y } 4' },
+                { latex: '\\text{Regiones } 3,\\ 4 \\text{ y } 6' },
+                { latex: '\\text{Regiones } 1,\\ 2,\\ 3 \\text{ y } 4' }
             ],
-            correct: 1,
-            hint: 'Recuerda que la pendiente de la rectagente a una curva es la derivada de la curva evaluada en el punto de tangencia.'
+            correct: 0,
+            hint: 'A ∩ B son los elementos que están a la vez en A y en B, estén o no en C.'
         },
         {
-            question: 'Con base en la construcción gráfica de conjuntos, ¿cuál es la respuesta apropiada?',
+            question: 'En el diagrama de Venn de la construcción, ¿qué regiones forman el conjunto indicado?',
             geogebraId: 'p7rkufyv',
             geogebraState: '1',
-            latex: 'A \\cap B =  \\text{ ? } ',
+            latex: '(C \\cap A) - B',
             options: [
-                { latex: '12\\text{ u}^2' },
-                { latex: '14\\text{ u}^2' },
-                { latex: '18\\text{ u}^2' },
-                { latex: '20\\text{ u}^2' }
+                { latex: '\\text{Región } 2' },
+                { latex: '\\text{Regiones } 2 \\text{ y } 4' },
+                { latex: '\\text{Región } 4' },
+                { latex: '\\text{Regiones } 2,\\ 4 \\text{ y } 6' }
             ],
-            correct: 1,
-            hint: 'Recuerda que la pendiente de la rectagente a una curva es la derivada de la curva evaluada en el punto de tangencia.'
+            correct: 0,
+            hint: 'Primero A ∩ C; luego se quita todo lo que esté en B.'
         },
         {
             question: 'Suma de enteros:',
@@ -124,7 +127,7 @@ window.examCategories.aritmetica = {
             options: [
                 { latex: '\\frac{5}{9}' },
                 { latex: '\\frac{9}{9}' },
-                { latex: '\\frac{5}{0}' },
+                { latex: '\\frac{5}{18}' },
                 { latex: '\\frac{14}{9}' }
             ],
             correct: 0,
@@ -162,12 +165,12 @@ window.examCategories.aritmetica = {
             question: 'Suma de decimales:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '2.5 + 3.1 = ?',
+            latex: '2{,}5 + 3{,}1 = ?',
             options: [
-                { latex: '5.6' },
-                { latex: '5.1' },
-                { latex: '6.5' },
-                { latex: '5.5' }
+                { latex: '5{,}6' },
+                { latex: '5{,}1' },
+                { latex: '6{,}5' },
+                { latex: '5{,}5' }
             ],
             correct: 0,
             hint: 'Alinea el punto decimal.'
@@ -176,12 +179,12 @@ window.examCategories.aritmetica = {
             question: 'Resta de decimales:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '5.8 - 2.3 = ?',
+            latex: '5{,}8 - 2{,}3 = ?',
             options: [
-                { latex: '3.5' },
-                { latex: '3.1' },
-                { latex: '4.5' },
-                { latex: '2.5' }
+                { latex: '3{,}5' },
+                { latex: '3{,}1' },
+                { latex: '4{,}5' },
+                { latex: '2{,}5' }
             ],
             correct: 0,
             hint: 'Alinea el punto decimal.'
@@ -190,12 +193,12 @@ window.examCategories.aritmetica = {
             question: 'Multiplicación de decimales:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '0.5 \\times 0.2 = ?',
+            latex: '0{,}5 \\times 0{,}2 = ?',
             options: [
-                { latex: '0.1' },
-                { latex: '0.01' },
-                { latex: '1.0' },
-                { latex: '0.7' }
+                { latex: '0{,}1' },
+                { latex: '0{,}01' },
+                { latex: '1{,}0' },
+                { latex: '0{,}7' }
             ],
             correct: 0,
             hint: '5 por 2 es 10, recorre el punto dos lugares.'
@@ -302,12 +305,12 @@ window.examCategories.aritmetica = {
             question: 'Redondeo de decimales:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '3.456 \\approx ? \\text{ (a décimas)}',
+            latex: '3{,}456 \\approx ? \\text{ (a décimas)}',
             options: [
-                { latex: '3.5' },
-                { latex: '3.4' },
-                { latex: '3.46' },
-                { latex: '3.45' }
+                { latex: '3{,}5' },
+                { latex: '3{,}4' },
+                { latex: '3{,}46' },
+                { latex: '3{,}45' }
             ],
             correct: 0,
             hint: 'Mira el siguiente dígito.'
@@ -318,10 +321,10 @@ window.examCategories.aritmetica = {
             geogebraState: '0',
             latex: '\\frac{1}{4} = ?',
             options: [
-                { latex: '0.25' },
-                { latex: '0.5' },
-                { latex: '0.4' },
-                { latex: '0.2' }
+                { latex: '0{,}25' },
+                { latex: '0{,}5' },
+                { latex: '0{,}4' },
+                { latex: '0{,}2' }
             ],
             correct: 0,
             hint: 'Divide 1 entre 4.'
@@ -330,7 +333,7 @@ window.examCategories.aritmetica = {
             question: 'Decimal a fracción:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '0.5 = ?',
+            latex: '0{,}5 = ?',
             options: [
                 { latex: '\\frac{1}{2}' },
                 { latex: '\\frac{1}{5}' },
@@ -349,7 +352,7 @@ window.examCategories.aritmetica = {
                 { latex: '3 \\times 10^3' },
                 { latex: '3 \\times 10^2' },
                 { latex: '30 \\times 10^2' },
-                { latex: '0.3 \\times 10^4' }
+                { latex: '0{,}3 \\times 10^4' }
             ],
             correct: 0,
             hint: 'Mueve el punto 3 lugares.'
@@ -391,7 +394,7 @@ window.examCategories.aritmetica = {
                 { latex: '1/2' },
                 { latex: '-2' },
                 { latex: '2' },
-                { latex: '0.2' }
+                { latex: '0{,}2' }
             ],
             correct: 0,
             hint: 'Invierte la fracción (2/1).'
@@ -402,10 +405,10 @@ window.examCategories.aritmetica = {
             geogebraState: '0',
             latex: '\\sqrt{10} \\approx ?',
             options: [
-                { latex: '3.16' },
-                { latex: '3.5' },
-                { latex: '3.0' },
-                { latex: '3.33' }
+                { latex: '3{,}16' },
+                { latex: '3{,}5' },
+                { latex: '3{,}0' },
+                { latex: '3{,}33' }
             ],
             correct: 0,
             hint: 'Un poco más que 3.'
@@ -418,7 +421,7 @@ window.examCategories.aritmetica = {
             options: [
                 { latex: '2' },
                 { latex: '4' },
-                { latex: '2.8' },
+                { latex: '2{,}8' },
                 { latex: '3' }
             ],
             correct: 0,
@@ -433,7 +436,7 @@ window.examCategories.aritmetica = {
                 { latex: '0' },
                 { latex: '5' },
                 { latex: '1' },
-                { latex: 'Undefined' }
+                { latex: '\\text{Indefinido}' }
             ],
             correct: 0,
             hint: 'Cualquier número por cero es cero.'
@@ -503,7 +506,7 @@ window.examCategories.aritmetica = {
                 { latex: '8' },
                 { latex: '0' },
                 { latex: '1' },
-                { latex: 'Undefined' }
+                { latex: '\\text{Indefinido}' }
             ],
             correct: 0,
             hint: 'Sumar cero no cambia el valor.'
@@ -542,9 +545,9 @@ window.examCategories.aritmetica = {
             geogebraState: '0',
             latex: '25\\% = ?',
             options: [
-                { latex: '0.25' },
-                { latex: '2.5' },
-                { latex: '0.025' },
+                { latex: '0{,}25' },
+                { latex: '2{,}5' },
+                { latex: '0{,}025' },
                 { latex: '25' }
             ],
             correct: 0,
@@ -554,11 +557,11 @@ window.examCategories.aritmetica = {
             question: 'Decimal a porcentaje:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '0.75 = ?',
+            latex: '0{,}75 = ?',
             options: [
                 { latex: '75\\%' },
-                { latex: '7.5\\%' },
-                { latex: '0.75\\%' },
+                { latex: '7{,}5\\%' },
+                { latex: '0{,}75\\%' },
                 { latex: '750\\%' }
             ],
             correct: 0,
@@ -596,12 +599,12 @@ window.examCategories.aritmetica = {
             question: 'Interés simple:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: 'I = P \\times r \\times t. \\text{ Si } P=100, r=0.1, t=1, I=?',
+            latex: 'I = P \\times r \\times t. \\text{ Si } P=100, r=0{,}1, t=1, I=?',
             options: [
                 { latex: '10' },
                 { latex: '100' },
                 { latex: '1' },
-                { latex: '0.1' }
+                { latex: '0{,}1' }
             ],
             correct: 0,
             hint: 'Multiplica los tres valores.'
@@ -671,7 +674,7 @@ window.examCategories.aritmetica = {
                 { latex: '2' },
                 { latex: '3' },
                 { latex: '4' },
-                { latex: 'No tiene' }
+                { latex: '\\text{No tiene}' }
             ],
             correct: 0,
             hint: 'El que más se repite.'
@@ -703,6 +706,22 @@ window.examCategories.aritmetica = {
             ],
             correct: 0,
             hint: '1 caso favorable de 2 posibles.'
+        },
+        // ===== Paramétrica (2026-11-06) =====
+        {
+            question: 'Sume las fracciones y simplifique:',
+            params: { a: { min: 1, max: 8 }, b: { min: 2, max: 9 }, c: { min: 1, max: 8 }, d: { min: 2, max: 9 } },
+            where: 'a < b && c < d && b != d && gcd(a, b) == 1 && gcd(c, d) == 1',
+            geogebraAppName: 'classic',
+            latex: '\\frac{ {{a}} }{ {{b}} } + \\frac{ {{c}} }{ {{d}} } = \\text{ ? }',
+            options: [
+                { latex: '{{frac(a*d + c*b, b*d)}}' },
+                { latex: '{{frac(a + c, b + d)}}' },  // sumar numeradores y denominadores
+                { latex: '{{frac(a*c, b*d)}}' },      // multiplicar en vez de sumar
+                { latex: '{{frac(a + c, b*d)}}' }
+            ],
+            correct: 0,
+            hint: 'Usa un denominador común: a/b + c/d = (ad + cb)/(bd).'
         }
     ]
 };

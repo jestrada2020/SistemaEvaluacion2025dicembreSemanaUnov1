@@ -95,7 +95,7 @@ window.examCategories.razonamiento_logico = {
             geogebraState: '0',
             latex: '\\text{¿Cuál es el siguiente número?}',
             options: [
-                { latex: '12.5' },
+                { latex: '12{,}5' },
                 { latex: '10' },
                 { latex: '15' },
                 { latex: '20' }
@@ -252,9 +252,9 @@ window.examCategories.razonamiento_logico = {
             latex: '\\text{Hambre es a Comida como Sed es a:}',
             options: [
                 { latex: '\\text{Bebida}' },
-                { latex: '\\text{Agua}' },
+                { latex: '\\text{Sal}' },
                 { latex: '\\text{Vaso}' },
-                { latex: '\\text{Líquido}' }
+                { latex: '\\text{Calor}' }
             ],
             correct: 0,
             hint: 'Necesidad y satisfacción.'
@@ -460,10 +460,10 @@ window.examCategories.razonamiento_logico = {
             hint: 'Lee bien el principio.'
         },
         {
-            question: 'Acertijo:',
+            question: 'Acertijo: ¿Cuántos meses tienen 28 días?',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{¿Cuántos meses tienen 28 días?}',
+            latex: '',
             options: [
                 { latex: '\\text{Todos}' },
                 { latex: '\\text{Uno}' },
@@ -488,15 +488,15 @@ window.examCategories.razonamiento_logico = {
             hint: 'Ocupas su lugar.'
         },
         {
-            question: 'Acertijo:',
+            question: 'Acertijo: ¿Qué sube y nunca baja?',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{¿Qué sube y nunca baja?}',
+            latex: '',
             options: [
                 { latex: '\\text{La edad}' },
                 { latex: '\\text{La lluvia}' },
                 { latex: '\\text{El sol}' },
-                { latex: '\\text{Un globo}' }
+                { latex: '\\text{Una pelota}' }
             ],
             correct: 0,
             hint: 'Pasa el tiempo.'
@@ -516,10 +516,10 @@ window.examCategories.razonamiento_logico = {
             hint: 'Representación geográfica.'
         },
         {
-            question: 'Acertijo:',
+            question: 'Acertijo: ¿Qué es lo que se rompe cuando se nombra?',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{¿Qué es lo que se rompe cuando se nombra?}',
+            latex: '',
             options: [
                 { latex: '\\text{El silencio}' },
                 { latex: '\\text{El cristal}' },
@@ -530,15 +530,15 @@ window.examCategories.razonamiento_logico = {
             hint: 'Ausencia de sonido.'
         },
         {
-            question: 'Acertijo:',
+            question: 'Acertijo: ¿Qué tiene cuello pero no cabeza?',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{¿Qué tiene cuello pero no cabeza?}',
+            latex: '',
             options: [
                 { latex: '\\text{Una camisa}' },
-                { latex: '\\text{Una botella}' },
+                { latex: '\\text{Una gorra}' },
                 { latex: '\\text{Una jirafa}' },
-                { latex: '\\text{Un suéter}' }
+                { latex: '\\text{Un zapato}' }
             ],
             correct: 0,
             hint: 'Prenda de vestir.'
@@ -686,10 +686,10 @@ window.examCategories.razonamiento_logico = {
             hint: '(2/2) + 2 = 1 + 2 = 3. Ojo con la redacción.'
         },
         {
-            question: 'Lógica:',
+            question: 'Lógica: ¿Cuántos lados tiene un círculo?',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{¿Cuántos lados tiene un círculo?}',
+            latex: '',
             options: [
                 { latex: '\\text{Infinitos (o cero)}' },
                 { latex: '1' },

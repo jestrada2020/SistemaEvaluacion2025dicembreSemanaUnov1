@@ -9,7 +9,7 @@ window.examCategories.estadistica_inferencial = {
             question: 'La distribución Binomial modela experimentos con:',
             geogebraAppName: 'probability',
             geogebraState: '0',
-            latex: '\\text{Características?}',
+            latex: '',
             options: [
                 { latex: '\\text{n ensayos independientes con dos resultados posibles}' },
                 { latex: '\\text{Ensayos infinitos}' },
@@ -125,22 +125,22 @@ window.examCategories.estadistica_inferencial = {
             options: [
                 { latex: '10' },
                 { latex: '2' },
-                { latex: '0.5' },
+                { latex: '0{,}5' },
                 { latex: '5' }
             ],
             correct: 0,
             hint: 'Número de lanzamientos.'
         },
         {
-            question: 'Si la probabilidad de éxito es 0.2, la de fracaso es:',
+            question: 'Si la probabilidad de éxito es 0,2, la de fracaso es:',
             geogebraAppName: 'probability',
             geogebraState: '0',
-            latex: 'q = 1 - 0.2',
+            latex: 'q = 1 - 0{,}2',
             options: [
-                { latex: '0.8' },
-                { latex: '0.2' },
+                { latex: '0{,}8' },
+                { latex: '0{,}2' },
                 { latex: '0' },
-                { latex: '1.2' }
+                { latex: '1{,}2' }
             ],
             correct: 0,
             hint: 'Suma 1.'
@@ -149,7 +149,7 @@ window.examCategories.estadistica_inferencial = {
             question: '¿Cuál NO es una condición para la Binomial?',
             geogebraAppName: 'probability',
             geogebraState: '0',
-            latex: '\\text{Condición falsa?}',
+            latex: '',
             options: [
                 { latex: '\\text{La probabilidad p cambia en cada ensayo}' },
                 { latex: '\\text{Ensayos independientes}' },
@@ -174,28 +174,28 @@ window.examCategories.estadistica_inferencial = {
             hint: 'Combinaciones.'
         },
         {
-            question: 'Si X ~ B(10, 0.5), la media es:',
+            question: 'Si $X \\sim B(10;\\ 0{,}5)$, la media es:',
             geogebraAppName: 'probability',
             geogebraState: '0',
-            latex: '\\mu = 10 \\times 0.5',
+            latex: '\\mu = 10 \\times 0{,}5',
             options: [
                 { latex: '5' },
                 { latex: '10' },
-                { latex: '2.5' },
-                { latex: '0.5' }
+                { latex: '2{,}5' },
+                { latex: '0{,}5' }
             ],
             correct: 0,
             hint: 'Mitad de 10.'
         },
         {
-            question: 'Si X ~ B(5, 0.2), P(X=0) es:',
+            question: 'Si $X \\sim B(5;\\ 0{,}2)$, ¿cuánto vale $P(X=0)$?',
             geogebraAppName: 'probability',
             geogebraState: '0',
-            latex: '(0.8)^5',
+            latex: '(0{,}8)^5',
             options: [
-                { latex: '0.32768' },
+                { latex: '0{,}32768' },
                 { latex: '0' },
-                { latex: '0.2' },
+                { latex: '0{,}2' },
                 { latex: '1' }
             ],
             correct: 0,
@@ -233,7 +233,7 @@ window.examCategories.estadistica_inferencial = {
             question: 'Si n es grande y p es pequeño, la Binomial se aproxima a:',
             geogebraAppName: 'probability',
             geogebraState: '0',
-            latex: '\\text{Distribución?}',
+            latex: '',
             options: [
                 { latex: '\\text{Poisson}' },
                 { latex: '\\text{Normal}' }, // Normal is for large n and p not too extreme, Poisson for rare events.
@@ -247,7 +247,7 @@ window.examCategories.estadistica_inferencial = {
             question: 'Si n es grande y p no es extremo (np > 5, nq > 5), se aproxima a:',
             geogebraAppName: 'probability',
             geogebraState: '0',
-            latex: '\\text{Distribución?}',
+            latex: '',
             options: [
                 { latex: '\\text{Normal}' },
                 { latex: '\\text{Poisson}' },
@@ -258,15 +258,15 @@ window.examCategories.estadistica_inferencial = {
             hint: 'Teorema del Límite Central.'
         },
         {
-            question: 'En B(3, 0.5), la probabilidad de 3 éxitos es:',
+            question: 'En $B(3;\\ 0{,}5)$, la probabilidad de 3 éxitos es:',
             geogebraAppName: 'probability',
             geogebraState: '0',
-            latex: '(0.5)^3',
+            latex: '(0{,}5)^3',
             options: [
-                { latex: '0.125' },
-                { latex: '0.5' },
-                { latex: '0.25' },
-                { latex: '0.33' }
+                { latex: '0{,}125' },
+                { latex: '0{,}5' },
+                { latex: '0{,}25' },
+                { latex: '0{,}33' }
             ],
             correct: 0,
             hint: '1/8.'
@@ -291,19 +291,19 @@ window.examCategories.estadistica_inferencial = {
             geogebraState: '0',
             latex: 'p = ?',
             options: [
-                { latex: '0.5' },
+                { latex: '0{,}5' },
                 { latex: '0' },
                 { latex: '1' },
-                { latex: '0.1' }
+                { latex: '0{,}1' }
             ],
             correct: 0,
             hint: 'Igual probabilidad de éxito y fracaso.'
         },
         {
-            question: 'Si p < 0.5, la distribución está sesgada a la:',
+            question: 'Si p < 0,5, la distribución está sesgada a la:',
             geogebraAppName: 'probability',
             geogebraState: '0',
-            latex: '\\text{Sesgo?}',
+            latex: '',
             options: [
                 { latex: '\\text{Derecha (Positiva)}' },
                 { latex: '\\text{Izquierda (Negativa)}' },
@@ -314,10 +314,10 @@ window.examCategories.estadistica_inferencial = {
             hint: 'Más probabilidad de valores bajos.'
         },
         {
-            question: 'Para calcular P(X <= k) usamos:',
+            question: 'Para calcular $P(X \\le k)$ usamos:',
             geogebraAppName: 'probability',
             geogebraState: '0',
-            latex: '\\text{Función?}',
+            latex: '',
             options: [
                 { latex: '\\text{Función de Distribución Acumulada (CDF)}' },
                 { latex: '\\text{Función de Masa de Probabilidad (PMF)}' },
@@ -345,9 +345,9 @@ window.examCategories.estadistica_inferencial = {
             question: 'En Geogebra, el comando para Binomial es:',
             geogebraAppName: 'probability',
             geogebraState: '0',
-            latex: '\\text{Comando?}',
+            latex: '',
             options: [
-                { latex: '\\text{BinomialDist(n, p, ...)}' },
+                { latex: '\\text{Binomial(n, p, k, acumulada)}' },
                 { latex: '\\text{Normal(n, p)}' },
                 { latex: '\\text{Prob(n, p)}' },
                 { latex: '\\text{Bernoulli(p)}' }
@@ -375,19 +375,19 @@ window.examCategories.estadistica_inferencial = {
             geogebraState: '0',
             latex: 'p = ?',
             options: [
-                { latex: '0.5' },
+                { latex: '0{,}5' },
                 { latex: '0' },
                 { latex: '1' },
-                { latex: '0.25' }
+                { latex: '0{,}25' }
             ],
             correct: 0,
-            hint: 'p(1-p) es máximo en 0.5.'
+            hint: 'p(1-p) es máximo en 0,5.'
         },
         {
-            question: 'Si n=100 y p=0.5, la desviación estándar es:',
+            question: 'Si n=100 y p=0,5, la desviación estándar es:',
             geogebraAppName: 'probability',
             geogebraState: '0',
-            latex: '\\sqrt{100 \\times 0.5 \\times 0.5}',
+            latex: '\\sqrt{100 \\times 0{,}5 \\times 0{,}5}',
             options: [
                 { latex: '5' },
                 { latex: '25' },
@@ -398,15 +398,15 @@ window.examCategories.estadistica_inferencial = {
             hint: 'Raíz de 25.'
         },
         {
-            question: 'Un examen tiene 10 preguntas V/F. Si respondes al azar, X ~ ?',
+            question: 'Un examen tiene 10 preguntas de verdadero o falso. Si respondes al azar, ¿qué distribución sigue el número de aciertos $X$?',
             geogebraAppName: 'probability',
             geogebraState: '0',
-            latex: '\\text{Modelo?}',
+            latex: '',
             options: [
-                { latex: 'B(10, 0.5)' },
-                { latex: 'B(10, 0.2)' },
-                { latex: 'N(10, 0.5)' },
-                { latex: 'B(1, 0.5)' }
+                { latex: 'B(10;\\ 0{,}5)' },
+                { latex: 'B(10;\\ 0{,}2)' },
+                { latex: 'N(10;\\ 0{,}5)' },
+                { latex: 'B(1;\\ 0{,}5)' }
             ],
             correct: 0,
             hint: 'Probabilidad 1/2.'
@@ -415,12 +415,12 @@ window.examCategories.estadistica_inferencial = {
             question: 'P(X = x) en una Binomial es siempre:',
             geogebraAppName: 'probability',
             geogebraState: '0',
-            latex: '\\text{Valor?}',
+            latex: '',
             options: [
                 { latex: '\\ge 0 \\text{ y } \\le 1' },
                 { latex: '> 1' },
                 { latex: '< 0' },
-                { latex: 'Entero' }
+                { latex: '\\text{Entero}' }
             ],
             correct: 0,
             hint: 'Es una probabilidad.'
@@ -429,7 +429,7 @@ window.examCategories.estadistica_inferencial = {
             question: 'Si n aumenta, la gráfica de la Binomial se vuelve más:',
             geogebraAppName: 'probability',
             geogebraState: '0',
-            latex: '\\text{Forma?}',
+            latex: '',
             options: [
                 { latex: '\\text{Simétrica y acampanada (si p no es extremo)}' },
                 { latex: '\\text{Sesgada}' },
@@ -440,14 +440,14 @@ window.examCategories.estadistica_inferencial = {
             hint: 'Se parece a la Normal.'
         },
         {
-            question: 'El valor esperado de éxitos en 20 ensayos con p=0.1 es:',
+            question: 'El valor esperado de éxitos en 20 ensayos con p=0,1 es:',
             geogebraAppName: 'probability',
             geogebraState: '0',
-            latex: 'E[X] = 20 \\times 0.1',
+            latex: 'E[X] = 20 \\times 0{,}1',
             options: [
                 { latex: '2' },
                 { latex: '1' },
-                { latex: '0.2' },
+                { latex: '0{,}2' },
                 { latex: '20' }
             ],
             correct: 0,
@@ -471,7 +471,7 @@ window.examCategories.estadistica_inferencial = {
             question: '¿Qué significa que los ensayos sean independientes?',
             geogebraAppName: 'probability',
             geogebraState: '0',
-            latex: '\\text{Significado?}',
+            latex: '',
             options: [
                 { latex: '\\text{El resultado de uno no afecta al otro}' },
                 { latex: '\\text{No pueden ocurrir juntos}' },
@@ -485,7 +485,7 @@ window.examCategories.estadistica_inferencial = {
             question: 'La distribución Binomial es una distribución de variable:',
             geogebraAppName: 'probability',
             geogebraState: '0',
-            latex: '\\text{Tipo?}',
+            latex: '',
             options: [
                 { latex: '\\text{Discreta}' },
                 { latex: '\\text{Continua}' },
@@ -501,7 +501,7 @@ window.examCategories.estadistica_inferencial = {
             question: 'La distribución Normal es una distribución de variable:',
             geogebraAppName: 'probability',
             geogebraState: '0',
-            latex: '\\text{Tipo?}',
+            latex: '',
             options: [
                 { latex: '\\text{Continua}' },
                 { latex: '\\text{Discreta}' },
@@ -515,7 +515,7 @@ window.examCategories.estadistica_inferencial = {
             question: 'La forma de la distribución Normal es:',
             geogebraAppName: 'probability',
             geogebraState: '0',
-            latex: '\\text{Forma?}',
+            latex: '',
             options: [
                 { latex: '\\text{Campana simétrica}' },
                 { latex: '\\text{Uniforme rectangular}' },
@@ -529,7 +529,7 @@ window.examCategories.estadistica_inferencial = {
             question: 'Los parámetros que definen una Normal son:',
             geogebraAppName: 'probability',
             geogebraState: '0',
-            latex: '\\text{Parámetros?}',
+            latex: '',
             options: [
                 { latex: '\\mu \\text{ (media) y } \\sigma \\text{ (desviación)}' },
                 { latex: 'n \\text{ y } p' },
@@ -543,7 +543,7 @@ window.examCategories.estadistica_inferencial = {
             question: 'En una Normal, la media, mediana y moda son:',
             geogebraAppName: 'probability',
             geogebraState: '0',
-            latex: '\\text{Relación?}',
+            latex: '',
             options: [
                 { latex: '\\text{Iguales}' },
                 { latex: '\\text{Diferentes}' },
@@ -596,40 +596,40 @@ window.examCategories.estadistica_inferencial = {
             hint: 'Distancia en desviaciones estándar.'
         },
         {
-            question: 'Según la Regla Empírica, a +/- 1 sigma se encuentra el:',
+            question: 'Según la Regla Empírica, entre $\\mu - \\sigma$ y $\\mu + \\sigma$ se encuentra aproximadamente el:',
             geogebraAppName: 'probability',
             geogebraState: '0',
             latex: '\\% \\text{ Datos?}',
             options: [
                 { latex: '68\\%' },
                 { latex: '95\\%' },
-                { latex: '99.7\\%' },
+                { latex: '99{,}7\\%' },
                 { latex: '50\\%' }
             ],
             correct: 0,
             hint: 'Aprox 2/3.'
         },
         {
-            question: 'Según la Regla Empírica, a +/- 2 sigmas se encuentra el:',
+            question: 'Según la Regla Empírica, entre $\\mu - 2\\sigma$ y $\\mu + 2\\sigma$ se encuentra aproximadamente el:',
             geogebraAppName: 'probability',
             geogebraState: '0',
             latex: '\\% \\text{ Datos?}',
             options: [
                 { latex: '95\\%' },
                 { latex: '68\\%' },
-                { latex: '99.7\\%' },
+                { latex: '99{,}7\\%' },
                 { latex: '90\\%' }
             ],
             correct: 0,
             hint: 'Casi todo.'
         },
         {
-            question: 'Según la Regla Empírica, a +/- 3 sigmas se encuentra el:',
+            question: 'Según la Regla Empírica, entre $\\mu - 3\\sigma$ y $\\mu + 3\\sigma$ se encuentra aproximadamente el:',
             geogebraAppName: 'probability',
             geogebraState: '0',
             latex: '\\% \\text{ Datos?}',
             options: [
-                { latex: '99.7\\%' },
+                { latex: '99{,}7\\%' },
                 { latex: '100\\%' },
                 { latex: '95\\%' },
                 { latex: '98\\%' }
@@ -643,10 +643,10 @@ window.examCategories.estadistica_inferencial = {
             geogebraState: '0',
             latex: 'P(Z > 0) = ?',
             options: [
-                { latex: '0.5' },
+                { latex: '0{,}5' },
                 { latex: '0' },
                 { latex: '1' },
-                { latex: '0.25' }
+                { latex: '0{,}25' }
             ],
             correct: 0,
             hint: 'Mitad derecha.'
@@ -669,7 +669,7 @@ window.examCategories.estadistica_inferencial = {
             question: 'El Teorema del Límite Central establece que la media muestral se distribuye:',
             geogebraAppName: 'probability',
             geogebraState: '0',
-            latex: '\\text{Distribución?}',
+            latex: '',
             options: [
                 { latex: '\\text{Normalmente (para n grande)}' },
                 { latex: '\\text{Uniformemente}' },
@@ -680,18 +680,18 @@ window.examCategories.estadistica_inferencial = {
             hint: 'Converge a la Normal.'
         },
         {
-            question: 'Si Z = 1.96, el área a la izquierda es aproximadamente:',
+            question: 'Si Z = 1,96, el área a la izquierda es aproximadamente:',
             geogebraAppName: 'probability',
             geogebraState: '0',
-            latex: 'P(Z < 1.96) \\approx ?',
+            latex: 'P(Z < 1{,}96) \\approx ?',
             options: [
-                { latex: '0.975' },
-                { latex: '0.95' },
-                { latex: '0.025' },
-                { latex: '0.99' }
+                { latex: '0{,}975' },
+                { latex: '0{,}95' },
+                { latex: '0{,}025' },
+                { latex: '0{,}99' }
             ],
             correct: 0,
-            hint: 'Deja 2.5% a la derecha.'
+            hint: 'Deja 2,5% a la derecha.'
         },
         {
             question: 'El valor Z para un nivel de confianza del 95% (dos colas) es:',
@@ -699,9 +699,9 @@ window.examCategories.estadistica_inferencial = {
             geogebraState: '0',
             latex: 'Z_{\\alpha/2} = ?',
             options: [
-                { latex: '1.96' },
-                { latex: '1.645' },
-                { latex: '2.58' },
+                { latex: '1{,}96' },
+                { latex: '1{,}645' },
+                { latex: '2{,}58' },
                 { latex: '2' }
             ],
             correct: 0,
@@ -711,7 +711,7 @@ window.examCategories.estadistica_inferencial = {
             question: 'La curva Normal es asintótica al eje X, lo que significa:',
             geogebraAppName: 'probability',
             geogebraState: '0',
-            latex: '\\text{Significado?}',
+            latex: '',
             options: [
                 { latex: '\\text{Nunca toca el eje X}' },
                 { latex: '\\text{Cruza el eje X}' },
@@ -739,7 +739,7 @@ window.examCategories.estadistica_inferencial = {
             question: 'Si aumentamos sigma, la curva Normal se:',
             geogebraAppName: 'probability',
             geogebraState: '0',
-            latex: '\\text{Cambio?}',
+            latex: '',
             options: [
                 { latex: '\\text{Aplana y ensancha}' },
                 { latex: '\\text{Vuelve más alta y estrecha}' },
@@ -753,7 +753,7 @@ window.examCategories.estadistica_inferencial = {
             question: 'Si aumentamos mu, la curva Normal se:',
             geogebraAppName: 'probability',
             geogebraState: '0',
-            latex: '\\text{Cambio?}',
+            latex: '',
             options: [
                 { latex: '\\text{Desplaza a la derecha}' },
                 { latex: '\\text{Desplaza a la izquierda}' },
@@ -767,18 +767,18 @@ window.examCategories.estadistica_inferencial = {
             question: 'Para aproximar una Binomial con Normal, usamos corrección de:',
             geogebraAppName: 'probability',
             geogebraState: '0',
-            latex: '\\text{Corrección?}',
+            latex: '',
             options: [
-                { latex: '\\text{Continuidad (0.5)}' },
+                { latex: '\\text{Continuidad (0{,}5)}' },
                 { latex: '\\text{Bessel}' },
                 { latex: '\\text{Sheppard}' },
-                { latex: '\\text{Yates}' }
+                { latex: '\\text{Welch}' }
             ],
             correct: 0,
             hint: 'De discreto a continuo.'
         },
         {
-            question: 'P(a < X < b) se calcula como:',
+            question: 'Para una variable continua, ¿es correcto calcular $P(a < X < b)$ como se indica?',
             geogebraAppName: 'probability',
             geogebraState: '0',
             latex: 'P(X < b) - P(X < a)',
@@ -809,7 +809,7 @@ window.examCategories.estadistica_inferencial = {
             question: 'El valor Z indica:',
             geogebraAppName: 'probability',
             geogebraState: '0',
-            latex: '\\text{Indica?}',
+            latex: '',
             options: [
                 { latex: '\\text{Cuántas desviaciones estándar alejado de la media está un dato}' },
                 { latex: '\\text{La probabilidad}' },
@@ -826,9 +826,9 @@ window.examCategories.estadistica_inferencial = {
             latex: 'Z = \\frac{130-100}{15}',
             options: [
                 { latex: '2' },
-                { latex: '1.5' },
+                { latex: '1{,}5' },
                 { latex: '3' },
-                { latex: '0.5' }
+                { latex: '0{,}5' }
             ],
             correct: 0,
             hint: '30/15.'
@@ -853,9 +853,9 @@ window.examCategories.estadistica_inferencial = {
             geogebraState: '0',
             latex: 'K = ?',
             options: [
-                { latex: '3 (o 0 exceso)' },
+                { latex: '3 \\text{ (o 0 en exceso)}' },
                 { latex: '1' },
-                { latex: '0' },
+                { latex: '2' },
                 { latex: '-1' }
             ],
             correct: 0,
@@ -870,7 +870,7 @@ window.examCategories.estadistica_inferencial = {
                 { latex: '0' },
                 { latex: '1' },
                 { latex: '-1' },
-                { latex: '0.5' }
+                { latex: '0{,}5' }
             ],
             correct: 0,
             hint: 'Sin sesgo.'
@@ -879,7 +879,7 @@ window.examCategories.estadistica_inferencial = {
             question: 'Si Z es negativo, el dato está:',
             geogebraAppName: 'probability',
             geogebraState: '0',
-            latex: '\\text{Ubicación?}',
+            latex: '',
             options: [
                 { latex: '\\text{Por debajo de la media}' },
                 { latex: '\\text{Por encima de la media}' },
@@ -895,10 +895,10 @@ window.examCategories.estadistica_inferencial = {
             geogebraState: '0',
             latex: '\\approx ?',
             options: [
-                { latex: '0.68' },
-                { latex: '0.95' },
-                { latex: '0.99' },
-                { latex: '0.5' }
+                { latex: '0{,}68' },
+                { latex: '0{,}95' },
+                { latex: '0{,}99' },
+                { latex: '0{,}5' }
             ],
             correct: 0,
             hint: 'Regla empírica 1 sigma.'
@@ -907,7 +907,7 @@ window.examCategories.estadistica_inferencial = {
             question: 'La distribución Normal se usa para modelar:',
             geogebraAppName: 'probability',
             geogebraState: '0',
-            latex: '\\text{Ejemplos?}',
+            latex: '',
             options: [
                 { latex: '\\text{Alturas, pesos, errores de medición}' },
                 { latex: '\\text{Lanzamiento de dados}' },
@@ -921,7 +921,7 @@ window.examCategories.estadistica_inferencial = {
             question: 'Para usar la tabla Z, necesitamos:',
             geogebraAppName: 'probability',
             geogebraState: '0',
-            latex: '\\text{Requisito?}',
+            latex: '',
             options: [
                 { latex: '\\text{Estandarizar el valor X a Z}' },
                 { latex: '\\text{Conocer la varianza}' },
@@ -932,24 +932,24 @@ window.examCategories.estadistica_inferencial = {
             hint: 'Convertir a N(0,1).'
         },
         {
-            question: 'El cuantil 0.5 de la Normal Estándar es:',
+            question: 'El cuantil 0,5 de la Normal Estándar es:',
             geogebraAppName: 'probability',
             geogebraState: '0',
-            latex: 'Q(0.5) = ?',
+            latex: 'Q(0{,}5) = ?',
             options: [
                 { latex: '0' },
                 { latex: '1' },
-                { latex: '0.5' },
+                { latex: '0{,}5' },
                 { latex: '-1' }
             ],
             correct: 0,
             hint: 'La mediana es 0.'
         },
         {
-            question: 'Si X ~ N(0, 1), entonces X^2 sigue una distribución:',
+            question: 'Si $X \\sim N(0, 1)$, entonces $X^2$ sigue una distribución:',
             geogebraAppName: 'probability',
             geogebraState: '0',
-            latex: '\\text{Distribución?}',
+            latex: '',
             options: [
                 { latex: '\\text{Chi-cuadrado con 1 gl}' },
                 { latex: '\\text{Normal}' },
@@ -977,7 +977,7 @@ window.examCategories.estadistica_inferencial = {
             question: 'En Geogebra, el comando para Normal es:',
             geogebraAppName: 'probability',
             geogebraState: '0',
-            latex: '\\text{Comando?}',
+            latex: '',
             options: [
                 { latex: '\\text{Normal(media, desviación, valor)}' },
                 { latex: '\\text{Gauss(...)}' },

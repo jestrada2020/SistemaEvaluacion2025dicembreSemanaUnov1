@@ -82,7 +82,7 @@ window.examCategories.factorizacion = {
             latex: '4m^2 - 8m + 2',
             options: [
                 { latex: '2(2m^2 - 4m + 1)' },
-                { latex: '4(m^2 - 2m + 0.5)' },
+                { latex: '4(m^2 - 2m) + 2' },
                 { latex: '2m(2m - 4) + 2' },
                 { latex: '2(2m^2 + 4m - 1)' }
             ],
@@ -110,7 +110,7 @@ window.examCategories.factorizacion = {
             latex: 'x^2 + 3x + 2x + 6',
             options: [
                 { latex: '(x+3)(x+2)' },
-                { latex: '(x+2)(x+3)' },
+                { latex: '(x+3)(x-2)' },
                 { latex: 'x(x+3) + 2(x+3)' },
                 { latex: '(x-3)(x-2)' }
             ],
@@ -125,7 +125,7 @@ window.examCategories.factorizacion = {
             options: [
                 { latex: '6x^2y^2(2x - 3y)' },
                 { latex: '6xy(2x^2y - 3xy^2)' },
-                { latex: '12x^2y^2(x - 1.5y)' },
+                { latex: '12x^2y^2(x - 1{,}5y)' },
                 { latex: '6x^2y^2(2x + 3y)' }
             ],
             correct: 0,
@@ -139,7 +139,7 @@ window.examCategories.factorizacion = {
             options: [
                 { latex: '-5(x + 2)' },
                 { latex: '-5(x - 2)' },
-                { latex: '5(-x - 2)' },
+                { latex: '-5(x + 10)' },
                 { latex: '-5x(1 + 2/x)' }
             ],
             correct: 0,
@@ -212,7 +212,7 @@ window.examCategories.factorizacion = {
                 { latex: '(10-x)(10+x)' },
                 { latex: '(x-10)(x+10)' },
                 { latex: '(10-x)^2' },
-                { latex: '-(x-10)(x+10)' }
+                { latex: '-(10-x)^2' }
             ],
             correct: 0,
             hint: 'El orden importa.'
@@ -266,7 +266,7 @@ window.examCategories.factorizacion = {
             latex: '(x+1)^2 - 4',
             options: [
                 { latex: '(x-1)(x+3)' },
-                { latex: '(x+1-2)(x+1+2)' },
+                { latex: '(x-1)(x-3)' },
                 { latex: '(x-3)(x+1)' },
                 { latex: 'x^2+2x-3' }
             ],
@@ -318,7 +318,7 @@ window.examCategories.factorizacion = {
             hint: 'Verifica el doble producto.'
         },
         {
-            question: 'Factorice el trinomio de la forma x^2+bx+c:',
+            question: 'Factorice el trinomio de la forma $x^2+bx+c$:',
             geogebraAppName: 'cas',
             geogebraState: '0',
             latex: 'x^2 + 5x + 6',
@@ -360,7 +360,7 @@ window.examCategories.factorizacion = {
             hint: 'Dos números que sumados den 1 y multiplicados -12.'
         },
         {
-            question: 'Factorice el trinomio ax^2+bx+c:',
+            question: 'Factorice el trinomio $ax^2+bx+c$:',
             geogebraAppName: 'cas',
             geogebraState: '0',
             latex: '2x^2 + 5x + 3',

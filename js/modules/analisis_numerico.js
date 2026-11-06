@@ -6,15 +6,15 @@ window.examCategories.analisis_numerico = {
     questions: [
         // 1. Análisis de Errores (5 preguntas)
         {
-            question: 'Si el valor verdadero es 3.14159 y el valor aproximado es 3.14, ¿cuál es el error absoluto?',
+            question: 'Si el valor verdadero es 3,14159 y el valor aproximado es 3,14, ¿cuál es el error absoluto?',
             geogebraAppName: 'cas',
             geogebraState: '0',
-            latex: 'E_t = |V_{verdadero} - V_{aprox}|',
+            latex: 'E_t = |V_{\\text{verdadero}} - V_{\\text{aprox}}|',
             options: [
-                { latex: '0.00159' },
-                { latex: '0.0015' },
-                { latex: '0.002' },
-                { latex: '0.0016' }
+                { latex: '0{,}00159' },
+                { latex: '0{,}0015' },
+                { latex: '0{,}002' },
+                { latex: '0{,}0016' }
             ],
             correct: 0,
             hint: 'Resta los valores y toma el valor absoluto.'
@@ -28,16 +28,16 @@ window.examCategories.analisis_numerico = {
                 { latex: '2\\%' },
                 { latex: '1\\%' },
                 { latex: '5\\%' },
-                { latex: '0.5\\%' }
+                { latex: '0{,}5\\%' }
             ],
             correct: 0,
             hint: '(Error Absoluto / Valor Verdadero) * 100'
         },
         {
-            question: '¿Qué tipo de error se produce al cortar una expansión decimal infinita (ej. usar 3.33 para 10/3)?',
+            question: '¿Qué tipo de error se produce al representar un número con una cantidad finita de cifras (ej. usar 3,33 para 10/3)?',
             geogebraAppName: 'cas',
             geogebraState: '0',
-            latex: '\\text{Tipo de error?}',
+            latex: '',
             options: [
                 { latex: '\\text{Error de truncamiento}' },
                 { latex: '\\text{Error de redondeo}' },
@@ -53,7 +53,7 @@ window.examCategories.analisis_numerico = {
             question: 'En la serie de Taylor, el error cometido al usar solo los primeros n términos se llama:',
             geogebraAppName: 'cas',
             geogebraState: '0',
-            latex: '\\text{Tipo de error?}',
+            latex: '',
             options: [
                 { latex: '\\text{Error de truncamiento}' },
                 { latex: '\\text{Error de redondeo}' },
@@ -64,15 +64,15 @@ window.examCategories.analisis_numerico = {
             hint: 'Cortar una suma infinita.'
         },
         {
-            question: 'Si redondeamos 2.71828 a 3 cifras significativas, obtenemos:',
+            question: 'Si redondeamos 2,71828 a 3 cifras significativas, obtenemos:',
             geogebraAppName: 'cas',
             geogebraState: '0',
-            latex: '2.71828 \\to ?',
+            latex: '2{,}71828 \\to ?',
             options: [
-                { latex: '2.72' },
-                { latex: '2.71' },
-                { latex: '2.718' },
-                { latex: '2.7' }
+                { latex: '2{,}72' },
+                { latex: '2{,}71' },
+                { latex: '2{,}718' },
+                { latex: '2{,}7' }
             ],
             correct: 0,
             hint: 'La tercera cifra es 1, la siguiente es 8 (mayor que 5).'
@@ -111,7 +111,7 @@ window.examCategories.analisis_numerico = {
             question: 'El método de la Secante requiere:',
             geogebraAppName: 'cas',
             geogebraState: '0',
-            latex: '\\text{Requisitos?}',
+            latex: '',
             options: [
                 { latex: '\\text{Dos puntos iniciales}' },
                 { latex: '\\text{Un punto inicial y la derivada}' },
@@ -125,7 +125,7 @@ window.examCategories.analisis_numerico = {
             question: '¿Cuál método converge cuadráticamente (generalmente más rápido)?',
             geogebraAppName: 'cas',
             geogebraState: '0',
-            latex: '\\text{Método?}',
+            latex: '',
             options: [
                 { latex: '\\text{Newton-Raphson}' },
                 { latex: '\\text{Bisección}' },
@@ -136,15 +136,15 @@ window.examCategories.analisis_numerico = {
             hint: 'Usa información de la derivada.'
         },
         {
-            question: 'Para f(x) = x^2 - 4, usando Newton-Raphson con x0 = 3, calcule x1.',
+            question: 'Para $f(x) = x^2 - 4$, usando Newton-Raphson con $x_0 = 3$, calcule $x_1$.',
             geogebraAppName: 'cas',
             geogebraState: '0',
             latex: 'x_1 = 3 - \\frac{3^2 - 4}{2(3)}',
             options: [
-                { latex: '2.1667' }, // 3 - 5/6 = 3 - 0.833 = 2.166
-                { latex: '2.5' },
-                { latex: '2.0' },
-                { latex: '2.3333' }
+                { latex: '2{,}1667' }, // 3 - 5/6 = 3 - 0.833 = 2.166
+                { latex: '2{,}5' },
+                { latex: '2{,}0' },
+                { latex: '2{,}3333' }
             ],
             correct: 0,
             hint: 'x1 = x0 - f(x0)/f\'(x0)'
@@ -164,15 +164,15 @@ window.examCategories.analisis_numerico = {
             hint: 'La pendiente debe ser suave.'
         },
         {
-            question: 'Calcule la primera aproximación de la raíz de f(x) = x^3 - x - 1 en [1, 2] por Bisección.',
+            question: 'Calcule la primera aproximación de la raíz de $f(x) = x^3 - x - 1$ en $[1, 2]$ por Bisección.',
             geogebraAppName: 'cas',
             geogebraState: '0',
             latex: 'x_r = \\frac{1 + 2}{2}',
             options: [
-                { latex: '1.5' },
-                { latex: '1.25' },
-                { latex: '1.75' },
-                { latex: '1.0' }
+                { latex: '1{,}5' },
+                { latex: '1{,}25' },
+                { latex: '1{,}75' },
+                { latex: '1{,}0' }
             ],
             correct: 0,
             hint: 'Punto medio del intervalo.'
@@ -181,7 +181,7 @@ window.examCategories.analisis_numerico = {
             question: 'El método de la Falsa Posición (Regula Falsi) difiere de la Bisección en que:',
             geogebraAppName: 'cas',
             geogebraState: '0',
-            latex: '\\text{Diferencia?}',
+            latex: '',
             options: [
                 { latex: '\\text{Usa una interpolación lineal en lugar del punto medio}' },
                 { latex: '\\text{No requiere cambio de signo}' },
@@ -192,7 +192,7 @@ window.examCategories.analisis_numerico = {
             hint: 'Une f(a) y f(b) con una recta.'
         },
         {
-            question: 'Si f(x) = e^x - 3x, f\'(x) es:',
+            question: 'Si $f(x) = e^x - 3x$, $f\'(x)$ es:',
             geogebraAppName: 'cas',
             geogebraState: '0',
             latex: 'f\'(x) = ?',
@@ -209,7 +209,7 @@ window.examCategories.analisis_numerico = {
             question: '¿Qué método es "abierto" (no requiere intervalo que encierre la raíz)?',
             geogebraAppName: 'cas',
             geogebraState: '0',
-            latex: '\\text{Método abierto?}',
+            latex: '',
             options: [
                 { latex: '\\text{Newton-Raphson}' },
                 { latex: '\\text{Bisección}' },
@@ -225,7 +225,7 @@ window.examCategories.analisis_numerico = {
             question: 'El método de Eliminación Gaussiana transforma la matriz en:',
             geogebraAppName: 'cas',
             geogebraState: '0',
-            latex: '\\text{Forma?}',
+            latex: '',
             options: [
                 { latex: '\\text{Triangular superior}' },
                 { latex: '\\text{Diagonal}' },
@@ -253,7 +253,7 @@ window.examCategories.analisis_numerico = {
             question: 'El método de Gauss-Seidel es un método:',
             geogebraAppName: 'cas',
             geogebraState: '0',
-            latex: '\\text{Tipo?}',
+            latex: '',
             options: [
                 { latex: '\\text{Iterativo}' },
                 { latex: '\\text{Directo}' },
@@ -267,11 +267,11 @@ window.examCategories.analisis_numerico = {
             question: 'Una condición suficiente para la convergencia de Gauss-Seidel es que la matriz sea:',
             geogebraAppName: 'cas',
             geogebraState: '0',
-            latex: '\\text{Condición?}',
+            latex: '',
             options: [
-                { latex: '\\text{Diagonalmente dominante}' },
+                { latex: '\\text{Estrictamente diagonalmente dominante}' },
                 { latex: '\\text{Simétrica}' },
-                { latex: '\\text{Positiva definida}' },
+                { latex: '\\text{Singular (determinante cero)}' },
                 { latex: '\\text{Tridiagonal}' }
             ],
             correct: 0,
@@ -295,7 +295,7 @@ window.examCategories.analisis_numerico = {
             question: '¿Qué método es más eficiente para resolver múltiples sistemas Ax=b con la misma A pero diferente b?',
             geogebraAppName: 'cas',
             geogebraState: '0',
-            latex: '\\text{Método?}',
+            latex: '',
             options: [
                 { latex: '\\text{Descomposición LU}' },
                 { latex: '\\text{Eliminación Gaussiana simple}' },
@@ -309,7 +309,7 @@ window.examCategories.analisis_numerico = {
             question: 'El pivoteo parcial se usa para:',
             geogebraAppName: 'cas',
             geogebraState: '0',
-            latex: '\\text{Objetivo?}',
+            latex: '',
             options: [
                 { latex: '\\text{Reducir errores de redondeo y evitar división por cero}' },
                 { latex: '\\text{Hacer la matriz simétrica}' },
@@ -320,7 +320,7 @@ window.examCategories.analisis_numerico = {
             hint: 'Intercambiar filas para poner el mayor elemento en la diagonal.'
         },
         {
-            question: 'La matriz inversa A^-1 cumple que:',
+            question: 'La matriz inversa $A^{-1}$ cumple que:',
             geogebraAppName: 'cas',
             geogebraState: '0',
             latex: 'A \\cdot A^{-1} = ?',
@@ -339,7 +339,7 @@ window.examCategories.analisis_numerico = {
             question: 'El polinomio de interpolación de Lagrange de grado n pasa por:',
             geogebraAppName: 'cas',
             geogebraState: '0',
-            latex: '\\text{Puntos?}',
+            latex: '',
             options: [
                 { latex: 'n+1 \\text{ puntos dados}' },
                 { latex: 'n \\text{ puntos dados}' },
@@ -367,7 +367,7 @@ window.examCategories.analisis_numerico = {
             question: 'Para interpolar 3 puntos (x0, y0), (x1, y1), (x2, y2), ¿qué grado máximo tiene el polinomio único?',
             geogebraAppName: 'cas',
             geogebraState: '0',
-            latex: '\\text{Grado?}',
+            latex: '',
             options: [
                 { latex: '2' },
                 { latex: '3' },
@@ -378,7 +378,7 @@ window.examCategories.analisis_numerico = {
             hint: 'n puntos definen grado n-1.'
         },
         {
-            question: 'El coeficiente de correlación r^2 indica:',
+            question: 'El coeficiente de determinación $r^2$ indica:',
             geogebraAppName: 'cas',
             geogebraState: '0',
             latex: 'r^2 \\approx 1',
@@ -395,7 +395,7 @@ window.examCategories.analisis_numerico = {
             question: 'La interpolación por Splines Cúbicos usa:',
             geogebraAppName: 'cas',
             geogebraState: '0',
-            latex: '\\text{¿Qué usa?}',
+            latex: '',
             options: [
                 { latex: '\\text{Polinomios de grado 3 por tramos}' },
                 { latex: '\\text{Un solo polinomio de grado 3}' },
@@ -423,7 +423,7 @@ window.examCategories.analisis_numerico = {
             question: 'El fenómeno de Runge (oscilación en los bordes) ocurre al interpolar con:',
             geogebraAppName: 'cas',
             geogebraState: '0',
-            latex: '\\text{Causa?}',
+            latex: '',
             options: [
                 { latex: '\\text{Polinomios de alto grado equiespaciados}' },
                 { latex: '\\text{Splines cúbicos}' },
@@ -439,7 +439,7 @@ window.examCategories.analisis_numerico = {
             question: 'La Regla del Trapecio aproxima el área bajo la curva usando:',
             geogebraAppName: 'cas',
             geogebraState: '0',
-            latex: '\\text{Forma?}',
+            latex: '',
             options: [
                 { latex: '\\text{Polinomios de primer grado (rectas)}' },
                 { latex: '\\text{Polinomios de segundo grado (parábolas)}' },
@@ -467,7 +467,7 @@ window.examCategories.analisis_numerico = {
             question: 'La Regla de Simpson 3/8 ajusta:',
             geogebraAppName: 'cas',
             geogebraState: '0',
-            latex: '\\text{Grado?}',
+            latex: '',
             options: [
                 { latex: '\\text{Polinomios cúbicos (grado 3)}' },
                 { latex: '\\text{Parábolas (grado 2)}' },
@@ -495,7 +495,7 @@ window.examCategories.analisis_numerico = {
             question: '¿Qué método de integración es generalmente más preciso para funciones suaves?',
             geogebraAppName: 'cas',
             geogebraState: '0',
-            latex: '\\text{Método?}',
+            latex: '',
             options: [
                 { latex: '\\text{Cuadratura de Gauss}' },
                 { latex: '\\text{Regla del Trapecio}' },
@@ -537,7 +537,7 @@ window.examCategories.analisis_numerico = {
             question: 'Para integrar numéricamente datos con espaciamiento desigual, se usa:',
             geogebraAppName: 'cas',
             geogebraState: '0',
-            latex: '\\text{Método?}',
+            latex: '',
             options: [
                 { latex: '\\text{Regla del Trapecio aplicada a cada segmento}' },
                 { latex: '\\text{Simpson 1/3}' },
@@ -595,7 +595,7 @@ window.examCategories.analisis_numerico = {
             question: 'La Extrapolación de Richardson se usa para:',
             geogebraAppName: 'cas',
             geogebraState: '0',
-            latex: '\\text{Objetivo?}',
+            latex: '',
             options: [
                 { latex: '\\text{Mejorar la precisión de la derivada/integral}' },
                 { latex: '\\text{Encontrar raíces}' },
@@ -609,7 +609,7 @@ window.examCategories.analisis_numerico = {
             question: 'Si h se hace demasiado pequeño en diferenciación numérica, ¿qué error predomina?',
             geogebraAppName: 'cas',
             geogebraState: '0',
-            latex: '\\text{Error dominante?}',
+            latex: '',
             options: [
                 { latex: '\\text{Error de redondeo}' },
                 { latex: '\\text{Error de truncamiento}' },
@@ -620,15 +620,15 @@ window.examCategories.analisis_numerico = {
             hint: 'División por número muy pequeño y resta de números cercanos.'
         },
         {
-            question: 'Dada f(x)=x^2, aproxime f\'(1) con h=0.1 (diferencia adelante).',
+            question: 'Dada $f(x)=x^2$, aproxime $f\'(1)$ con $h=0{,}1$ (diferencia adelante).',
             geogebraAppName: 'cas',
             geogebraState: '0',
-            latex: '\\frac{(1.1)^2 - 1^2}{0.1}',
+            latex: '\\frac{(1{,}1)^2 - 1^2}{0{,}1}',
             options: [
-                { latex: '2.1' }, // (1.21 - 1)/0.1 = 2.1
-                { latex: '2.0' },
-                { latex: '2.2' },
-                { latex: '1.9' }
+                { latex: '2{,}1' }, // (1.21 - 1)/0.1 = 2.1
+                { latex: '2{,}0' },
+                { latex: '2{,}2' },
+                { latex: '1{,}9' }
             ],
             correct: 0,
             hint: 'Valor real es 2.'
@@ -653,7 +653,7 @@ window.examCategories.analisis_numerico = {
             question: 'El método de Runge-Kutta de 4to orden (RK4) usa:',
             geogebraAppName: 'cas',
             geogebraState: '0',
-            latex: '\\text{¿Qué usa?}',
+            latex: '',
             options: [
                 { latex: '\\text{Un promedio ponderado de 4 pendientes}' },
                 { latex: '\\text{4 pasos de Euler}' },
@@ -681,7 +681,7 @@ window.examCategories.analisis_numerico = {
             question: 'Un método "implícito" (como Euler hacia atrás) requiere:',
             geogebraAppName: 'cas',
             geogebraState: '0',
-            latex: '\\text{Requisito?}',
+            latex: '',
             options: [
                 { latex: '\\text{Resolver una ecuación en cada paso}' },
                 { latex: '\\text{Solo evaluar la función}' },
@@ -695,7 +695,7 @@ window.examCategories.analisis_numerico = {
             question: 'El método de Heun (Euler mejorado) es un método:',
             geogebraAppName: 'cas',
             geogebraState: '0',
-            latex: '\\text{Tipo?}',
+            latex: '',
             options: [
                 { latex: '\\text{Predictor-Corrector}' },
                 { latex: '\\text{Implícito puro}' },
@@ -706,15 +706,15 @@ window.examCategories.analisis_numerico = {
             hint: 'Predice con Euler, corrige con promedio.'
         },
         {
-            question: 'Para resolver y\' = y, y(0)=1 con h=0.1 usando Euler, y(0.1) es:',
+            question: 'Para resolver y\' = y, y(0)=1 con h=0,1 usando Euler, y(0,1) es:',
             geogebraAppName: 'cas',
             geogebraState: '0',
-            latex: 'y_1 = 1 + (1)(0.1)',
+            latex: 'y_1 = 1 + (1)(0{,}1)',
             options: [
-                { latex: '1.1' },
-                { latex: '1.0' },
-                { latex: '1.2' },
-                { latex: '1.01' }
+                { latex: '1{,}1' },
+                { latex: '1{,}0' },
+                { latex: '1{,}2' },
+                { latex: '1{,}01' }
             ],
             correct: 0,
             hint: 'y_new = y_old + slope * h'

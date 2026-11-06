@@ -204,7 +204,7 @@ window.examCategories.algebra_lineal = {
             hint: 'Producto exterior (2x1 * 1x2 = 2x2).'
         },
         {
-            question: 'Calcule A^2:',
+            question: 'Calcule $A^2$:',
             geogebraAppName: 'cas',
             geogebraState: '0',
             latex: 'A = \\begin{pmatrix} 1 & 1 \\\\ 1 & 1 \\end{pmatrix}',
@@ -432,21 +432,21 @@ window.examCategories.algebra_lineal = {
 
         // 4. Matrices Inversas (10 preguntas)
         {
-            question: 'Calcule la inversa A^{-1}:',
+            question: 'Calcule la inversa $A^{-1}$:',
             geogebraAppName: 'cas',
             geogebraState: '0',
             latex: 'A = \\begin{pmatrix} 1 & 0 \\\\ 0 & 2 \\end{pmatrix}',
             options: [
-                { latex: '\\begin{pmatrix} 1 & 0 \\\\ 0 & 0.5 \\end{pmatrix}' },
+                { latex: '\\begin{pmatrix} 1 & 0 \\\\ 0 & 0{,}5 \\end{pmatrix}' },
                 { latex: '\\begin{pmatrix} 1 & 0 \\\\ 0 & 2 \\end{pmatrix}' },
-                { latex: '\\begin{pmatrix} 0.5 & 0 \\\\ 0 & 1 \\end{pmatrix}' },
+                { latex: '\\begin{pmatrix} 0{,}5 & 0 \\\\ 0 & 1 \\end{pmatrix}' },
                 { latex: '\\begin{pmatrix} 1 & 0 \\\\ 0 & -2 \\end{pmatrix}' }
             ],
             correct: 0,
             hint: 'Inversa de diagonal.'
         },
         {
-            question: 'Calcule la inversa A^{-1}:',
+            question: 'Calcule la inversa $A^{-1}$:',
             geogebraAppName: 'cas',
             geogebraState: '0',
             latex: 'A = \\begin{pmatrix} 0 & 1 \\\\ 1 & 0 \\end{pmatrix}',
@@ -460,21 +460,21 @@ window.examCategories.algebra_lineal = {
             hint: 'Es su propia inversa.'
         },
         {
-            question: 'Calcule la inversa A^{-1}:',
+            question: 'Calcule la inversa $A^{-1}$:',
             geogebraAppName: 'cas',
             geogebraState: '0',
             latex: 'A = \\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}',
             options: [
-                { latex: '\\begin{pmatrix} -2 & 1 \\\\ 1.5 & -0.5 \\end{pmatrix}' },
+                { latex: '\\begin{pmatrix} -2 & 1 \\\\ 1{,}5 & -0{,}5 \\end{pmatrix}' },
                 { latex: '\\begin{pmatrix} 4 & -2 \\\\ -3 & 1 \\end{pmatrix}' },
-                { latex: '\\begin{pmatrix} -2 & 1 \\\\ 1.5 & 0.5 \\end{pmatrix}' },
+                { latex: '\\begin{pmatrix} -2 & 1 \\\\ 1{,}5 & 0{,}5 \\end{pmatrix}' },
                 { latex: '\\begin{pmatrix} 1 & -2 \\\\ -3 & 4 \\end{pmatrix}' }
             ],
             correct: 0,
             hint: 'Fórmula 1/det * adj.'
         },
         {
-            question: 'Calcule la inversa A^{-1}:',
+            question: 'Calcule la inversa $A^{-1}$:',
             geogebraAppName: 'cas',
             geogebraState: '0',
             latex: 'A = \\begin{pmatrix} 1 & 1 \\\\ 0 & 1 \\end{pmatrix}',
@@ -488,7 +488,7 @@ window.examCategories.algebra_lineal = {
             hint: 'Matriz elemental.'
         },
         {
-            question: 'Calcule la inversa A^{-1}:',
+            question: 'Calcule la inversa $A^{-1}$:',
             geogebraAppName: 'cas',
             geogebraState: '0',
             latex: 'A = \\begin{pmatrix} 2 & 1 \\\\ 1 & 1 \\end{pmatrix}',
@@ -502,7 +502,7 @@ window.examCategories.algebra_lineal = {
             hint: 'Det = 1.'
         },
         {
-            question: 'Calcule la inversa A^{-1}:',
+            question: 'Calcule la inversa $A^{-1}$:',
             geogebraAppName: 'cas',
             geogebraState: '0',
             latex: 'A = \\begin{pmatrix} 1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1 \\end{pmatrix}',
@@ -516,21 +516,21 @@ window.examCategories.algebra_lineal = {
             hint: 'Inversa de la identidad.'
         },
         {
-            question: 'Calcule la inversa A^{-1}:',
+            question: 'Calcule la inversa $A^{-1}$:',
             geogebraAppName: 'cas',
             geogebraState: '0',
             latex: 'A = \\begin{pmatrix} 1 & 0 & 0 \\\\ 0 & 2 & 0 \\\\ 0 & 0 & 4 \\end{pmatrix}',
             options: [
-                { latex: '\\begin{pmatrix} 1 & 0 & 0 \\\\ 0 & 0.5 & 0 \\\\ 0 & 0 & 0.25 \\end{pmatrix}' },
+                { latex: '\\begin{pmatrix} 1 & 0 & 0 \\\\ 0 & 0{,}5 & 0 \\\\ 0 & 0 & 0{,}25 \\end{pmatrix}' },
                 { latex: '\\begin{pmatrix} 1 & 0 & 0 \\\\ 0 & 2 & 0 \\\\ 0 & 0 & 4 \\end{pmatrix}' },
                 { latex: '\\begin{pmatrix} 1 & 0 & 0 \\\\ 0 & -2 & 0 \\\\ 0 & 0 & -4 \\end{pmatrix}' },
-                { latex: '\\begin{pmatrix} 1 & 0 & 0 \\\\ 0 & 0.2 & 0 \\\\ 0 & 0 & 0.4 \\end{pmatrix}' }
+                { latex: '\\begin{pmatrix} 1 & 0 & 0 \\\\ 0 & 0{,}2 & 0 \\\\ 0 & 0 & 0{,}4 \\end{pmatrix}' }
             ],
             correct: 0,
             hint: 'Inversa de diagonal.'
         },
         {
-            question: 'Calcule la inversa A^{-1}:',
+            question: 'Calcule la inversa $A^{-1}$:',
             geogebraAppName: 'cas',
             geogebraState: '0',
             latex: 'A = \\begin{pmatrix} 0 & 0 & 1 \\\\ 0 & 1 & 0 \\\\ 1 & 0 & 0 \\end{pmatrix}',
@@ -544,7 +544,7 @@ window.examCategories.algebra_lineal = {
             hint: 'Matriz de permutación.'
         },
         {
-            question: 'Calcule la inversa A^{-1}:',
+            question: 'Calcule la inversa $A^{-1}$:',
             geogebraAppName: 'cas',
             geogebraState: '0',
             latex: 'A = \\begin{pmatrix} 1 & 0 & 1 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1 \\end{pmatrix}',
@@ -558,13 +558,13 @@ window.examCategories.algebra_lineal = {
             hint: 'Eliminación.'
         },
         {
-            question: 'Calcule la inversa A^{-1}:',
+            question: 'Calcule la inversa $A^{-1}$:',
             geogebraAppName: 'cas',
             geogebraState: '0',
             latex: 'A = \\begin{pmatrix} 2 & 0 \\\\ 0 & 0 \\end{pmatrix}',
             options: [
                 { latex: '\\text{No existe}' },
-                { latex: '\\begin{pmatrix} 0.5 & 0 \\\\ 0 & 0 \\end{pmatrix}' },
+                { latex: '\\begin{pmatrix} 0{,}5 & 0 \\\\ 0 & 0 \\end{pmatrix}' },
                 { latex: '\\begin{pmatrix} 0 & 0 \\\\ 0 & 0 \\end{pmatrix}' },
                 { latex: '\\begin{pmatrix} 2 & 0 \\\\ 0 & 2 \\end{pmatrix}' }
             ],
@@ -610,7 +610,7 @@ window.examCategories.algebra_lineal = {
                 { latex: '\\begin{pmatrix} 3 \\\\ 2 \\end{pmatrix}' },
                 { latex: '\\begin{pmatrix} 3 \\\\ 8 \\end{pmatrix}' },
                 { latex: '\\begin{pmatrix} 3 \\\\ 4 \\end{pmatrix}' },
-                { latex: '\\begin{pmatrix} 1.5 \\\\ 2 \\end{pmatrix}' }
+                { latex: '\\begin{pmatrix} 1{,}5 \\\\ 2 \\end{pmatrix}' }
             ],
             correct: 0,
             hint: 'Multiplica por inversa.'
@@ -705,7 +705,7 @@ window.examCategories.algebra_lineal = {
             geogebraState: '0',
             latex: 'X^{-1} = \\begin{pmatrix} 2 & 0 \\\\ 0 & 2 \\end{pmatrix}',
             options: [
-                { latex: '\\begin{pmatrix} 0.5 & 0 \\\\ 0 & 0.5 \\end{pmatrix}' },
+                { latex: '\\begin{pmatrix} 0{,}5 & 0 \\\\ 0 & 0{,}5 \\end{pmatrix}' },
                 { latex: '\\begin{pmatrix} 2 & 0 \\\\ 0 & 2 \\end{pmatrix}' },
                 { latex: '\\begin{pmatrix} -2 & 0 \\\\ 0 & -2 \\end{pmatrix}' },
                 { latex: '\\begin{pmatrix} 4 & 0 \\\\ 0 & 4 \\end{pmatrix}' }

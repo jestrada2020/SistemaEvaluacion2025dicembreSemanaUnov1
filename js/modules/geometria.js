@@ -10,13 +10,13 @@ window.examCategories.geometria = {
             geogebraState: '1',
             latex: '\\text{Obtener el área del triángulo cuyos lados miden } \\ a=7; b=9; c= 12',
             options: [
-                { latex: '31.3 U.A' },
-                { latex: '35.3 U.A' },
-                { latex: '28.3 U.A' },
-                { latex: '33.3 U.A' }
+                { latex: '31{,}3 U.A' },
+                { latex: '35{,}3 U.A' },
+                { latex: '28{,}3 U.A' },
+                { latex: '33{,}3 U.A' }
             ],
             correct: 0,
-            hint: 'Recuerda que la pendiente de la recta tangente a una curva es la derivada de la curva evaluada en el punto de tangencia.'
+            hint: 'Usa la fórmula de Herón: $s = (a+b+c)/2$ y $A = \\sqrt{s(s-a)(s-b)(s-c)}$.'
         },
         {
             question: 'Con base en la construcción, ¿cuál es el área del triángulo?',
@@ -24,13 +24,13 @@ window.examCategories.geometria = {
             geogebraState: '2',
             latex: '\\text{Obtener el área del triángulo cuyos lados miden } \\ a=10; b=7; c= 12',
             options: [
-                { latex: '31.3 U.A' },
-                { latex: '34.9 U.A' },
-                { latex: '28.3 U.A' },
-                { latex: '33.3 U.A' }
+                { latex: '31{,}3 U.A' },
+                { latex: '35{,}0 U.A' },
+                { latex: '28{,}3 U.A' },
+                { latex: '33{,}3 U.A' }
             ],
             correct: 1,
-            hint: 'Recuerda que la pendiente de la recta tangente a una curva es la derivada de la curva evaluada en el punto de tangencia.'
+            hint: 'Usa la fórmula de Herón: $s = (a+b+c)/2$ y $A = \\sqrt{s(s-a)(s-b)(s-c)}$.'
         },
         {
             question: 'Con base en la construcción, ¿cuál es el área del triángulo?',
@@ -38,13 +38,13 @@ window.examCategories.geometria = {
             geogebraState: '3',
             latex: '\\text{Obtener el área del triángulo cuyos lados miden } \\ a=10; b=14; c= 12',
             options: [
-                { latex: '51.3 U.A' },
-                { latex: '34.9 U.A' },
-                { latex: '58.7 U.A' },
-                { latex: '33.3 U.A' }
+                { latex: '51{,}3 U.A' },
+                { latex: '34{,}9 U.A' },
+                { latex: '58{,}8 U.A' },
+                { latex: '33{,}3 U.A' }
             ],
             correct: 2,
-            hint: 'Recuerda que la pendiente de la recta tangente a una curva es la derivada de la curva evaluada en el punto de tangencia.'
+            hint: 'Usa la fórmula de Herón: $s = (a+b+c)/2$ y $A = \\sqrt{s(s-a)(s-b)(s-c)}$.'
         },
         {
             question: 'Área del círculo:',
@@ -58,7 +58,7 @@ window.examCategories.geometria = {
                 { latex: '12\\pi' }
             ],
             correct: 0,
-            hint: 'r = \\sqrt{A/\\pi}.'
+            hint: 'A = π r².'
         },
         {
             question: 'Longitud de arco:',
@@ -72,7 +72,7 @@ window.examCategories.geometria = {
                 { latex: '8\\pi' }
             ],
             correct: 0,
-            hint: 'L = 2\\pi r (\\theta/360).'
+            hint: '$L = 2\\pi r \\, (\\theta/360^\\circ)$.'
         },
         {
             question: 'Área del sector circular:',
@@ -86,7 +86,7 @@ window.examCategories.geometria = {
                 { latex: '8\\pi' }
             ],
             correct: 0,
-            hint: 'A = \\pi r^2 (\\theta/360).'
+            hint: '$A = \\pi r^2 \\, (\\theta/360^\\circ)$.'
         },
         {
             question: 'Ángulo inscrito:',
@@ -310,7 +310,7 @@ window.examCategories.geometria = {
                 { latex: '1' }
             ],
             correct: 0,
-            hint: 'd = \\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}.'
+            hint: '$d = \\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$.'
         },
         {
             question: 'Punto medio:',
@@ -333,7 +333,7 @@ window.examCategories.geometria = {
             latex: 'A(1,1), B(3,5)',
             options: [
                 { latex: '2' },
-                { latex: '0.5' },
+                { latex: '0{,}5' },
                 { latex: '4' },
                 { latex: '1' }
             ],
@@ -358,7 +358,7 @@ window.examCategories.geometria = {
             question: 'Pendiente rectas paralelas:',
             geogebraAppName: 'classic',
             geogebraState: '0',
-            latex: '\\text{Si } L_1 || L_2 \\text{ y } m_1 = 3, \\text{ entonces } m_2 = ?',
+            latex: '\\text{Si } L_1 \\parallel L_2 \\text{ y } m_1 = 3, \\text{ entonces } m_2 = ?',
             options: [
                 { latex: '3' },
                 { latex: '-3' },
@@ -402,10 +402,10 @@ window.examCategories.geometria = {
             geogebraState: '0',
             latex: 'P(-2, 3)',
             options: [
-                { latex: 'II' },
-                { latex: 'I' },
-                { latex: 'III' },
-                { latex: 'IV' }
+                { latex: '\\text{II}' },
+                { latex: '\\text{I}' },
+                { latex: '\\text{III}' },
+                { latex: '\\text{IV}' }
             ],
             correct: 0,
             hint: 'x negativo, y positivo.'

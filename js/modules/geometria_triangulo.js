@@ -23,7 +23,7 @@ window.examCategories.geometria_triangulo = {
             question: 'Un triángulo con dos lados iguales se llama:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Tipo?}',
+            latex: '',
             options: [
                 { latex: '\\text{Isósceles}' },
                 { latex: '\\text{Equilátero}' },
@@ -37,7 +37,7 @@ window.examCategories.geometria_triangulo = {
             question: 'En un triángulo rectángulo, el lado opuesto al ángulo recto se llama:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Nombre?}',
+            latex: '',
             options: [
                 { latex: '\\text{Hipotenusa}' },
                 { latex: '\\text{Cateto}' },
@@ -93,10 +93,10 @@ window.examCategories.geometria_triangulo = {
             question: 'El ángulo exterior de un triángulo es igual a:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Propiedad?}',
+            latex: '',
             options: [
                 { latex: '\\text{La suma de los dos internos no adyacentes}' },
-                { latex: '\\text{El suplemento del adyacente}' }, // Also true, but usually the theorem refers to the sum of opposite interiors. Let's make options distinct.
+                { latex: '\\text{El doble del ángulo interno adyacente}' },
                 { latex: '\\text{180 grados}' },
                 { latex: '\\text{La diferencia de los internos}' }
             ],
@@ -135,7 +135,7 @@ window.examCategories.geometria_triangulo = {
             question: 'En un triángulo isósceles, los ángulos opuestos a los lados iguales son:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Relación?}',
+            latex: '',
             options: [
                 { latex: '\\text{Iguales}' },
                 { latex: '\\text{Suplementarios}' },
@@ -165,7 +165,7 @@ window.examCategories.geometria_triangulo = {
             question: 'Dos triángulos son semejantes si tienen:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Condición?}',
+            latex: '',
             options: [
                 { latex: '\\text{Sus ángulos correspondientes iguales}' },
                 { latex: '\\text{Sus lados iguales}' },
@@ -193,7 +193,7 @@ window.examCategories.geometria_triangulo = {
             question: 'El Teorema de Tales se aplica a:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Aplicación?}',
+            latex: '',
             options: [
                 { latex: '\\text{Rectas paralelas cortadas por transversales}' },
                 { latex: '\\text{Triángulos rectángulos}' },
@@ -207,7 +207,7 @@ window.examCategories.geometria_triangulo = {
             question: '¿Cuál NO es un criterio de congruencia?',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Criterio inválido?}',
+            latex: '',
             options: [
                 { latex: '\\text{AAA (Ángulo-Ángulo-Ángulo)}' },
                 { latex: '\\text{LLL (Lado-Lado-Lado)}' },
@@ -221,7 +221,7 @@ window.examCategories.geometria_triangulo = {
             question: 'En un triángulo rectángulo, la altura sobre la hipotenusa divide al triángulo en:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Resultado?}',
+            latex: '',
             options: [
                 { latex: '\\text{Dos triángulos semejantes al original}' },
                 { latex: '\\text{Dos triángulos congruentes}' },
@@ -235,7 +235,7 @@ window.examCategories.geometria_triangulo = {
             question: 'Si un triángulo tiene lados 2, 3, 4 y otro 4, 6, 8, son:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Relación?}',
+            latex: '',
             options: [
                 { latex: '\\text{Semejantes (LLL)}' },
                 { latex: '\\text{Congruentes}' },
@@ -265,7 +265,7 @@ window.examCategories.geometria_triangulo = {
             question: 'El punto donde se cortan las medianas se llama:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Nombre?}',
+            latex: '',
             options: [
                 { latex: '\\text{Baricentro (Centroide)}' },
                 { latex: '\\text{Ortocentro}' },
@@ -279,7 +279,7 @@ window.examCategories.geometria_triangulo = {
             question: 'El Ortocentro es el punto de intersección de:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Líneas?}',
+            latex: '',
             options: [
                 { latex: '\\text{Las alturas}' },
                 { latex: '\\text{Las medianas}' },
@@ -293,7 +293,7 @@ window.examCategories.geometria_triangulo = {
             question: 'El Incentro es el centro de:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Centro de?}',
+            latex: '',
             options: [
                 { latex: '\\text{La circunferencia inscrita}' },
                 { latex: '\\text{La circunferencia circunscrita}' },
@@ -307,7 +307,7 @@ window.examCategories.geometria_triangulo = {
             question: 'El Circuncentro es la intersección de:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Líneas?}',
+            latex: '',
             options: [
                 { latex: '\\text{Las mediatrices}' },
                 { latex: '\\text{Las bisectrices}' },
@@ -321,7 +321,7 @@ window.examCategories.geometria_triangulo = {
             question: 'En un triángulo equilátero, el baricentro, ortocentro, incentro y circuncentro:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Propiedad?}',
+            latex: '',
             options: [
                 { latex: '\\text{Coinciden en el mismo punto}' },
                 { latex: '\\text{Son colineales}' },
@@ -335,7 +335,7 @@ window.examCategories.geometria_triangulo = {
             question: 'El baricentro divide a cada mediana en razón:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Razón?}',
+            latex: '',
             options: [
                 { latex: '2:1' },
                 { latex: '1:1' },
@@ -349,7 +349,7 @@ window.examCategories.geometria_triangulo = {
             question: 'La Recta de Euler pasa por:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Puntos?}',
+            latex: '',
             options: [
                 { latex: '\\text{Ortocentro, Baricentro y Circuncentro}' },
                 { latex: '\\text{Incentro, Baricentro y Ortocentro}' },
@@ -363,7 +363,7 @@ window.examCategories.geometria_triangulo = {
             question: 'El Teorema de Ceva relaciona:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Relación?}',
+            latex: '',
             options: [
                 { latex: '\\text{Cevianas concurrentes}' },
                 { latex: '\\text{Puntos colineales}' },
@@ -377,7 +377,7 @@ window.examCategories.geometria_triangulo = {
             question: 'El Teorema de Menelao se usa para probar:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Prueba?}',
+            latex: '',
             options: [
                 { latex: '\\text{Colinealidad de puntos}' },
                 { latex: '\\text{Concurrencia de líneas}' },
@@ -391,7 +391,7 @@ window.examCategories.geometria_triangulo = {
             question: 'El radio de la circunferencia inscrita se denota usualmente como:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Símbolo?}',
+            latex: '',
             options: [
                 { latex: 'r' },
                 { latex: 'R' },
@@ -412,7 +412,7 @@ window.examCategories.geometria_triangulo = {
                 { latex: '\\frac{b}{\\sin B} = \\frac{c}{\\sin C}' },
                 { latex: 'b \\sin B' },
                 { latex: '\\frac{\\sin B}{b}' },
-                { latex: '2R' } // Also true, but let's pick the ratio equality first.
+                { latex: 'R' }
             ],
             correct: 0,
             hint: 'Proporcionalidad lado-seno.'
@@ -530,15 +530,15 @@ window.examCategories.geometria_triangulo = {
             hint: 'Definición.'
         },
         {
-            question: 'La suma de dos lados a+b comparada con 2R sin(A+B) es:',
+            question: 'En todo triángulo $A + B + C = 180^\\circ$. ¿Cuánto vale $\\sin(A + B + C)$?',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Compleja... simplifiquemos: } \\sin(180) = ?',
+            latex: '\\sin(180^\\circ) = ?',
             options: [
                 { latex: '0' },
                 { latex: '1' },
                 { latex: '-1' },
-                { latex: '0.5' }
+                { latex: '0{,}5' }
             ],
             correct: 0,
             hint: 'Seno de pi.'
@@ -633,7 +633,7 @@ window.examCategories.geometria_triangulo = {
             question: 'Área máxima de un triángulo con dos lados fijos a y b:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Cuándo?}',
+            latex: '',
             options: [
                 { latex: '\\text{Cuando el ángulo entre ellos es } 90^\\circ' },
                 { latex: '\\text{Cuando el ángulo es } 60^\\circ' },
@@ -694,7 +694,7 @@ window.examCategories.geometria_triangulo = {
             latex: 'm = \\frac{7-3}{4-2}',
             options: [
                 { latex: '2' },
-                { latex: '0.5' },
+                { latex: '0{,}5' },
                 { latex: '4' },
                 { latex: '1' }
             ],
@@ -744,10 +744,10 @@ window.examCategories.geometria_triangulo = {
             hint: 'Recíproco negativo.'
         },
         {
-            question: 'Si m1 = m2, las rectas son:',
+            question: 'Si dos rectas tienen la misma pendiente ($m_1 = m_2$) y distinta ordenada al origen, son:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Relación?}',
+            latex: '',
             options: [
                 { latex: '\\text{Paralelas}' },
                 { latex: '\\text{Perpendiculares}' },
@@ -761,7 +761,7 @@ window.examCategories.geometria_triangulo = {
             question: 'La mediatriz de un segmento es el lugar geométrico de puntos que:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Condición?}',
+            latex: '',
             options: [
                 { latex: '\\text{Equidistan de los extremos}' },
                 { latex: '\\text{Suman una distancia constante}' },
@@ -772,10 +772,10 @@ window.examCategories.geometria_triangulo = {
             hint: 'Definición.'
         },
         {
-            question: 'La ecuación x^2 + y^2 = r^2 representa:',
+            question: 'La ecuación $x^2 + y^2 = r^2$ representa:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Figura?}',
+            latex: '',
             options: [
                 { latex: '\\text{Circunferencia centrada en el origen}' },
                 { latex: '\\text{Parábola}' },
@@ -845,7 +845,7 @@ window.examCategories.geometria_triangulo = {
             question: 'En un triángulo, el lado mayor se opone al:',
             geogebraAppName: 'geometry',
             geogebraState: '0',
-            latex: '\\text{Opuesto a?}',
+            latex: '',
             options: [
                 { latex: '\\text{Ángulo mayor}' },
                 { latex: '\\text{Ángulo menor}' },
@@ -854,6 +854,54 @@ window.examCategories.geometria_triangulo = {
             ],
             correct: 0,
             hint: 'Relación lado-ángulo.'
+        },
+        // ===== Paramétricas (2026-11-06) =====
+        {
+            question: 'Calcule el área del triángulo:',
+            params: { b: { min: 3, max: 20 }, h: { min: 2, max: 15 } },
+            geogebraAppName: 'geometry',
+            latex: '\\text{base } b = {{b}}\\text{ cm}, \\quad \\text{altura } h = {{h}}\\text{ cm}',
+            options: [
+                { latex: '{{b*h/2}}\\text{ cm}^2' },
+                { latex: '{{b*h}}\\text{ cm}^2' },       // olvidar dividir entre 2
+                { latex: '{{b + h}}\\text{ cm}^2' },
+                { latex: '{{2*(b + h)}}\\text{ cm}^2' }
+            ],
+            correct: 0,
+            hint: 'A = (b × h) / 2.'
+        },
+        {
+            question: 'Los catetos de un triángulo rectángulo miden {{3*k}} cm y {{4*k}} cm. ¿Cuánto mide la hipotenusa?',
+            params: { k: { min: 1, max: 9 } },
+            geogebraAppName: 'geometry',
+            latex: 'c^2 = a^2 + b^2',
+            options: [
+                { latex: '{{5*k}}\\text{ cm}' },
+                { latex: '{{7*k}}\\text{ cm}' },         // sumar los catetos
+                { latex: '{{25*k*k}}\\text{ cm}' },      // olvidar la raíz
+                { latex: '{{round(sqrt(7)*k, 2)}}\\text{ cm}' }
+            ],
+            correct: 0,
+            hint: 'Teorema de Pitágoras.'
+        },
+        // ===== Tarea en GeoGebra (2026-11-06): se responde moviendo la construcción =====
+        {
+            question: 'Mueva el vértice C para que el triángulo ABC sea rectángulo en C.',
+            answerType: 'geogebra',
+            params: { d: { min: 4, max: 8 } },
+            geogebraAppName: 'geometry',
+            geogebraCommands: [
+                'A = (0, 0)', 'B = ({{d}}, 0)', 'SetFixed(A, true)', 'SetFixed(B, true)',
+                'C = (1, 3)', 'tri = Polygon(A, B, C)', 'ang = Angle(Line(C, A), Line(C, B))'
+            ],
+            geogebraCheck: {
+                // coseno del ángulo ACB ≈ 0 (no depende de si C está arriba o abajo de AB)
+                condition: 'abs(((x(A) - x(C)) * (x(B) - x(C)) + (y(A) - y(C)) * (y(B) - y(C))) / (Distance(A, C) * Distance(B, C))) < 0.03',
+                report: 'C',
+                expected: 'C sobre la circunferencia de diámetro AB (ángulo ACB = 90°)'
+            },
+            latex: 'A = (0, 0), \\quad B = ({{d}}, 0)',
+            hint: 'Teorema de Tales: los puntos que ven AB en ángulo recto están en la circunferencia de diámetro AB.'
         }
     ]
 };
